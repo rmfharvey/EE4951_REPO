@@ -20,9 +20,10 @@ redi0069@umn.edu
 Ryan Thompson
 thom4192@umn.edu
 
+Kia Bazargan
+kia@umn.edu
 
-
-
-
+Greg Nash
+greg.nash@nimbelink.com
 
 
