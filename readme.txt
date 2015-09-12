@@ -7,7 +7,6 @@ Ross Harvey
 harve321@umn.edu	
 (515) 210-5953
 
-
 Diego Martinez
 mart1951@umn.edu
 
