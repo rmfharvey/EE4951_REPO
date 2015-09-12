@@ -26,3 +26,4 @@ Greg Nash
 greg.nash@nimbelink.com
 
 
+Testing from shell
