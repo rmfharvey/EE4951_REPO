@@ -1,0 +1,24 @@
+Temp = 34.000
+Pressure = 674.572
+Humidity = 27.646
+Accel = 0.000, 0.000, 0.000
+Waiting for: #HTTPRING, Recieved:
+Waiting for: #HTTPRING, Recieved: OK
+Waiting for: #HTTPRING, Recieved:
+Waiting for: #HTTPRING, Recieved: #HTTPRING: 1,200,"application/json",234
+Waiting for: OK, Recieved:
+Waiting for: OK, Recieved: <<<{"this":"succeeded","by":"dweeting","the":"dweet","with":{"thing":"A100003E422925","created":"2015-10-02T22:30:34.553Z","content":{"temp":34,"press":674.572,"humi":27.646,"X":0,"Y":0,"Z":0,"Latitude":44.977551,"Longitude":-93.23204}}}
+Waiting for: OK, Recieved: OK
+Temp = 34.000
+Pressure = 674.572
+Humidity = 27.746
+Accel = 0.000, 0.000, 0.000
+Waiting for: #HTTPRING, Recieved:
+Waiting for: #HTTPRING, Recieved: OK
+Waiting for: #HTTPRING, Recieved:
+Waiting for: #HTTPRING, Recieved: #HTTPRING: 1,200,"application/json",234
+Waiting for: OK, Recieved:
+Waiting for: OK, Recieved: <<<{"this":"succeeded","by":"dweeting","the":"dweet","with":{"thing":"A100003E422925","created":"2015-10-02T22:30:41.456Z","content":{"temp":34,"press":674.572,"humi":27.746,"X":0,"Y":0,"Z":0,"Latitude":44.977551,"Longitude":-93.23204}}}
+Waiting for: OK, Recieved: OK
+
+
