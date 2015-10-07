@@ -1,0 +1,30 @@
+* C:\Users\James\Desktop\Converter Selection Controls.asc
+R1 +VCC Comp+ 1000k
+R2 Comp+ 0 1000k
+R3 +VCC Comp- 5k
+D1 0 Comp- 2_5V_Zener
+V1 +VCC 0 PULSE(0 24V 0 1ms 1ms 1ms 4ms 5)
+C1 Boost_In 0 10µ
+M1 Boost_In Control_Boost +VCC +VCC FDC5614P
+M2 Buck_In Control_Buck +VCC +VCC FDC5614P
+R13 +VCC Control_Buck 10k
+M6 Control_Buck N001 N002 N002 AP9465GEM
+M7 Control_Boost N003 0 0 AP9465GEM
+R19 +VCC Control_Boost 1k
+R17 +VCC N002 5k
+R21 N002 0 5k
+C5 Buck_In 0 10µ
+R6 Buck_In 0 1k
+R7 Boost_In 0 1k
+XU1 Comp+ Comp- +VCC 0 N001 LT1018
+XU2 Comp- Comp+ +VCC 0 N003 LT1018
+.model D D
+.lib C:\PROGRA~2\LTC\LTSPIC~1\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\PROGRA~2\LTC\LTSPIC~1\lib\cmp\standard.mos
+.tran 5ms uic
+.inc "C:\Users\James\Documents\LT SPICE SIMULATIONS\MMSZ5222BT1G.txt"
+.lib LTC1.lib
+.backanno
+.end
