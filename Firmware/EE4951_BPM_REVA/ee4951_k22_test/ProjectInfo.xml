@@ -44,6 +44,8 @@
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\osa\inc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\utilities\src\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\utilities\inc\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\composite\inc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\include\</Path>
@@ -54,9 +56,16 @@
     </IncludePaths>
     <SourceCodePaths>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\composite\src\sdcard\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\startup\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\adc16\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\dspi\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\gpio\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\rtc\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\adc16\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\dspi\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\gpio\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\lpuart\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\mcg\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\osc\</Path>
@@ -78,13 +87,33 @@
     <GeneratedCs>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\DbgCs1.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\WAIT1.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\clockMan1.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\disp_spi.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\dut_adc.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\fsl_dspi1.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\gpio1.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\hardware_init.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\hw_irqs.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\osa1.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\pin_init.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\sd_card.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\self_adc.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\composite\src\sdcard\fsl_sdcard_spi.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\startup\system_MK22F51212.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\startup.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\adc16\fsl_adc16_common.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\adc16\fsl_adc16_driver.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\dspi\fsl_dspi_common.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\dspi\fsl_dspi_master_driver.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\dspi\fsl_dspi_shared_function.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\dspi\fsl_dspi_slave_driver.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\gpio\fsl_gpio_common.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\gpio\fsl_gpio_driver.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\src\rtc\fsl_rtc_common.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\adc16\fsl_adc16_hal.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\dspi\fsl_dspi_hal.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\gpio\fsl_gpio_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\mcg\fsl_mcg_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\src\mcg\fsl_mcg_hal_modes.c</PathName>
@@ -102,6 +131,7 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\utilities\src\print_scan.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Sources\Events.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Sources\main.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Sources\spi_dspi_layer.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Static_Code\System\PE_low_level_init.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
@@ -109,10 +139,18 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\DbgCs1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\PE_low_level_init.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\SDK\platform\devices\MK22F51212\startup\system_MK22F51212.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\WAIT1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\board.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\clockMan1.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\disp_spi.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\dut_adc.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\fsl_dspi1.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\gpio1.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\hw_irqs.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\osa1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\pin_init.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\sd_card.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\Generated_Code\self_adc.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\arm_math.h</PathName>
@@ -120,12 +158,22 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\core_cmFunc.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\core_cmInstr.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\CMSIS\Include\core_cmSimd.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\composite\inc\fsl_sdcard_spi.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\composite\inc\fsl_sdmmc_card.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\include\MK22F51212.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\include\MK22F51212_extension.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\include\MK22F51212_features.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\MK22F51212\include\fsl_bitaccess.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\fsl_device_registers.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\devices\startup.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\fsl_adc16_driver.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\fsl_dspi_master_driver.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\fsl_dspi_shared_function.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\fsl_dspi_slave_driver.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\drivers\inc\fsl_gpio_driver.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_adc16_hal.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_dspi_hal.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_gpio_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_lpuart_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_mcg_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\EE4951_BPM_REVA\ee4951_k22_test\SDK\platform\hal\inc\fsl_mcg_hal_modes.h</PathName>

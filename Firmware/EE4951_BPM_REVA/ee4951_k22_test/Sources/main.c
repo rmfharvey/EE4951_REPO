@@ -34,6 +34,14 @@
 #include "pin_init.h"
 #include "osa1.h"
 #include "DbgCs1.h"
+#include "sd_card.h"
+#include "fsl_dspi1.h"
+#include "WAIT1.h"
+#include "disp_spi.h"
+#include "dut_adc.h"
+#include "self_adc.h"
+#include "hw_irqs.h"
+#include "gpio1.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif

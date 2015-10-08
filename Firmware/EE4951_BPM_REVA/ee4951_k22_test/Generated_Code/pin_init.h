@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-09-26, 13:52, # CodeGen: 3
+**     Date/Time   : 2015-10-08, 10:15, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -917,15 +917,25 @@
 **              fsl_sim_hal                                : fsl_sim_hal
 **              fsl_mcg_hal                                : fsl_mcg_hal
 **     Contents    :
-**         hardware_init            - void hardware_init(void);
-**         init_jtag_pins           - void init_jtag_pins(uint32_t instance);
-**         deinit_jtag_pins         - void deinit_jtag_pins(uint32_t instance);
-**         init_lpuart_pins         - void init_lpuart_pins(uint32_t instance);
-**         deinit_lpuart_pins       - void deinit_lpuart_pins(uint32_t instance);
-**         init_osc_pins            - void init_osc_pins(uint32_t instance);
-**         deinit_osc_pins          - void deinit_osc_pins(uint32_t instance);
-**         init_tpiu_pins           - void init_tpiu_pins(uint32_t instance);
-**         deinit_tpiu_pins         - void deinit_tpiu_pins(uint32_t instance);
+**         hardware_init          - void hardware_init(void);
+**         init_adc_pins          - void init_adc_pins(uint32_t instance);
+**         deinit_adc_pins        - void deinit_adc_pins(uint32_t instance);
+**         init_cmp_pins          - void init_cmp_pins(uint32_t instance);
+**         deinit_cmp_pins        - void deinit_cmp_pins(uint32_t instance);
+**         init_gpio_pins         - void init_gpio_pins(uint32_t instance);
+**         deinit_gpio_pins       - void deinit_gpio_pins(uint32_t instance);
+**         init_jtag_pins         - void init_jtag_pins(uint32_t instance);
+**         deinit_jtag_pins       - void deinit_jtag_pins(uint32_t instance);
+**         init_llwu_pins         - void init_llwu_pins(uint32_t instance);
+**         deinit_llwu_pins       - void deinit_llwu_pins(uint32_t instance);
+**         init_osc_pins          - void init_osc_pins(uint32_t instance);
+**         deinit_osc_pins        - void deinit_osc_pins(uint32_t instance);
+**         init_spi_pins          - void init_spi_pins(uint32_t instance);
+**         deinit_spi_pins        - void deinit_spi_pins(uint32_t instance);
+**         init_tpiu_pins         - void init_tpiu_pins(uint32_t instance);
+**         deinit_tpiu_pins       - void deinit_tpiu_pins(uint32_t instance);
+**         init_uart_pins         - void init_uart_pins(uint32_t instance);
+**         deinit_uart_pins       - void deinit_uart_pins(uint32_t instance);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.

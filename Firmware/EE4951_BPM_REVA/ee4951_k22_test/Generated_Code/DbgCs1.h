@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-09-26, 13:52, # CodeGen: 3
+**     Date/Time   : 2015-10-07, 21:14, # CodeGen: 5
 **     Abstract    :
 **
 **     Contents    :
@@ -69,11 +69,11 @@
 #include "fsl_debug_console.h"
   
 /** Device instance number */
-#define BOARD_DEBUG_UART_INSTANCE LPUART0_IDX
+#define BOARD_DEBUG_UART_INSTANCE UART1_IDX
 /** Baud rate in bits per second. */
 #define DEBUG_UART_BAUD 115200U
 /** Low level device type */
-#define DEBUG_UART_TYPE kDebugConsoleLPUART
+#define DEBUG_UART_TYPE kDebugConsoleUART
  
 #endif
 /* ifndef __DbgCs1_H */

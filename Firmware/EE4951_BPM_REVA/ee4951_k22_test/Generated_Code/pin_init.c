@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-09-26, 13:52, # CodeGen: 3
+**     Date/Time   : 2015-10-08, 10:15, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -968,6 +968,143 @@
 #include "pin_init.h"
 
 
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_adc_pins
+* Description   : ADC method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_adc_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case ADC0_IDX:                      /* ADC0_IDX */
+      /* Affects PORTB_PCR0 register */
+      PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
+      /* Affects PORTB_PCR1 register */
+      PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      break;
+    case ADC1_IDX:                      /* ADC1_IDX */
+      /* Affects PORTB_PCR0 register */
+      PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
+      /* Affects PORTB_PCR1 register */
+      PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      /* Affects PORTC_PCR9 register */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      /* Affects PORTC_PCR10 register */
+      PORT_HAL_SetMuxMode(PORTC,10UL,kPortPinDisabled);
+      /* Affects PORTC_PCR11 register */
+      PORT_HAL_SetMuxMode(PORTC,11UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_adc_pins
+* Description   : ADC method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_adc_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case ADC0_IDX:                      /* ADC0_IDX */
+      PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      break;
+    case ADC1_IDX:                      /* ADC1_IDX */
+      PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,10UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,11UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_cmp_pins
+* Description   : CMP method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_cmp_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case CMP0_IDX:                      /* CMP0_IDX */
+      /* Affects PORTC_PCR9 register */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_cmp_pins
+* Description   : CMP method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_cmp_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case CMP0_IDX:                      /* CMP0_IDX */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_gpio_pins
+* Description   : GPIO method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_gpio_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case PORTA_IDX:                     /* PORTA_IDX */
+      /* Affects PORTA_PCR4 register */
+      PORT_HAL_SetMuxMode(PORTA,4UL,kPortMuxAsGpio);
+      /* Affects PORTA_PCR13 register */
+      PORT_HAL_SetMuxMode(PORTA,13UL,kPortMuxAsGpio);
+      break;
+    case PORTC_IDX:                     /* PORTC_IDX */
+      /* Affects PORTC_PCR2 register */
+      PORT_HAL_SetMuxMode(PORTC,2UL,kPortMuxAsGpio);
+      /* Affects PORTC_PCR3 register */
+      PORT_HAL_SetMuxMode(PORTC,3UL,kPortMuxAsGpio);
+      /* Affects PORTC_PCR7 register */
+      PORT_HAL_SetMuxMode(PORTC,7UL,kPortMuxAsGpio);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_gpio_pins
+* Description   : GPIO method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_gpio_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case PORTA_IDX:                     /* PORTA_IDX */
+      PORT_HAL_SetMuxMode(PORTA,4UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTA,13UL,kPortPinDisabled);
+      break;
+    case PORTC_IDX:                     /* PORTC_IDX */
+      PORT_HAL_SetMuxMode(PORTC,2UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,3UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,7UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
 
 /*FUNCTION**********************************************************************
 *
@@ -1002,27 +1139,30 @@ void deinit_jtag_pins(uint32_t instance)
 
 /*FUNCTION**********************************************************************
 *
-* Function Name : init_lpuart_pins
-* Description   : LPUART method sets registers according routing settings.
+* Function Name : init_llwu_pins
+* Description   : LLWU method sets registers according routing settings.
 * Call this method code to route desired pins.
 *END**************************************************************************/
-void init_lpuart_pins(uint32_t instance)
+void init_llwu_pins(uint32_t instance)
 {
+  /* Affects PORTA_PCR4 register */
+  PORT_HAL_SetMuxMode(PORTA,4UL,kPortMuxAsGpio);
+  /* Affects PORTA_PCR13 register */
+  PORT_HAL_SetMuxMode(PORTA,13UL,kPortMuxAsGpio);
   /* Affects PORTC_PCR3 register */
-  PORT_HAL_SetMuxMode(PORTC,3UL,kPortMuxAlt7);
-  /* Affects PORTC_PCR4 register */
-  PORT_HAL_SetMuxMode(PORTC,4UL,kPortMuxAlt7);
+  PORT_HAL_SetMuxMode(PORTC,3UL,kPortMuxAsGpio);
 }
 /*FUNCTION**********************************************************************
 *
-* Function Name : deinit_lpuart_pins
-* Description   : LPUART method sets registers according routing settings.
+* Function Name : deinit_llwu_pins
+* Description   : LLWU method sets registers according routing settings.
 * Call this method code to disable routing of desired pins.
 *END**************************************************************************/
-void deinit_lpuart_pins(uint32_t instance)
+void deinit_llwu_pins(uint32_t instance)
 {
+  PORT_HAL_SetMuxMode(PORTA,4UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTA,13UL,kPortPinDisabled);
   PORT_HAL_SetMuxMode(PORTC,3UL,kPortPinDisabled);
-  PORT_HAL_SetMuxMode(PORTC,4UL,kPortPinDisabled);
 }
 
 /*FUNCTION**********************************************************************
@@ -1049,6 +1189,64 @@ void deinit_osc_pins(uint32_t instance)
   PORT_HAL_SetMuxMode(PORTA,18UL,kPortPinDisabled);
   PORT_HAL_SetMuxMode(PORTA,19UL,kPortPinDisabled);
 }
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_spi_pins
+* Description   : SPI method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_spi_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case SPI0_IDX:                      /* SPI0_IDX */
+      /* Affects PORTD_PCR0 register */
+      PORT_HAL_SetMuxMode(PORTD,0UL,kPortMuxAlt2);
+      /* Affects PORTD_PCR3 register */
+      PORT_HAL_SetMuxMode(PORTD,3UL,kPortMuxAlt2);
+      /* Affects PORTD_PCR1 register */
+      PORT_HAL_SetMuxMode(PORTD,1UL,kPortMuxAlt2);
+      /* Affects PORTD_PCR2 register */
+      PORT_HAL_SetMuxMode(PORTD,2UL,kPortMuxAlt2);
+      break;
+    case SPI1_IDX:                      /* SPI1_IDX */
+      /* Affects PORTD_PCR4 register */
+      PORT_HAL_SetMuxMode(PORTD,4UL,kPortMuxAlt7);
+      /* Affects PORTD_PCR7 register */
+      PORT_HAL_SetMuxMode(PORTD,7UL,kPortMuxAlt7);
+      /* Affects PORTD_PCR5 register */
+      PORT_HAL_SetMuxMode(PORTD,5UL,kPortMuxAlt7);
+      /* Affects PORTD_PCR6 register */
+      PORT_HAL_SetMuxMode(PORTD,6UL,kPortMuxAlt7);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_spi_pins
+* Description   : SPI method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_spi_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case SPI0_IDX:                      /* SPI0_IDX */
+      PORT_HAL_SetMuxMode(PORTD,0UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,3UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,1UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,2UL,kPortPinDisabled);
+      break;
+    case SPI1_IDX:                      /* SPI1_IDX */
+      PORT_HAL_SetMuxMode(PORTD,4UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,7UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,5UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTD,6UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
 
 /*FUNCTION**********************************************************************
 *
@@ -1070,6 +1268,42 @@ void init_tpiu_pins(uint32_t instance)
 void deinit_tpiu_pins(uint32_t instance)
 {
   PORT_HAL_SetMuxMode(PORTA,2UL,kPortPinDisabled);
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_uart_pins
+* Description   : UART method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_uart_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case UART1_IDX:                     /* UART1_IDX */
+      /* Affects PORTE_PCR1 register */
+      PORT_HAL_SetMuxMode(PORTE,1UL,kPortMuxAlt3);
+      /* Affects PORTE_PCR0 register */
+      PORT_HAL_SetMuxMode(PORTE,0UL,kPortMuxAlt3);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_uart_pins
+* Description   : UART method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_uart_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case UART1_IDX:                     /* UART1_IDX */
+      PORT_HAL_SetMuxMode(PORTE,1UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTE,0UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
 }
 
 

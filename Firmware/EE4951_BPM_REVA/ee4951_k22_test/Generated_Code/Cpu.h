@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-09-26, 13:41, # CodeGen: 1
+**     Date/Time   : 2015-10-08, 10:15, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -81,6 +81,15 @@
 #include "fsl_uart_hal.h"
 #include "fsl_lpuart_hal.h"
 #include "fsl_debug_console.h"
+#include "fsl_dspi_hal.h"
+#include "fsl_dspi_master_driver.h"
+#include "fsl_dspi_slave_driver.h"
+#include "fsl_dspi_shared_function.h"
+#include "fsl_sdcard_spi.h"
+#include "fsl_adc16_hal.h"
+#include "fsl_adc16_driver.h"
+#include "fsl_gpio_hal.h"
+#include "fsl_gpio_driver.h"
 #include <assert.h>
 
 #ifdef __cplusplus

@@ -37,6 +37,40 @@ extern "C" {
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
+/*! disp_spi IRQ handler */
+void SPI1_IRQHandler(void)
+{
+#if DISP_SPI_DMA_MODE
+  DSPI_DRV_EdmaIRQHandler(FSL_DISP_SPI);
+#else
+  DSPI_DRV_IRQHandler(FSL_DISP_SPI);
+#endif
+  /* Write your code here ... */
+}
+
+/*! fsl_dspi1 IRQ handler */
+void SPI0_IRQHandler(void)
+{
+#if FSL_DSPI1_DMA_MODE
+  DSPI_DRV_EdmaIRQHandler(FSL_FSL_DSPI1);
+#else
+  DSPI_DRV_IRQHandler(FSL_FSL_DSPI1);
+#endif
+  /* Write your code here ... */
+}
+
+/*! self_adc IRQ handler */
+void ADC1_IRQHandler(void)
+{
+  /* Write your code here ... */
+}
+
+/*! dut_adc IRQ handler */
+void ADC0_IRQHandler(void)
+{
+  /* Write your code here ... */
+}
+
 /* END Events */
 
 #ifdef __cplusplus

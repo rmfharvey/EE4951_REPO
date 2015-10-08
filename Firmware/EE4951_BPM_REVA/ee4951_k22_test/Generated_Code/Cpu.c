@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-09-26, 13:52, # CodeGen: 3
+**     Date/Time   : 2015-10-08, 10:15, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -108,11 +108,42 @@ void Components_Init(void)
 {
 
   /*! DbgCs1 Auto initialization start */
-  /* Enable clock source for LPUART - bitfield LPUART0SRC within SIM_SOPT2 */
-  CLOCK_SYS_SetLpuartSrc(BOARD_DEBUG_UART_INSTANCE,kClockLpuartSrcPllFllSel);
   /* Debug console initialization */
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
   /*! DbgCs1 Auto initialization end */
+  /*! fsl_dspi1 Auto initialization start */
+  DSPI_DRV_MasterInit(FSL_FSL_DSPI1, &fsl_dspi1_MasterState, &fsl_dspi1_MasterConfig0);
+  DSPI_DRV_MasterConfigureBus(FSL_FSL_DSPI1, &fsl_dspi1_BusConfig0, &fsl_dspi1_calculatedBaudRate);
+  /*! fsl_dspi1 Auto initialization end */
+  
+  /*! sd_card Auto initialization start */
+  sd_card_spi_state.busBaudRate = fsl_dspi1_calculatedBaudRate;
+  (void)SDSPI_DRV_Init(&sd_card_spi_state,&sd_card_state);
+  /*! sd_card Auto initialization start */
+
+  /*! disp_spi Auto initialization start */
+  DSPI_DRV_MasterInit(FSL_DISP_SPI, &disp_spi_MasterState, &disp_spi_MasterConfig0);
+  DSPI_DRV_MasterConfigureBus(FSL_DISP_SPI, &disp_spi_BusConfig0, &disp_spi_calculatedBaudRate);
+  /*! disp_spi Auto initialization end */
+  
+  /*! dut_adc Auto initialization start */
+  ADC16_DRV_Init(FSL_DUT_ADC, &dut_adc_InitConfig0);
+  ADC16_DRV_ConfigConvChn(FSL_DUT_ADC, 0U, &dut_vsense_config);
+  /*! dut_adc Auto initialization end */
+  
+  /*! self_adc Auto initialization start */
+  ADC16_DRV_Init(FSL_SELF_ADC, &self_adc_InitConfig0);
+  ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_vsense);
+  /*! self_adc Auto initialization end */
+  
+  /*! hw_irqs Auto initialization start */
+  GPIO_DRV_Init(hw_irqs_InpConfig0,NULL);
+  /*! hw_irqs Auto initialization end */
+  
+  /*! gpio1 Auto initialization start */
+  GPIO_DRV_Init(gpio1_InpConfig0,gpio1_OutConfig0);
+  /*! gpio1 Auto initialization end */
+  
 }
 #endif /* CPU_COMPONENTS_INIT */
 

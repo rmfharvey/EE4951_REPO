@@ -35,11 +35,31 @@
 #include "pin_init.h"
 #include "osa1.h"
 #include "DbgCs1.h"
+#include "sd_card.h"
+#include "fsl_dspi1.h"
+#include "WAIT1.h"
+#include "disp_spi.h"
+#include "dut_adc.h"
+#include "self_adc.h"
+#include "hw_irqs.h"
+#include "gpio1.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif 
 
+
+/*! disp_spi IRQ handler */
+void SPI1_IRQHandler(void);
+
+/*! fsl_dspi1 IRQ handler */
+void SPI0_IRQHandler(void);
+
+/*! self_adc IRQ handler */
+void ADC1_IRQHandler(void);
+
+/*! dut_adc IRQ handler */
+void ADC0_IRQHandler(void);
 
 /* END Events */
 
