@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;EE4951_BPM_DEVKIT_REVA&apos;" deleteContents="true" description="Delete resource &apos;EE4951_BPM_DEVKIT_REVA&apos;" element1="/EE4951_BPM_DEVKIT_REVA" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1443290641211"/>&#x0A;<refactoring comment="Delete resource &apos;ksdk_platform_lib_K22F51212&apos;" deleteContents="false" description="Delete resource &apos;ksdk_platform_lib_K22F51212&apos;" element1="/ksdk_platform_lib_K22F51212" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1443290894101"/>
+</session>
