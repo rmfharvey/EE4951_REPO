@@ -1,0 +1,4 @@
+Added Component: Designator=X2(ABMM2-8.000MHZ-E2-T)
+Added Pin To Net: NetName=OSC8M_P Pin=X2-1
+Added Pin To Net: NetName=OSC8M_N Pin=X2-3
+Added Member To Class: ClassName=Microcontroller Member=Component X2 8MHz

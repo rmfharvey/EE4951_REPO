@@ -1,0 +1,8 @@
+Added Component: Designator=M1(SOT666-6N)
+Added Pin To Net: NetName=GND Pin=M1-1
+Added Pin To Net: NetName=NetM1_3 Pin=M1-6
+Change Net Name : Old Net Name=NetM1_3 New Net Name=NetM1_6
+Added Pin To Net: NetName=NetM1_2 Pin=M1-2
+Added Pin To Net: NetName=NetM1_2 Pin=R8-2
+Added Net: Name=NetM1_2
+Added Member To Class: ClassName=Microcontroller Member=Component M1 NX3020NAKV,115

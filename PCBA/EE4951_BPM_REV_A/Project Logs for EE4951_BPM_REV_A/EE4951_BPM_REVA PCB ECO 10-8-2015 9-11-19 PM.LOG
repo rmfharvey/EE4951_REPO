@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=3.3V Pin=C9-1
+Added Component: Designator=U3(SOT23-3M)
+Added Pin To Net: NetName=ADC_3V_REF Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U3-3
+Added Pin To Net: NetName=5V Pin=C9-1
+Added Pin To Net: NetName=5V Pin=U3-1
+Added Net: Name=5V
+Added Member To Class: ClassName=Microcontroller Member=Component U3 MAX6103EUR+T

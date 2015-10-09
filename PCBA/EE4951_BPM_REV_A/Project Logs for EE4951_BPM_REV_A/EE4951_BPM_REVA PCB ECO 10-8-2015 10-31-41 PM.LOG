@@ -1,0 +1,4 @@
+Added Component: Designator=R23(RES0603W)
+Added Pin To Net: NetName=DUT_VSENSE_OUT Pin=R23-1
+Added Pin To Net: NetName=DUT_VSENSE Pin=R23-2
+Added Member To Class: ClassName=Voltage Measurement Member=Component R23 220R

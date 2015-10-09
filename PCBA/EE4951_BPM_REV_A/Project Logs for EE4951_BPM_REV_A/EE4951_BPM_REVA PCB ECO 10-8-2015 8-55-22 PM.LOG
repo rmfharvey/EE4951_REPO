@@ -1,0 +1,41 @@
+Added Component: Designator=C22(CAP0402R)
+Added Component: Designator=C23(CAP1206R)
+Added Component: Designator=J7(MICROSD_1050270001)
+Added Component: Designator=R25(RES0402R)
+Added Component: Designator=R26(RES0402R)
+Added Pin To Net: NetName=DUT_VSENSE Pin=C19-1
+Added Pin To Net: NetName=3.3V Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=3.3V Pin=C23-2
+Added Pin To Net: NetName=JTAG_TMS Pin=J3-2
+Added Pin To Net: NetName=JTAG_TCLK Pin=J3-4
+Added Pin To Net: NetName=JTAG_TDO Pin=J3-6
+Added Pin To Net: NetName=JTAG_TDI Pin=J3-8
+Added Pin To Net: NetName=USBD_N Pin=J4-2
+Added Pin To Net: NetName=USBD_P Pin=J4-3
+Added Pin To Net: NetName=SD_C\S\ Pin=J7-P2
+Added Pin To Net: NetName=SD_MOSI Pin=J7-P3
+Added Pin To Net: NetName=3.3V Pin=J7-P4
+Added Pin To Net: NetName=SD_CLK Pin=J7-P5
+Added Pin To Net: NetName=GND Pin=J7-P6
+Added Pin To Net: NetName=GND Pin=J7-S1
+Added Pin To Net: NetName=GND Pin=J7-S2
+Added Pin To Net: NetName=GND Pin=J7-S3
+Added Pin To Net: NetName=GND Pin=J7-S4
+Added Pin To Net: NetName=DUT_VSENSE Pin=R23-2
+Added Pin To Net: NetName=SD_MISO Pin=R25-1
+Added Pin To Net: NetName=NetJ7_G1 Pin=J7-G1
+Added Pin To Net: NetName=NetJ7_G1 Pin=R26-2
+Added Net: Name=NetJ7_G1
+Added Pin To Net: NetName=NetJ7_P7 Pin=J7-P7
+Added Pin To Net: NetName=NetJ7_P7 Pin=R25-2
+Added Net: Name=NetJ7_P7
+Added Pin To Net: NetName=NetR26_1 Pin=R26-1
+Added Pin To Net: NetName=NetR26_1 Pin=U1-62
+Added Net: Name=NetR26_1
+Added Member To Class: ClassName=Connectors Member=Component C22 0.1uF
+Added Member To Class: ClassName=Connectors Member=Component C23 10uF
+Added Member To Class: ClassName=Connectors Member=Component J7 Micro SD Connector
+Added Member To Class: ClassName=Connectors Member=Component R25 100R
+Added Member To Class: ClassName=Connectors Member=Component R26 100R
