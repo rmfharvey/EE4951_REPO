@@ -1,0 +1,11 @@
+Subsystem Changes
+Ross Harvey
+10-11-2015
+
+Power
+1. Changed voltage range Comparator
+	Reason: Hard to find, expensive, and large package.
+2. Switched Zener diode to a precision reference	
+	Reason:  Zeners are very imprecise.  Not used for references.
+3. Changed PFET pulldown FETs to NX3020
+	Reson: Size reduction
