@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=UART1_TX Pin=R6-2
+Removed Pin From Net: NetName=UART1_RX Pin=R13-2
+Removed Member From Class: ClassName=Microcontroller Member=R6
+Removed Member From Class: ClassName=Microcontroller Member=R13
+Added Pin To Net: NetName=UART1_TX Pin=U1-1
+Added Pin To Net: NetName=UART1_RX Pin=U2-30

@@ -1,0 +1,42 @@
+Added Component: Designator=C57(CAP1206W)
+Added Component: Designator=C58(CAP0402R)
+Added Component: Designator=D11(SOD-123)
+Added Component: Designator=R55(RES0402R)
+Added Component: Designator=R56(RES0603W)
+Added Component: Designator=R57(RES0402R)
+Added Component: Designator=U14(SOT23-5)
+Added Pin To Net: NetName=SELF_5V_VSENSE Pin=C49-1
+Added Pin To Net: NetName=GND Pin=C57-2
+Added Pin To Net: NetName=GND Pin=C58-2
+Added Pin To Net: NetName=3.3V Pin=D11-2
+Added Pin To Net: NetName=SELF_5V_VSENSE Pin=R45-2
+Added Pin To Net: NetName=GND Pin=R55-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R56-1
+Added Pin To Net: NetName=GND Pin=R57-1
+Added Pin To Net: NetName=NetC54_1 Pin=U1-81
+Added Pin To Net: NetName=NetC48_1 Pin=U1-83
+Added Pin To Net: NetName=DISP_MOSI Pin=U13-1
+Added Pin To Net: NetName=DISP_CLK Pin=U13-2
+Added Pin To Net: NetName=DISP_C\S\ Pin=U13-5
+Added Pin To Net: NetName=PWR_FAIL_IRQ Pin=U14-1
+Added Pin To Net: NetName=GND Pin=U14-2
+Change Net Name : Old Net Name=NetC48_1 New Net Name=SELF_5V_ISENSE
+Change Net Name : Old Net Name=NetC54_1 New Net Name=SELF_3V3_ISENSE
+Added Pin To Net: NetName=NetC57_1 Pin=C57-1
+Added Pin To Net: NetName=NetC57_1 Pin=C58-1
+Added Pin To Net: NetName=NetC57_1 Pin=D11-1
+Added Pin To Net: NetName=NetC57_1 Pin=R55-2
+Added Pin To Net: NetName=NetC57_1 Pin=U14-4
+Added Pin To Net: NetName=NetC57_1 Pin=U14-5
+Added Net: Name=NetC57_1
+Added Pin To Net: NetName=NetR56_2 Pin=R56-2
+Added Pin To Net: NetName=NetR56_2 Pin=R57-2
+Added Pin To Net: NetName=NetR56_2 Pin=U14-3
+Added Net: Name=NetR56_2
+Added Member To Class: ClassName=Power Member=Component C57 10uF
+Added Member To Class: ClassName=Power Member=Component C58 0.1uF
+Added Member To Class: ClassName=Power Member=Component D11 BAT43W-G3-18
+Added Member To Class: ClassName=Power Member=Component R55 1MEG
+Added Member To Class: ClassName=Power Member=Component R56 22k
+Added Member To Class: ClassName=Power Member=Component R57 50k
+Added Member To Class: ClassName=Power Member=Component U14 TLV3201AIDBVR
