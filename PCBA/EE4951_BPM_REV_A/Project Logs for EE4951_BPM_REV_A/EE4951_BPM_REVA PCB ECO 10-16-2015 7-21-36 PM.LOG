@@ -1,0 +1,24 @@
+Added Component: Designator=TP2(Testpoint 1.5mm SMD)
+Added Component: Designator=TP3(Testpoint 1.5mm SMD)
+Added Component: Designator=TP4(Testpoint 1.5mm SMD)
+Added Component: Designator=TP5(Testpoint 1.5mm SMD)
+Added Component: Designator=TP6(Testpoint 1.5mm SMD)
+Added Component: Designator=TP7(Testpoint 1.5mm SMD)
+Added Component: Designator=TP8(Testpoint 1.5mm SMD)
+Added Component: Designator=TP10(Testpoint 1.5mm SMD)
+Added Pin To Net: NetName=BUCK_OUT Pin=TP2-1
+Added Pin To Net: NetName=BOOST_EN Pin=TP3-1
+Added Pin To Net: NetName=BUCK_EN Pin=TP4-1
+Added Pin To Net: NetName=BOOST_OUT Pin=TP5-1
+Added Pin To Net: NetName=SELF_5V_VSENSE Pin=TP6-1
+Added Pin To Net: NetName=SELF_5V_ISENSE Pin=TP7-1
+Added Pin To Net: NetName=SELF_3V3_ISENSE Pin=TP8-1
+Added Pin To Net: NetName=DUT_VSENSE_IN Pin=TP10-1
+Added Member To Class: ClassName=Power Member=Component TP2 NONE
+Added Member To Class: ClassName=Power Member=Component TP3 NONE
+Added Member To Class: ClassName=Power Member=Component TP4 NONE
+Added Member To Class: ClassName=Power Member=Component TP5 NONE
+Added Member To Class: ClassName=Power Member=Component TP6 NONE
+Added Member To Class: ClassName=Power Member=Component TP7 NONE
+Added Member To Class: ClassName=Power Member=Component TP8 NONE
+Added Member To Class: ClassName=Voltage Measurement Member=Component TP10 NONE

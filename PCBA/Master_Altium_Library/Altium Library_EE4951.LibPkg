@@ -225,6 +225,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QYLTTYJC
 
+[Document12]
+DocumentPath=Testing.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KNTCDHQE
+
 [Generic_IntLibOptions]
 OldFormat=False
 

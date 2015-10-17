@@ -1,0 +1,3 @@
+Added Component: Designator=TP9(Testpoint 1.5mm SMD)
+Added Pin To Net: NetName=DUT_VSENSE Pin=TP9-1
+Added Member To Class: ClassName=Voltage Measurement Member=Component TP9 NONE

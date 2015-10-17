@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=3.3V Pin=C45-1
+Removed Pin From Net: NetName=3.3V Pin=U9-3
+Change Component Kind : Designator=NT1 Old Kind=Standard New Kind=Net Tie
+Added Pin To Net: NetName=NetC45_1 Pin=C45-1
+Added Pin To Net: NetName=NetC45_1 Pin=U9-3
+Added Net: Name=NetC45_1

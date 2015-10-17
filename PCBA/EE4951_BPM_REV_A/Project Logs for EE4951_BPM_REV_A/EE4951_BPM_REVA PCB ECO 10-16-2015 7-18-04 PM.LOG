@@ -1,0 +1,6 @@
+Change Component DesignItemId : Designator=NT1 Old DesignItemId=Net Tie New DesignItemId=Net Tie 
+Change Component Description : Designator=NT1 Old Description= New Description=Net Tie Testpoint w/ Hook
+Added Component: Designator=NT2(Net Tie)
+Added Pin To Net: NetName=NetC45_1 Pin=NT2-1
+Added Pin To Net: NetName=3.3V Pin=NT2-2
+Added Member To Class: ClassName=Power Member=Component NT2 Net Tie
