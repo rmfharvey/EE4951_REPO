@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=5V Pin=C44-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=C44-1
+Change Differential Pair Positive Net Name : Old Net Name=V3_ISENSE_P New Net Name=V3_ISENSE_P

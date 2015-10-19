@@ -1,0 +1,8 @@
+Added Component: Designator=U9(SOT-223-6)
+Added Pin To Net: NetName=V3_ISENSE_N Pin=U9-1
+Added Pin To Net: NetName=V3_ISENSE_N Pin=U9-2
+Added Pin To Net: NetName=GND Pin=U9-3
+Added Pin To Net: NetName=NetC45_1 Pin=U9-4
+Added Pin To Net: NetName=NetC45_1 Pin=U9-5
+Added Pin To Net: NetName=GND Pin=U9-6
+Added Member To Class: ClassName=Power Member=Component U9 #NAME?

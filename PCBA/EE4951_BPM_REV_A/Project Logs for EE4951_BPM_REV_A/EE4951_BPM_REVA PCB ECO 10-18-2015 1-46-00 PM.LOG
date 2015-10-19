@@ -1,0 +1,179 @@
+Removed Pin From Net: NetName=DISP_MOSI Pin=U13-1
+Removed Pin From Net: NetName=DISP_CLK Pin=U13-2
+Removed Pin From Net: NetName=NetR54_1 Pin=U13-4
+Removed Pin From Net: NetName=DISP_C\S\ Pin=U13-5
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=U13-7
+Removed Member From Class: ClassName=OLED Display Member=U13
+Change Component DesignItemId : Designator=U13 Old DesignItemId=SSD1306 New DesignItemId=MAX4618CSE+
+Change Component Footprint: Designator=U13 Old Footprint=SSD1306 New Footprint=TSSOP16
+Change Component Comment : Designator=U13 Old Comment=SSD1306 New Comment=MAX4618EUE+
+Added Component: Designator=C59(CAP0402R)
+Added Component: Designator=C60(CAP0402R)
+Added Component: Designator=C61(CAP0402R)
+Added Component: Designator=M7(SOT666-6N)
+Added Component: Designator=M8(SOT23-3M)
+Added Component: Designator=M9(SOT666-6N)
+Added Component: Designator=M10(SOT23-3M)
+Added Component: Designator=R13(RES0402R)
+Added Component: Designator=R58(RES0402R)
+Added Component: Designator=R59(RES0402R)
+Added Component: Designator=R60(RES0402R)
+Added Component: Designator=R61(RES0402R)
+Added Component: Designator=R62(RES0603R)
+Added Component: Designator=R63(RES0603R)
+Added Component: Designator=R64(RES0805R)
+Added Component: Designator=R65(RES0805R)
+Added Component: Designator=R66(RES0402R)
+Added Component: Designator=R67(RES0402R)
+Added Component: Designator=R68(RES0402R)
+Added Component: Designator=R69(RES0402R)
+Added Component: Designator=R70(RES0402R)
+Added Component: Designator=R71(RES0603R)
+Added Component: Designator=R72(RES0402R)
+Added Component: Designator=R73(RES0402R)
+Added Component: Designator=R74(RES0402R)
+Added Component: Designator=R75(RES0402R)
+Added Component: Designator=R76(RES0402R)
+Added Component: Designator=R77(RES0402R)
+Added Component: Designator=R78(RES0402R)
+Added Component: Designator=R79(RES0402R)
+Added Component: Designator=R80(RES0402R)
+Added Component: Designator=R81(RES0402R)
+Added Component: Designator=U15(SOT23-6)
+Added Component: Designator=U16(SSD1306)
+Added Pin To Net: NetName=V3_ISENSE_P Pin=C59-1
+Added Pin To Net: NetName=GND Pin=C59-2
+Added Pin To Net: NetName=3.3V Pin=C60-1
+Added Pin To Net: NetName=GND Pin=C60-2
+Added Pin To Net: NetName=DUT_ISENSE Pin=C61-1
+Added Pin To Net: NetName=GND Pin=C61-2
+Added Pin To Net: NetName=GND Pin=M8-2
+Added Pin To Net: NetName=GND Pin=M10-2
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R13-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE0 Pin=R58-2
+Added Pin To Net: NetName=3.3V Pin=R59-2
+Added Pin To Net: NetName=GND Pin=R60-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE0 Pin=R61-1
+Added Pin To Net: NetName=DUT_ISENSE Pin=R62-2
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R66-2
+Added Pin To Net: NetName=3.3V Pin=R68-2
+Added Pin To Net: NetName=GND Pin=R69-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R72-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=R73-2
+Added Pin To Net: NetName=3.3V Pin=R74-2
+Added Pin To Net: NetName=GND Pin=R75-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=R76-1
+Added Pin To Net: NetName=NetR54_2 Pin=R80-2
+Added Pin To Net: NetName=V3_ISENSE_P Pin=U13-6
+Added Pin To Net: NetName=V3_ISENSE_P Pin=U13-16
+Added Pin To Net: NetName=GND Pin=U15-2
+Added Pin To Net: NetName=NetU13_3 Pin=U15-3
+Added Pin To Net: NetName=3.3V Pin=U15-5
+Added Pin To Net: NetName=3.3V Pin=U15-6
+Added Pin To Net: NetName=DISP_MOSI Pin=U16-1
+Added Pin To Net: NetName=DISP_CLK Pin=U16-2
+Added Pin To Net: NetName=NetR54_1 Pin=U16-4
+Added Pin To Net: NetName=DISP_C\S\ Pin=U16-5
+Added Pin To Net: NetName=V3_ISENSE_P Pin=U16-7
+Added Pin To Net: NetName=GND Pin=U16-8
+Added Pin To Net: NetName=DUT_GND Pin=J2-2
+Added Pin To Net: NetName=DUT_GND Pin=R65-2
+Added Pin To Net: NetName=DUT_GND Pin=R71-2
+Added Pin To Net: NetName=DUT_GND Pin=U13-1
+Added Pin To Net: NetName=DUT_GND Pin=U13-2
+Added Pin To Net: NetName=DUT_GND Pin=U13-4
+Added Pin To Net: NetName=DUT_GND Pin=U13-5
+Added Net: Name=DUT_GND
+Added Pin To Net: NetName=DUT_ISENSE_IN0 Pin=M8-3
+Added Pin To Net: NetName=DUT_ISENSE_IN0 Pin=R65-1
+Added Pin To Net: NetName=DUT_ISENSE_IN0 Pin=U13-12
+Added Net: Name=DUT_ISENSE_IN0
+Added Pin To Net: NetName=DUT_ISENSE_IN1 Pin=M10-3
+Added Pin To Net: NetName=DUT_ISENSE_IN1 Pin=R71-1
+Added Pin To Net: NetName=DUT_ISENSE_IN1 Pin=U13-14
+Added Net: Name=DUT_ISENSE_IN1
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=U13-15
+Added Net: Name=DUT_ISENSE_IN2
+Added Pin To Net: NetName=DUT_ISENSE_IN3 Pin=U13-11
+Added Net: Name=DUT_ISENSE_IN3
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=R67-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=R70-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=R77-2
+Added Net: Name=DUT_ISENSE_RANGE2
+Added Pin To Net: NetName=DUT_MUX_RANGE0 Pin=R78-2
+Added Pin To Net: NetName=DUT_MUX_RANGE0 Pin=U13-10
+Added Net: Name=DUT_MUX_RANGE0
+Added Pin To Net: NetName=DUT_MUX_RANGE1 Pin=R79-2
+Added Pin To Net: NetName=DUT_MUX_RANGE1 Pin=U13-9
+Added Net: Name=DUT_MUX_RANGE1
+Added Pin To Net: NetName=NetM6_1 Pin=M7-6
+Added Pin To Net: NetName=NetM6_1 Pin=R13-1
+Added Pin To Net: NetName=NetM6_1 Pin=R58-1
+Added Pin To Net: NetName=NetM6_1 Pin=R60-2
+Added Net: Name=NetM6_1
+Added Pin To Net: NetName=NetM7_1 Pin=M7-1
+Added Pin To Net: NetName=NetM7_1 Pin=R61-2
+Added Net: Name=NetM7_1
+Added Pin To Net: NetName=NetM7_2 Pin=M7-2
+Added Pin To Net: NetName=NetM7_2 Pin=R59-1
+Added Net: Name=NetM7_2
+Added Pin To Net: NetName=NetM7_3 Pin=M7-3
+Added Pin To Net: NetName=NetM7_3 Pin=M10-1
+Added Pin To Net: NetName=NetM7_3 Pin=R72-1
+Added Pin To Net: NetName=NetM7_3 Pin=R73-1
+Added Pin To Net: NetName=NetM7_3 Pin=R75-2
+Added Net: Name=NetM7_3
+Added Pin To Net: NetName=NetM7_4 Pin=M7-4
+Added Pin To Net: NetName=NetM7_4 Pin=R76-2
+Added Net: Name=NetM7_4
+Added Pin To Net: NetName=NetM7_5 Pin=M7-5
+Added Pin To Net: NetName=NetM7_5 Pin=R74-1
+Added Net: Name=NetM7_5
+Added Pin To Net: NetName=NetM8_1 Pin=M8-1
+Added Pin To Net: NetName=NetM8_1 Pin=M9-6
+Added Pin To Net: NetName=NetM8_1 Pin=R66-1
+Added Pin To Net: NetName=NetM8_1 Pin=R67-1
+Added Pin To Net: NetName=NetM8_1 Pin=R69-2
+Added Net: Name=NetM8_1
+Added Pin To Net: NetName=NetM9_1 Pin=M9-1
+Added Pin To Net: NetName=NetM9_1 Pin=R70-2
+Added Net: Name=NetM9_1
+Added Pin To Net: NetName=NetM9_2 Pin=M9-2
+Added Pin To Net: NetName=NetM9_2 Pin=R68-1
+Added Net: Name=NetM9_2
+Added Pin To Net: NetName=NetR62_1 Pin=R62-1
+Added Pin To Net: NetName=NetR62_1 Pin=R64-1
+Added Pin To Net: NetName=NetR62_1 Pin=U15-1
+Added Net: Name=NetR62_1
+Added Pin To Net: NetName=NetR63_1 Pin=R63-1
+Added Pin To Net: NetName=NetR63_1 Pin=R64-2
+Added Pin To Net: NetName=NetR63_1 Pin=U15-4
+Added Net: Name=NetR63_1
+Added Pin To Net: NetName=NetR63_2 Pin=R63-2
+Added Pin To Net: NetName=NetR63_2 Pin=U13-13
+Added Net: Name=NetR63_2
+Added Pin To Net: NetName=NetR77_1 Pin=R77-1
+Added Pin To Net: NetName=NetR77_1 Pin=U1-76
+Added Net: Name=NetR77_1
+Added Pin To Net: NetName=NetR78_1 Pin=R78-1
+Added Pin To Net: NetName=NetR78_1 Pin=U1-77
+Added Net: Name=NetR78_1
+Added Pin To Net: NetName=NetR79_1 Pin=R79-1
+Added Pin To Net: NetName=NetR79_1 Pin=U1-78
+Added Net: Name=NetR79_1
+Added Pin To Net: NetName=NetR80_1 Pin=R80-1
+Added Pin To Net: NetName=NetR80_1 Pin=U1-79
+Added Net: Name=NetR80_1
+Added Pin To Net: NetName=NetR81_1 Pin=R81-1
+Added Pin To Net: NetName=NetR81_1 Pin=U1-80
+Added Net: Name=NetR81_1
+Added Pin To Net: NetName=NetR81_2 Pin=R81-2
+Added Pin To Net: NetName=NetR81_2 Pin=U16-3
+Added Net: Name=NetR81_2
+Added Class: Name=Current Measurement
+Added Member To Class: ClassName=Microcontroller Member=Component R77 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R78 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R79 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R80 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R81 220R
+Added Member To Class: ClassName=OLED Display Member=Component U16 SSD1306

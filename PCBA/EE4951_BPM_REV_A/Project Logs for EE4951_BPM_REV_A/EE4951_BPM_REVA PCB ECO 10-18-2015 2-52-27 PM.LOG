@@ -1,0 +1,13 @@
+Change Component Library : Designator=J7 Old Library=Altium Library.IntLib New Library=Altium Library_EE4951.IntLib
+Added Component: Designator=M6(VSON-8)
+Added Pin To Net: NetName=GND Pin=M6-1
+Added Pin To Net: NetName=GND Pin=M6-2
+Added Pin To Net: NetName=GND Pin=M6-3
+Added Pin To Net: NetName=NetM6_1 Pin=M6-4
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M6-5
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M6-5
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M6-6
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M6-7
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M6-8
+Change Net Name : Old Net Name=NetM6_1 New Net Name=NetM6_4
+Added Member To Class: ClassName=Current Measurement Member=Component M6 CSD16321Q5

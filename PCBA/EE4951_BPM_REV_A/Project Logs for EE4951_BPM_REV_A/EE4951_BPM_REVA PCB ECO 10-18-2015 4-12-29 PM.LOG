@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=R42-1
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=R51-1
+Added Component: Designator=NT3(Net Tie)
+Added Pin To Net: NetName=V3_ISENSE_P Pin=NT3-1
+Change Net Name : Old Net Name=V3_ISENSE_P New Net Name=5V
+Added Pin To Net: NetName=V3_ISENSE_P Pin=NT3-2
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R42-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=R51-1
+Added Net: Name=V3_ISENSE_P
+Added Member To Class: ClassName=Power Member=Component NT3 Net Tie

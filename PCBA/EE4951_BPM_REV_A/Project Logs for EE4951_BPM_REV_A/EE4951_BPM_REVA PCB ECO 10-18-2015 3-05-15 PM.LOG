@@ -1,0 +1,4 @@
+Added Component: Designator=R6(RES2512R)
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=R6-1
+Added Pin To Net: NetName=DUT_GND Pin=R6-2
+Added Member To Class: ClassName=Current Measurement Member=Component R6 10m

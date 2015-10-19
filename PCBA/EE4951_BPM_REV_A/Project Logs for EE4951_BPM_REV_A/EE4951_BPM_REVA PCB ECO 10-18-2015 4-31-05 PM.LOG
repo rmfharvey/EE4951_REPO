@@ -1,0 +1,12 @@
+Added Component: Designator=NT1(Net Tie)
+Added Component: Designator=NT2(Net Tie)
+Added Component: Designator=NT3(Net Tie)
+Added Pin To Net: NetName=V5_ISENSE_N Pin=NT1-1
+Added Pin To Net: NetName=5V Pin=NT1-2
+Added Pin To Net: NetName=V3_ISENSE_P Pin=NT2-1
+Added Pin To Net: NetName=5V Pin=NT2-2
+Added Pin To Net: NetName=NetC45_1 Pin=NT3-1
+Added Pin To Net: NetName=3.3V Pin=NT3-2
+Added Member To Class: ClassName=Power Member=Component NT1 Net Tie
+Added Member To Class: ClassName=Power Member=Component NT2 Net Tie
+Added Member To Class: ClassName=Power Member=Component NT3 Net Tie

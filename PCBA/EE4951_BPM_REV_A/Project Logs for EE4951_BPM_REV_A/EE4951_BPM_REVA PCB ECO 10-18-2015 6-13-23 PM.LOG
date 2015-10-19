@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=DUT_ISENSE_IN2 Pin=U13-15
+Added Component: Designator=TP11(TESTPOINT - 1.5mm Round Pad)
+Added Component: Designator=TP12(TESTPOINT - 1.5mm Round Pad)
+Added Component: Designator=TP13(TESTPOINT - 1.5mm Round Pad)
+Added Component: Designator=TP14(TESTPOINT - 1.5mm Round Pad)
+Added Pin To Net: NetName=DUT_GND Pin=TP11-1
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=TP12-1
+Added Pin To Net: NetName=DUT_ISENSE_IN1 Pin=TP13-1
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=U13-12
+Change Net Name : Old Net Name=DUT_ISENSE_IN2 New Net Name=DUT_ISENSE_IN0
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=M8-3
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=R65-1
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=TP14-1
+Added Pin To Net: NetName=DUT_ISENSE_IN2 Pin=U13-15
+Added Net: Name=DUT_ISENSE_IN2
+Added Member To Class: ClassName=Current Measurement Member=Component TP11 NONE
+Added Member To Class: ClassName=Current Measurement Member=Component TP12 NONE
+Added Member To Class: ClassName=Current Measurement Member=Component TP13 NONE
+Added Member To Class: ClassName=Current Measurement Member=Component TP14 NONE

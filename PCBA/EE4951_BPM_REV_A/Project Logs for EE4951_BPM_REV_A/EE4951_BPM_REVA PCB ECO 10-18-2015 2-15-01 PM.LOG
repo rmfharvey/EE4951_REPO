@@ -1,0 +1,4 @@
+Added Component: Designator=S2(TECONN_14783-1)
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=NetM1_6 Pin=S2-2
+Added Member To Class: ClassName=Microcontroller Member=Component S2 147873-1

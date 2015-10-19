@@ -1,0 +1,12 @@
+Change Component DesignItemId : Designator=D4 Old DesignItemId=Generic Schottky New DesignItemId=PMEG3020ER,115
+Change Component DesignItemId : Designator=D7 Old DesignItemId=Generic Schottky New DesignItemId=PMEG3020ER,115
+Change Component DesignItemId : Designator=D5 Old DesignItemId=PMEG3050BEP New DesignItemId=PMEG3020ER,115
+Change Component DesignItemId : Designator=D6 Old DesignItemId=PMEG3050BEP New DesignItemId=PMEG3020ER,115
+Change Component Footprint: Designator=D5 Old Footprint=SOD128 New Footprint=SOD-123
+Change Component Footprint: Designator=D6 Old Footprint=SOD128 New Footprint=SOD-123
+Change Component Footprint: Designator=D4 Old Footprint=SOD-323 (SC-90) New Footprint=SOD-123
+Change Component Footprint: Designator=D7 Old Footprint=SOD-323 (SC-90) New Footprint=SOD-123
+Change Component Comment : Designator=D4 Old Comment=BAT 60A E6327 New Comment=PMEG3020
+Change Component Comment : Designator=D7 Old Comment=BAT 60A E6327 New Comment=PMEG3020
+Change Component Comment : Designator=D5 Old Comment=PMEG3050 New Comment=PMEG3020
+Change Component Comment : Designator=D6 Old Comment=PMEG3050 New Comment=PMEG3020

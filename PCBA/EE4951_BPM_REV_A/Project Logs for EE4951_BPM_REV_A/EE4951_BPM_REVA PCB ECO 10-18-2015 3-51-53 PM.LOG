@@ -1,0 +1,16 @@
+Added Component: Designator=D4(SOD-123)
+Added Component: Designator=D5(SOD-123)
+Added Component: Designator=D6(SOD-123)
+Added Component: Designator=D7(SOD-123)
+Added Pin To Net: NetName=V5_ISENSE_P Pin=D4-1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD5_1 Pin=D5-1
+Added Pin To Net: NetName=BUCK_OUT Pin=D5-2
+Added Pin To Net: NetName=NetD5_1 Pin=D6-1
+Added Pin To Net: NetName=BOOST_OUT Pin=D6-2
+Added Pin To Net: NetName=V5_ISENSE_P Pin=D7-1
+Added Pin To Net: NetName=NetC35_1 Pin=D7-2
+Added Member To Class: ClassName=Power Member=Component D4 PMEG3020
+Added Member To Class: ClassName=Power Member=Component D5 PMEG3020
+Added Member To Class: ClassName=Power Member=Component D6 PMEG3020
+Added Member To Class: ClassName=Power Member=Component D7 PMEG3020
