@@ -1,0 +1,22 @@
+Added Component: Designator=J3(2x5 Header (1.27mm))
+Added Component: Designator=J5(2x5 Header (1.27mm))
+Added Pin To Net: NetName=3.3V Pin=J3-1
+Added Pin To Net: NetName=JTAG_TMS Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-3
+Added Pin To Net: NetName=JTAG_TCLK Pin=J3-4
+Added Pin To Net: NetName=GND Pin=J3-5
+Added Pin To Net: NetName=JTAG_TDO Pin=J3-6
+Added Pin To Net: NetName=JTAG_TDI Pin=J3-8
+Added Pin To Net: NetName=NetJ3_10 Pin=J3-10
+Added Pin To Net: NetName=DISP_MOSI Pin=J5-1
+Added Pin To Net: NetName=SD_MOSI Pin=J5-2
+Added Pin To Net: NetName=DISP_C\S\ Pin=J5-3
+Added Pin To Net: NetName=SD_C\S\ Pin=J5-4
+Added Pin To Net: NetName=DISP_MISO Pin=J5-5
+Added Pin To Net: NetName=SD_MISO Pin=J5-6
+Added Pin To Net: NetName=DISP_CLK Pin=J5-7
+Added Pin To Net: NetName=SD_CLK Pin=J5-8
+Added Pin To Net: NetName=GND Pin=J5-9
+Added Pin To Net: NetName=GND Pin=J5-10
+Added Member To Class: ClassName=Connectors Member=Component J3 20021111-00010T4LF
+Added Member To Class: ClassName=Microcontroller Member=Component J5 20021111-00010T4LF

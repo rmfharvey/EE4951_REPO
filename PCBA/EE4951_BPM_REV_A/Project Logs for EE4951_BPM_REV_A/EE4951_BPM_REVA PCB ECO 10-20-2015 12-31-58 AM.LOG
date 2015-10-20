@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=V5_VSENSE_IN Pin=R44-1
+Removed Pin From Net: NetName=5V Pin=R44-2
+Removed Pin From Net: NetName=GND Pin=R48-1
+Removed Pin From Net: NetName=V5_VSENSE_IN Pin=R48-2
+Change Component DesignItemId : Designator=R44 Old DesignItemId=150k 0.1% (0603) New DesignItemId=120k 0.1% (0603)
+Change Component Comment : Designator=R44 Old Comment=150k New Comment=120k
+Added Pin To Net: NetName=GND Pin=R44-1
+Added Pin To Net: NetName=V5_VSENSE_IN Pin=R44-2
+Added Pin To Net: NetName=V5_VSENSE_IN Pin=R48-1
+Added Pin To Net: NetName=5V Pin=R48-2

@@ -1,0 +1,8 @@
+Added Component: Designator=U10(SC70)
+Added Pin To Net: NetName=V5_VSENSE_IN Pin=U10-1
+Added Pin To Net: NetName=GND Pin=U10-2
+Added Pin To Net: NetName=V5_VSENSE_OUT Pin=U10-3
+Added Pin To Net: NetName=V5_VSENSE_OUT Pin=U10-4
+Added Pin To Net: NetName=3.3V Pin=U10-5
+Added Pin To Net: NetName=3.3V Pin=U10-6
+Added Member To Class: ClassName=Power Member=Component U10 MAX9618AXA+T

@@ -1,0 +1,13 @@
+Added Component: Designator=J7(MICROSD_1050270001)
+Added Pin To Net: NetName=NetJ7_G1 Pin=J7-G1
+Added Pin To Net: NetName=SD_C\S\ Pin=J7-P2
+Added Pin To Net: NetName=SD_MOSI Pin=J7-P3
+Added Pin To Net: NetName=3.3V Pin=J7-P4
+Added Pin To Net: NetName=SD_CLK Pin=J7-P5
+Added Pin To Net: NetName=GND Pin=J7-P6
+Added Pin To Net: NetName=SD_MISO Pin=J7-P7
+Added Pin To Net: NetName=GND Pin=J7-S1
+Added Pin To Net: NetName=GND Pin=J7-S2
+Added Pin To Net: NetName=GND Pin=J7-S3
+Added Pin To Net: NetName=GND Pin=J7-S4
+Added Member To Class: ClassName=Connectors Member=Component J7 Micro SD Connector

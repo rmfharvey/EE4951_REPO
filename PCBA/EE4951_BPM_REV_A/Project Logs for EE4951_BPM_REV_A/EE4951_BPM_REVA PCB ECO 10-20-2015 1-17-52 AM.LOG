@@ -1,0 +1,4 @@
+Removed Member From Class: ClassName=OLED Display Member=R54
+Added Pin To Net: NetName=NetU1_79 Pin=U1-79
+Added Pin To Net: NetName=NetU1_79 Pin=U16-4
+Added Net: Name=NetU1_79

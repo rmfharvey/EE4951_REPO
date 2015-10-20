@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=DUT_GND Pin=TP11-1
+Removed Member From Class: ClassName=Current Measurement Member=TP11

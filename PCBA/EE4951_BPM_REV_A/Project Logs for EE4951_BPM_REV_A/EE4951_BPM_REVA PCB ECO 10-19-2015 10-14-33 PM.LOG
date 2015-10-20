@@ -1,0 +1,6 @@
+Added Component: Designator=Mech1(Standoff M3 15mm)
+Added Component: Designator=Mech2(Standoff M3 15mm)
+Added Component: Designator=Mech3(Standoff M3 15mm)
+Added Member To Class: ClassName=Connectors Member=Component Mech1 Standoff M3x15mm
+Added Member To Class: ClassName=Connectors Member=Component Mech2 Standoff M3x15mm
+Added Member To Class: ClassName=Connectors Member=Component Mech3 Standoff M3x15mm
