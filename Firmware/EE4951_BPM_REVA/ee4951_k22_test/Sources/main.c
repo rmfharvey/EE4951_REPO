@@ -47,9 +47,48 @@
 #endif
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
-#define true	1
-#define false	0
+#define True	1
+#define False	0
 
+void printADCvals(void)	{
+	uint16_t DUT_vsense;	//DUT
+	uint16_t DUT_isense;	//DUT
+	uint16_t SELF_3v_vsense;
+	uint16_t SELF_3v_isense;
+	uint16_t SELF_5v_vsense;
+	uint16_t SELF_5v_isense;
+	static uint8_t count=0;
+
+	ADC16_DRV_ConfigConvChn(FSL_DUT_ADC, 0U, &dut_vsense_config);
+	DUT_vsense = ADC16_DRV_GetConvValueRAW(FSL_DUT_ADC,0);
+
+	ADC16_DRV_ConfigConvChn(FSL_DUT_ADC, 0U, &dut_isense_config);
+	DUT_isense = ADC16_DRV_GetConvValueRAW(FSL_DUT_ADC,0);
+
+	PRINTF("%05.0d,%05.0d\n",DUT_vsense,DUT_isense);
+	//PRINTF("DUT_Vsense: %5.0d\tDUT_ISense: %5.0d\n",DUT_vsense,DUT_isense);
+
+	/*ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_vsense);
+	ADC16_DRV_GetConvValueRAW(FSL_SELF_ADC,0);
+
+
+	ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_vsense);
+	SELF_3v_vsense = ADC16_DRV_GetConvValueRAW(FSL_SELF_ADC,0);
+
+	ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_isense);
+	SELF_3v_isense = ADC16_DRV_GetConvValueRAW(FSL_SELF_ADC,0);
+
+	ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v5_vsense);
+	SELF_5v_vsense = ADC16_DRV_GetConvValueRAW(FSL_SELF_ADC,0);
+
+	ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v5_isense);
+	SELF_5v_isense = ADC16_DRV_GetConvValueRAW(FSL_SELF_ADC,0);
+*/
+	//PRINTF("\t%5.0d\r",SELF_3v_isense);
+	//PRINTF("\t%5.0d\t%5.0d\t%5.0d\t%5.0d\t%5.0d\t%5.0d\t\r",
+	//		DUT_vsense, DUT_isense, SELF_5v_vsense, SELF_5v_isense, SELF_3v_vsense, SELF_3v_isense);
+	//PRINTF("DUT Vsense = %5.0d\n\rDUT Isense = %5.d\n\rSelf 5v vSense = %5.d\n\rSelf 5v ISense = %5.d\n\rSelf 3v vSense = %5.d\n\rSelf 3v ISense = %5.d\n\n\r",DUT_vsense, DUT_isense, SELF_5v_vsense, SELF_5v_isense, SELF_3v_vsense, SELF_3v_isense);
+}
 
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -63,13 +102,12 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
-  /* For example: for(;;) { } */
+
   long int i;
-  while(true)	{
-	  PRINTF("Debugging!\n");
-	  for(i=10000;i;i--);
-	  PRINTF("HOORAY!\n\n");
-	  for(i=10000;i;i--);
+  PRINTF("\n\n\r");
+  while(True)	{
+	  printADCvals();
+	  WAIT1_Waitms(10);
   }
 
 

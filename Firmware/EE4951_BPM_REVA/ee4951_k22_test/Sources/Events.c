@@ -68,6 +68,7 @@ void ADC1_IRQHandler(void)
 /*! dut_adc IRQ handler */
 void ADC0_IRQHandler(void)
 {
+	PRINTF("ADC INT\n\r");
   /* Write your code here ... */
 }
 

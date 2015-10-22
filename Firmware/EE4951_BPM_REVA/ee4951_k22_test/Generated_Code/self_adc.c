@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-10-08, 09:41, # CodeGen: 7
+**     Date/Time   : 2015-10-21, 17:37, # CodeGen: 24
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -55,9 +55,9 @@
 #include "self_adc.h"
 
 const adc16_converter_config_t self_adc_InitConfig0 = {
-  .lowPowerEnable = true,
+  .lowPowerEnable = false,
   .clkDividerMode = kAdc16ClkDividerOf1,
-  .longSampleTimeEnable = true,
+  .longSampleTimeEnable = false,
   .resolution = kAdc16ResolutionBitOf16,
   .clkSrc = kAdc16ClkSrcOfBusClk,
   .asyncClkEnable = false,

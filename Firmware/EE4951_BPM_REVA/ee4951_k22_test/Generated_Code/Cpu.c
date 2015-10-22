@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-10-08, 10:15, # CodeGen: 8
+**     Date/Time   : 2015-10-21, 17:31, # CodeGen: 22
 **     Abstract    :
 **
 **     Settings    :
@@ -133,7 +133,7 @@ void Components_Init(void)
   
   /*! self_adc Auto initialization start */
   ADC16_DRV_Init(FSL_SELF_ADC, &self_adc_InitConfig0);
-  ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_vsense);
+  ADC16_DRV_ConfigConvChn(FSL_SELF_ADC, 0U, &v3_isense);
   /*! self_adc Auto initialization end */
   
   /*! hw_irqs Auto initialization start */

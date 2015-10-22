@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-10-08, 09:41, # CodeGen: 7
+**     Date/Time   : 2015-10-21, 17:17, # CodeGen: 20
 **     Contents    :
 **         ADC16_DRV_GetAutoCalibrationParam     - adc16_status_t ADC16_DRV_GetAutoCalibrationParam(uint32_t...
 **         ADC16_DRV_SetCalibrationParam         - adc16_status_t ADC16_DRV_SetCalibrationParam(uint32_t instance,const...
