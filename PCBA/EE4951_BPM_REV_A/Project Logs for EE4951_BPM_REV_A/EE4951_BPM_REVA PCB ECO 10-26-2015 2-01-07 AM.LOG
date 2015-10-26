@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=TP1 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component Footprint: Designator=TP1 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Comment : Designator=TP1 Old Comment=TP New Comment=NONE

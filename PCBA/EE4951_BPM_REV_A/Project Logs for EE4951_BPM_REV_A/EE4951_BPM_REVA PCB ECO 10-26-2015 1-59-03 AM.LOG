@@ -1,0 +1,27 @@
+Change Component DesignItemId : Designator=TP2 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP3 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP4 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP5 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP6 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP7 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP8 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP9 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component DesignItemId : Designator=TP10 Old DesignItemId=Testpoint 1mm Via New DesignItemId=Testpoint 1.5mm SMD
+Change Component Footprint: Designator=TP2 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP3 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP4 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP5 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP6 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP7 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP8 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP9 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Footprint: Designator=TP10 Old Footprint=1mm Via New Footprint=TESTPOINT - 1.5mm Round Pad
+Change Component Comment : Designator=TP2 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP3 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP4 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP5 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP6 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP7 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP8 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP9 Old Comment=TP New Comment=NONE
+Change Component Comment : Designator=TP10 Old Comment=TP New Comment=NONE

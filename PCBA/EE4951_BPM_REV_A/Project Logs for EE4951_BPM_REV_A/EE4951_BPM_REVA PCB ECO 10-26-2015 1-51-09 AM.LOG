@@ -1,0 +1,387 @@
+Removed Pin From Net: NetName=5V Pin=C59-1
+Removed Pin From Net: NetName=GND Pin=C61-2
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=D4-1
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=D7-1
+Removed Pin From Net: NetName=V_BAT Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=M6-1
+Removed Pin From Net: NetName=GND Pin=M6-2
+Removed Pin From Net: NetName=GND Pin=M6-3
+Removed Pin From Net: NetName=GND Pin=M8-2
+Removed Pin From Net: NetName=GND Pin=M10-2
+Removed Pin From Net: NetName=V3_ISENSE_P Pin=NT2-2
+Removed Pin From Net: NetName=5V Pin=R13-2
+Removed Pin From Net: NetName=5V Pin=R56-1
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE0 Pin=R58-2
+Removed Pin From Net: NetName=3.3V Pin=R59-2
+Removed Pin From Net: NetName=GND Pin=R60-1
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE0 Pin=R61-1
+Removed Pin From Net: NetName=NetM7_1 Pin=R61-2
+Removed Pin From Net: NetName=5V Pin=R66-2
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE2 Pin=R67-2
+Removed Pin From Net: NetName=3.3V Pin=R68-2
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE2 Pin=R70-1
+Removed Pin From Net: NetName=NetM9_1 Pin=R70-2
+Removed Pin From Net: NetName=5V Pin=R72-2
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE1 Pin=R73-2
+Removed Pin From Net: NetName=3.3V Pin=R74-2
+Removed Pin From Net: NetName=GND Pin=R75-1
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE1 Pin=R76-1
+Removed Pin From Net: NetName=PWR_FAIL_IRQ Pin=U1-38
+Removed Pin From Net: NetName=5V Pin=U13-6
+Removed Pin From Net: NetName=GND Pin=U13-8
+Removed Pin From Net: NetName=5V Pin=U13-16
+Removed Pin From Net: NetName=GND Pin=U15-2
+Removed Pin From Net: NetName=3.3V Pin=U15-5
+Removed Pin From Net: NetName=3.3V Pin=U15-6
+Removed Pin From Net: NetName=OSC32K_N Pin=X1-1
+Removed Pin From Net: NetName=OSC32K_P Pin=X1-2
+Removed Pin From Net: NetName=OSC8M_P Pin=X2-1
+Removed Pin From Net: NetName=OSC8M_N Pin=X2-3
+Removed Member From Class: ClassName=Current Measurement Member=R70
+Removed Member From Class: ClassName=Current Measurement Member=R71
+Removed Member From Class: ClassName=Current Measurement Member=R72
+Removed Member From Class: ClassName=Current Measurement Member=R73
+Removed Member From Class: ClassName=Current Measurement Member=R74
+Removed Member From Class: ClassName=Current Measurement Member=R75
+Removed Member From Class: ClassName=Current Measurement Member=R76
+Removed Member From Class: ClassName=Current Measurement Member=TP12
+Removed Member From Class: ClassName=Current Measurement Member=TP13
+Removed Member From Class: ClassName=Current Measurement Member=TP14
+Removed Member From Class: ClassName=Microcontroller Member=X1
+Removed Member From Class: ClassName=Microcontroller Member=X2
+Change Component DesignItemId : Designator=R61 Old DesignItemId=0R (0402) New DesignItemId=10k (0402)
+Change Component DesignItemId : Designator=R13 Old DesignItemId=10k (0402) New DesignItemId=10K (0603)
+Change Component DesignItemId : Designator=R60 Old DesignItemId=10k (0402) New DesignItemId=100R (0402)
+Change Component DesignItemId : Designator=R66 Old DesignItemId=10k (0402) New DesignItemId=100R (0402)
+Change Component DesignItemId : Designator=R6 Old DesignItemId=10m 0.5% (2512) New DesignItemId=10m 0.5% (2512 4-Terminal)
+Change Component DesignItemId : Designator=C61 Old DesignItemId=10nF (0402) New DesignItemId=1nF (0402)
+Change Component DesignItemId : Designator=R63 Old DesignItemId=20k 0.1% (0603) New DesignItemId=100R   0.1% (0603)
+Change Component DesignItemId : Designator=C14 Old DesignItemId=25pF New DesignItemId=12pF (0402)
+Change Component DesignItemId : Designator=C15 Old DesignItemId=25pF New DesignItemId=12pF (0402)
+Change Component DesignItemId : Designator=C16 Old DesignItemId=36pF New DesignItemId=22pF (0402)
+Change Component DesignItemId : Designator=C17 Old DesignItemId=36pF New DesignItemId=22pF (0402)
+Change Component DesignItemId : Designator=R65 Old DesignItemId=36R 0.1% (0805) New DesignItemId=1k   0.1% (0603)
+Change Component DesignItemId : Designator=R29 Old DesignItemId=50k (0402) New DesignItemId=49.9k (0402)
+Change Component DesignItemId : Designator=R59 Old DesignItemId=100R (0402) New DesignItemId=10k (0402)
+Change Component DesignItemId : Designator=R68 Old DesignItemId=100R (0402) New DesignItemId=10k (0402)
+Change Component DesignItemId : Designator=R58 Old DesignItemId=100R (0402) New DesignItemId=220R (0603)
+Change Component DesignItemId : Designator=R62 Old DesignItemId=100R (0603) New DesignItemId=10K (0603)
+Change Component DesignItemId : Designator=R23 Old DesignItemId=220R (0603) New DesignItemId=0R (0402)
+Change Component DesignItemId : Designator=R64 Old DesignItemId=590k   0.1% (0805) New DesignItemId=10K (0603)
+Change Component DesignItemId : Designator=M10 Old DesignItemId=BSR802N L6327 New DesignItemId=DMP3056L
+Change Component DesignItemId : Designator=M8 Old DesignItemId=BSR802N L6327 New DesignItemId=NX3020NAKV
+Change Component DesignItemId : Designator=M6 Old DesignItemId=CSD16321Q5 New DesignItemId=DMP3056L
+Change Component DesignItemId : Designator=U15 Old DesignItemId=MAX4239AUT+T New DesignItemId=MAX9923TEUB+
+Change Component DesignItemId : Designator=U13 Old DesignItemId=MAX4618CSE+ New DesignItemId=MAX9923TEUB+
+Change Component DesignItemId : Designator=M9 Old DesignItemId=NX3020NAKV New DesignItemId=DMP3056L
+Change Component DesignItemId : Designator=M7 Old DesignItemId=NX3020NAKV New DesignItemId=SISS27DN
+Change Component DesignItemId : Designator=TP1 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP2 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP3 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP4 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP5 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP6 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP7 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP8 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP9 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component DesignItemId : Designator=TP10 Old DesignItemId=Testpoint 1.5mm SMD New DesignItemId=Testpoint 1mm Via
+Change Component Footprint: Designator=C14 Old Footprint=CAP0603R New Footprint=CAP0402R
+Change Component Footprint: Designator=C15 Old Footprint=CAP0603R New Footprint=CAP0402R
+Change Component Footprint: Designator=C16 Old Footprint=CAP0603R New Footprint=CAP0402R
+Change Component Footprint: Designator=C17 Old Footprint=CAP0603R New Footprint=CAP0402R
+Change Component Footprint: Designator=R13 Old Footprint=RES0402R New Footprint=RES0603R
+Change Component Footprint: Designator=R58 Old Footprint=RES0402R New Footprint=RES0603R
+Change Component Footprint: Designator=R23 Old Footprint=RES0603R New Footprint=RES0402R
+Change Component Footprint: Designator=R63 Old Footprint=RES0603R New Footprint=RES0603W
+Change Component Footprint: Designator=R64 Old Footprint=RES0805R New Footprint=RES0603R
+Change Component Footprint: Designator=R65 Old Footprint=RES0805R New Footprint=RES0603W
+Change Component Footprint: Designator=R6 Old Footprint=RES2512R New Footprint=2512 4 Terminal
+Change Component Footprint: Designator=M8 Old Footprint=SOT23-3M New Footprint=SOT666-6N
+Change Component Footprint: Designator=U15 Old Footprint=SOT23-6 New Footprint=uMAX10
+Change Component Footprint: Designator=M7 Old Footprint=SOT666-6N New Footprint=PowerPAK-1212-8
+Change Component Footprint: Designator=M9 Old Footprint=SOT666-6N New Footprint=SOT23-3M
+Change Component Footprint: Designator=TP1 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP2 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP3 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP4 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP5 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP6 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP7 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP8 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP9 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=TP10 Old Footprint=Testpoint 1.5mm SMD New Footprint=1mm Via
+Change Component Footprint: Designator=U13 Old Footprint=TSSOP16 New Footprint=uMAX10
+Change Component Footprint: Designator=M6 Old Footprint=VSON-8 New Footprint=SOT23-3M
+Change Component Comment : Designator=R61 Old Comment=0R New Comment=10k
+Change Component Comment : Designator=R60 Old Comment=10k New Comment=100R
+Change Component Comment : Designator=R66 Old Comment=10k New Comment=100R
+Change Component Comment : Designator=C61 Old Comment=10nF New Comment=1nF
+Change Component Comment : Designator=R63 Old Comment=20k New Comment=100R
+Change Component Comment : Designator=C14 Old Comment=25pF New Comment=12pF
+Change Component Comment : Designator=C15 Old Comment=25pF New Comment=12pF
+Change Component Comment : Designator=C16 Old Comment=36pF New Comment=22pF
+Change Component Comment : Designator=C17 Old Comment=36pF New Comment=22pF
+Change Component Comment : Designator=R65 Old Comment=36R New Comment=1k
+Change Component Comment : Designator=R29 Old Comment=50k New Comment=49.9k
+Change Component Comment : Designator=R59 Old Comment=100R New Comment=10k
+Change Component Comment : Designator=R62 Old Comment=100R New Comment=10k
+Change Component Comment : Designator=R68 Old Comment=100R New Comment=10k
+Change Component Comment : Designator=R58 Old Comment=100R New Comment=220R
+Change Component Comment : Designator=R23 Old Comment=220R New Comment=0R
+Change Component Comment : Designator=R64 Old Comment=590k New Comment=10k
+Change Component Comment : Designator=M10 Old Comment=BSR802N L6327 New Comment=DMP3056L-7
+Change Component Comment : Designator=M8 Old Comment=BSR802N L6327 New Comment=NX3020NAKV,115
+Change Component Comment : Designator=M6 Old Comment=CSD16321Q5 New Comment=DMP3056L-7
+Change Component Comment : Designator=U15 Old Comment=MAX4239AUT+T New Comment=MAX9923TEUB+
+Change Component Comment : Designator=U13 Old Comment=MAX4618EUE+ New Comment=MAX9923TEUB+
+Change Component Comment : Designator=TP1 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP2 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP3 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP4 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP5 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP6 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP7 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP8 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP9 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=TP10 Old Comment=NONE New Comment=TP
+Change Component Comment : Designator=M9 Old Comment=NX3020NAKV,115 New Comment=DMP3056L-7
+Change Component Comment : Designator=M7 Old Comment=NX3020NAKV,115 New Comment=SISS27DN-T1-GE3
+Change Component Description : Designator=M10 Old Description=NFET_Single_3.7A_20V New Description=PFET_SINGLE_4.3A_30v
+Change Component Library : Designator=R61 Old Library=Altium Library_EE4951.IntLib New Library=Altium Library.IntLib
+Change Component Library : Designator=C59 Old Library=Capacitors.SchLib New Library=Altium Library_EE4951.IntLib
+Change Component Library : Designator=C60 Old Library=Capacitors.SchLib New Library=Altium Library_EE4951.IntLib
+Change Component Library : Designator=C61 Old Library=Capacitors.SchLib New Library=Altium Library_EE4951.IntLib
+Change Component Library : Designator=R62 Old Library=Resistors.SchLib New Library=Altium Library_EE4951.IntLib
+Change Component Library : Designator=M10 Old Library=Transistors.SchLib New Library=Altium Library_EE4951.IntLib
+Added Component: Designator=C63(CAP0402R)
+Added Component: Designator=C64(CAP0402R)
+Added Component: Designator=C65(CAP0402R)
+Added Component: Designator=C66(CAP0402R)
+Added Component: Designator=C67(CAP0402R)
+Added Component: Designator=C68(CAP0402R)
+Added Component: Designator=D12(SOD-123)
+Added Component: Designator=J6(1x2 Header)
+Added Component: Designator=M11(SOT666-6N)
+Added Component: Designator=NT4(Net Tie 1mm)
+Added Component: Designator=NT5(Net Tie 1mm)
+Added Component: Designator=NT6(Net Tie 1mm)
+Added Component: Designator=NT7(Net Tie 1mm)
+Added Component: Designator=R17(RES0805R)
+Added Component: Designator=R18(RES0603R)
+Added Component: Designator=R54(RES0402R)
+Added Component: Designator=U17(uMAX10)
+Added Component: Designator=U18(uMAX10)
+Added Component: Designator=Y1(ABS07-32.768KHZ-T)
+Added Component: Designator=Y2(ABMM2-8.000MHZ-B2-T)
+Added Pin To Net: NetName=3.3V Pin=C59-1
+Added Pin To Net: NetName=3.3V Pin=C64-1
+Added Pin To Net: NetName=GND Pin=C64-2
+Added Pin To Net: NetName=3.3V Pin=C65-1
+Added Pin To Net: NetName=GND Pin=C65-2
+Added Pin To Net: NetName=NetM5_1 Pin=C68-1
+Added Pin To Net: NetName=GND Pin=C68-2
+Added Pin To Net: NetName=V_BAT Pin=D12-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=STATS_SW_IRQ Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-2
+Added Pin To Net: NetName=NetM7_1 Pin=M7-2
+Added Pin To Net: NetName=NetM7_1 Pin=M7-3
+Added Pin To Net: NetName=GND Pin=M8-1
+Added Pin To Net: NetName=GND Pin=M8-4
+Added Pin To Net: NetName=GND Pin=M11-1
+Added Pin To Net: NetName=GND Pin=M11-4
+Added Pin To Net: NetName=NetM9_1 Pin=M11-6
+Added Pin To Net: NetName=V_BAT Pin=NT4-2
+Added Pin To Net: NetName=V_BAT Pin=NT5-2
+Added Pin To Net: NetName=V_BAT Pin=NT6-2
+Added Pin To Net: NetName=V_BAT Pin=NT7-2
+Added Pin To Net: NetName=NetM7_1 Pin=R6-1
+Added Pin To Net: NetName=V_BAT Pin=R13-2
+Added Pin To Net: NetName=V_BAT Pin=R18-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=R54-1
+Added Pin To Net: NetName=GND Pin=R59-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=R59-2
+Added Pin To Net: NetName=GND Pin=R61-1
+Added Pin To Net: NetName=NetM9_1 Pin=R62-1
+Added Pin To Net: NetName=V_BAT Pin=R62-2
+Added Pin To Net: NetName=V_BAT Pin=R64-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=R66-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE0 Pin=R67-1
+Added Pin To Net: NetName=GND Pin=R68-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=R68-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE0 Pin=R69-2
+Added Pin To Net: NetName=PWR_FAIL_IRQ Pin=U1-39
+Added Pin To Net: NetName=GND Pin=U13-5
+Added Pin To Net: NetName=GND Pin=U13-7
+Added Pin To Net: NetName=3.3V Pin=U13-10
+Added Pin To Net: NetName=GND Pin=U15-5
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=U15-6
+Added Pin To Net: NetName=GND Pin=U15-7
+Added Pin To Net: NetName=3.3V Pin=U15-10
+Added Pin To Net: NetName=GND Pin=U17-5
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=U17-6
+Added Pin To Net: NetName=GND Pin=U17-7
+Added Pin To Net: NetName=3.3V Pin=U17-10
+Added Pin To Net: NetName=GND Pin=U18-5
+Added Pin To Net: NetName=DUT_ISENSE_RANGE0 Pin=U18-6
+Added Pin To Net: NetName=GND Pin=U18-7
+Added Pin To Net: NetName=3.3V Pin=U18-10
+Added Pin To Net: NetName=OSC32K_N Pin=Y1-1
+Added Pin To Net: NetName=OSC32K_P Pin=Y1-2
+Added Pin To Net: NetName=GND Pin=Y2-1
+Added Pin To Net: NetName=OSC8M_N Pin=Y2-2
+Added Pin To Net: NetName=GND Pin=Y2-3
+Added Pin To Net: NetName=OSC8M_P Pin=Y2-4
+Change Net Name : Old Net Name=NetM5_1 New Net Name=NetC68_1
+Change Net Name : Old Net Name=NetR26_1 New Net Name=SD_DETECT
+Added Pin To Net: NetName=DUT_ISENSE0 Pin=C67-2
+Added Pin To Net: NetName=DUT_ISENSE0 Pin=U1-54
+Added Pin To Net: NetName=DUT_ISENSE0 Pin=U18-9
+Added Net: Name=DUT_ISENSE0
+Added Pin To Net: NetName=DUT_ISENSE1 Pin=C63-2
+Added Pin To Net: NetName=DUT_ISENSE1 Pin=U1-55
+Added Pin To Net: NetName=DUT_ISENSE1 Pin=U15-9
+Added Net: Name=DUT_ISENSE1
+Added Pin To Net: NetName=DUT_ISENSE2 Pin=C66-2
+Added Pin To Net: NetName=DUT_ISENSE2 Pin=U1-56
+Added Pin To Net: NetName=DUT_ISENSE2 Pin=U17-9
+Added Net: Name=DUT_ISENSE2
+Added Pin To Net: NetName=DUT_ISENSE3 Pin=C61-2
+Added Pin To Net: NetName=DUT_ISENSE3 Pin=U1-70
+Added Pin To Net: NetName=DUT_ISENSE3 Pin=U13-9
+Added Net: Name=DUT_ISENSE3
+Added Pin To Net: NetName=DUT_ISENSE_RANGE3 Pin=R60-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE3 Pin=R61-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE3 Pin=U1-77
+Added Pin To Net: NetName=DUT_ISENSE_RANGE3 Pin=U13-6
+Added Net: Name=DUT_ISENSE_RANGE3
+Added Pin To Net: NetName=ISENSE0_N Pin=M10-2
+Added Pin To Net: NetName=ISENSE0_N Pin=R65-1
+Added Pin To Net: NetName=ISENSE0_N Pin=U18-3
+Added Net: Name=ISENSE0_N
+Added Pin To Net: NetName=ISENSE0_P Pin=NT7-1
+Added Pin To Net: NetName=ISENSE0_P Pin=R65-2
+Added Pin To Net: NetName=ISENSE0_P Pin=U18-1
+Added Pin To Net: NetName=ISENSE0_P Pin=U18-2
+Added Net: Name=ISENSE0_P
+Added Pin To Net: NetName=ISENSE1_N Pin=M6-2
+Added Pin To Net: NetName=ISENSE1_N Pin=R17-1
+Added Pin To Net: NetName=ISENSE1_N Pin=U15-3
+Added Net: Name=ISENSE1_N
+Added Pin To Net: NetName=ISENSE1_P Pin=NT5-1
+Added Pin To Net: NetName=ISENSE1_P Pin=R17-2
+Added Pin To Net: NetName=ISENSE1_P Pin=U15-1
+Added Pin To Net: NetName=ISENSE1_P Pin=U15-2
+Added Net: Name=ISENSE1_P
+Added Pin To Net: NetName=ISENSE2_N Pin=M9-2
+Added Pin To Net: NetName=ISENSE2_N Pin=R63-1
+Added Pin To Net: NetName=ISENSE2_N Pin=U17-3
+Added Net: Name=ISENSE2_N
+Added Pin To Net: NetName=ISENSE2_P Pin=NT6-1
+Added Pin To Net: NetName=ISENSE2_P Pin=R63-2
+Added Pin To Net: NetName=ISENSE2_P Pin=U17-1
+Added Pin To Net: NetName=ISENSE2_P Pin=U17-2
+Added Net: Name=ISENSE2_P
+Added Pin To Net: NetName=ISENSE3_N Pin=R6-2
+Added Pin To Net: NetName=ISENSE3_N Pin=U13-3
+Added Net: Name=ISENSE3_N
+Added Pin To Net: NetName=ISENSE3_P Pin=R6-4
+Added Pin To Net: NetName=ISENSE3_P Pin=U13-1
+Added Pin To Net: NetName=ISENSE3_P Pin=U13-2
+Added Net: Name=ISENSE3_P
+Added Pin To Net: NetName=JTAG_TRST Pin=J3-10
+Added Pin To Net: NetName=JTAG_TRST Pin=U1-38
+Added Net: Name=JTAG_TRST
+Added Pin To Net: NetName=NetC61_1 Pin=C61-1
+Added Pin To Net: NetName=NetC61_1 Pin=U13-8
+Added Net: Name=NetC61_1
+Added Pin To Net: NetName=NetC63_1 Pin=C63-1
+Added Pin To Net: NetName=NetC63_1 Pin=U15-8
+Added Net: Name=NetC63_1
+Added Pin To Net: NetName=NetC66_1 Pin=C66-1
+Added Pin To Net: NetName=NetC66_1 Pin=U17-8
+Added Net: Name=NetC66_1
+Added Pin To Net: NetName=NetC67_1 Pin=C67-1
+Added Pin To Net: NetName=NetC67_1 Pin=U18-8
+Added Net: Name=NetC67_1
+Added Pin To Net: NetName=NetD12_2 Pin=D12-2
+Added Pin To Net: NetName=NetD12_2 Pin=M7-4
+Added Pin To Net: NetName=NetD12_2 Pin=R18-1
+Added Pin To Net: NetName=NetD12_2 Pin=R58-2
+Added Net: Name=NetD12_2
+Added Pin To Net: NetName=NetM6_1 Pin=M6-1
+Added Pin To Net: NetName=NetM6_1 Pin=M8-3
+Added Pin To Net: NetName=NetM6_1 Pin=R13-1
+Added Net: Name=NetM6_1
+Added Pin To Net: NetName=NetM8_2 Pin=M8-2
+Added Pin To Net: NetName=NetM8_2 Pin=R60-2
+Added Net: Name=NetM8_2
+Added Pin To Net: NetName=NetM8_5 Pin=M8-5
+Added Pin To Net: NetName=NetM8_5 Pin=R54-2
+Added Net: Name=NetM8_5
+Added Pin To Net: NetName=NetM8_6 Pin=M8-6
+Added Pin To Net: NetName=NetM8_6 Pin=R58-1
+Added Net: Name=NetM8_6
+Added Pin To Net: NetName=NetM10_1 Pin=M10-1
+Added Pin To Net: NetName=NetM10_1 Pin=M11-3
+Added Pin To Net: NetName=NetM10_1 Pin=R64-1
+Added Net: Name=NetM10_1
+Added Pin To Net: NetName=NetM11_2 Pin=M11-2
+Added Pin To Net: NetName=NetM11_2 Pin=R66-2
+Added Net: Name=NetM11_2
+Added Pin To Net: NetName=NetM11_5 Pin=M11-5
+Added Pin To Net: NetName=NetM11_5 Pin=R67-2
+Added Net: Name=NetM11_5
+Added Pin To Net: NetName=NetNT4_1 Pin=NT4-1
+Added Pin To Net: NetName=NetNT4_1 Pin=R6-3
+Added Net: Name=NetNT4_1
+Added Pin To Net: NetName=V5_SUM Pin=D4-1
+Added Pin To Net: NetName=V5_SUM Pin=D7-1
+Added Pin To Net: NetName=V5_SUM Pin=NT2-2
+Added Pin To Net: NetName=V5_SUM Pin=R56-1
+Added Net: Name=V5_SUM
+Added Pin To Net: NetName=V_DUT Pin=J2-1
+Added Pin To Net: NetName=V_DUT Pin=M6-3
+Added Pin To Net: NetName=V_DUT Pin=M7-5
+Added Pin To Net: NetName=V_DUT Pin=M7-5
+Added Pin To Net: NetName=V_DUT Pin=M7-6
+Added Pin To Net: NetName=V_DUT Pin=M7-7
+Added Pin To Net: NetName=V_DUT Pin=M7-8
+Added Pin To Net: NetName=V_DUT Pin=M9-3
+Added Pin To Net: NetName=V_DUT Pin=M10-3
+Added Net: Name=V_DUT
+Added Differential Pair: Name=ISENSE0
+Added Differential Pair: Name=ISENSE1
+Added Differential Pair: Name=ISENSE2
+Added Differential Pair: Name=ISENSE3
+Added Member To Class: ClassName=Microcontroller Member=Component C1 10nF
+Added Member To Class: ClassName=Microcontroller Member=Component C22 0.1uF
+Added Member To Class: ClassName=Microcontroller Member=Component C23 10uF
+Added Member To Class: ClassName=Current Measurement Member=Component C63 1nF
+Added Member To Class: ClassName=Current Measurement Member=Component C64 0.1uF
+Added Member To Class: ClassName=Current Measurement Member=Component C65 0.1uF
+Added Member To Class: ClassName=Current Measurement Member=Component C66 1nF
+Added Member To Class: ClassName=Current Measurement Member=Component C67 1nF
+Added Member To Class: ClassName=Power Member=Component C68 0.1uF
+Added Member To Class: ClassName=Microcontroller Member=Component D1 LTST-S270KGKT
+Added Member To Class: ClassName=Current Measurement Member=Component D12 BZT52H-C18,115
+Added Member To Class: ClassName=Power Member=Component J1 39-29-3026
+Added Member To Class: ClassName=Power Member=Component J2 39-29-3026
+Added Member To Class: ClassName=Microcontroller Member=Component J3 20021111-00010T4LF
+Added Member To Class: ClassName=Microcontroller Member=Component J4 1734035-4
+Added Member To Class: ClassName=Microcontroller Member=Component J6 1x2 Header
+Added Member To Class: ClassName=Microcontroller Member=Component J7 Micro SD Connector
+Added Member To Class: ClassName=Current Measurement Member=Component M11 NX3020NAKV,115
+Added Member To Class: ClassName=Current Measurement Member=Component NT4 Net Tie 1mm
+Added Member To Class: ClassName=Current Measurement Member=Component NT5 Net Tie 1mm
+Added Member To Class: ClassName=Current Measurement Member=Component NT6 Net Tie 1mm
+Added Member To Class: ClassName=Current Measurement Member=Component NT7 Net Tie 1mm
+Added Member To Class: ClassName=Microcontroller Member=Component R1 300R
+Added Member To Class: ClassName=Current Measurement Member=Component R17 1R
+Added Member To Class: ClassName=Current Measurement Member=Component R18 10k
+Added Member To Class: ClassName=Microcontroller Member=Component R26 100R
+Added Member To Class: ClassName=Current Measurement Member=Component R54 100R
+Added Member To Class: ClassName=Current Measurement Member=Component U17 MAX9923TEUB+
+Added Member To Class: ClassName=Current Measurement Member=Component U18 MAX9923TEUB+
+Added Member To Class: ClassName=Microcontroller Member=Component Y1 32.768kHz
+Added Member To Class: ClassName=Microcontroller Member=Component Y2 8MHz
