@@ -1,0 +1,28 @@
+Added Component: Designator=D13(LED Green 0603)
+Added Component: Designator=D14(LED Green 0603)
+Added Component: Designator=M12(SOT666-6N)
+Added Component: Designator=R70(RES0402R)
+Added Component: Designator=R71(RES0402R)
+Added Pin To Net: NetName=GND Pin=M12-1
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=M12-2
+Added Pin To Net: NetName=GND Pin=M12-4
+Added Pin To Net: NetName=DUT_ISENSE_RANGE3 Pin=M12-5
+Added Pin To Net: NetName=3.3V Pin=R70-2
+Added Pin To Net: NetName=3.3V Pin=R71-2
+Added Pin To Net: NetName=NetD13_1 Pin=D13-1
+Added Pin To Net: NetName=NetD13_1 Pin=M12-6
+Added Net: Name=NetD13_1
+Added Pin To Net: NetName=NetD13_2 Pin=D13-2
+Added Pin To Net: NetName=NetD13_2 Pin=R70-1
+Added Net: Name=NetD13_2
+Added Pin To Net: NetName=NetD14_1 Pin=D14-1
+Added Pin To Net: NetName=NetD14_1 Pin=M12-3
+Added Net: Name=NetD14_1
+Added Pin To Net: NetName=NetD14_2 Pin=D14-2
+Added Pin To Net: NetName=NetD14_2 Pin=R71-1
+Added Net: Name=NetD14_2
+Added Member To Class: ClassName=Microcontroller Member=Component D13 LTST-S270KGKT
+Added Member To Class: ClassName=Microcontroller Member=Component D14 LTST-S270KGKT
+Added Member To Class: ClassName=Microcontroller Member=Component M12 NX3020NAKV,115
+Added Member To Class: ClassName=Microcontroller Member=Component R70 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R71 220R

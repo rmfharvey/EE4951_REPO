@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=M7 Old DesignItemId=SISS27DN New DesignItemId=SI7101DN
+Change Component Comment : Designator=M7 Old Comment=SISS27DN-T1-GE3 New Comment=SI7101DN-T1-GE3
+Change Component Description : Designator=M7 Old Description=PFET_SINGLE_50A_30v New Description=PFET_SINGLE_35A_30v
