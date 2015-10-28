@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=V5_SUM Pin=R56-1
+Change Component Footprint: Designator=R56 Old Footprint=RES0603R New Footprint=RES0603W
+Added Pin To Net: NetName=V5_ISENSE_P Pin=R56-1

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=DISP_MISO Pin=J5-3
+Removed Pin From Net: NetName=DISP_MOSI Pin=J5-5
+Removed Pin From Net: NetName=DISP_CLK Pin=J5-7
+Removed Pin From Net: NetName=DISP_C\S\ Pin=J5-9
+Added Pin To Net: NetName=DISP_C\S\ Pin=J5-3
+Added Pin To Net: NetName=DISP_CLK Pin=J5-5
+Added Pin To Net: NetName=DISP_MOSI Pin=J5-7
+Added Pin To Net: NetName=DISP_MISO Pin=J5-9

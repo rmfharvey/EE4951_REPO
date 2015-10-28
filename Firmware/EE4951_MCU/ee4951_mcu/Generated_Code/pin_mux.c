@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-10-26, 01:33, # CodeGen: 1
+**     Date/Time   : 2015-10-27, 12:43, # CodeGen: 2
 **     Abstract    :
 **
 **     Settings    :
@@ -1508,6 +1508,8 @@ void init_adc_pins(uint32_t instance)
       PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
       /* Affects PORTB_PCR1 register */
       PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      /* Affects PORTB_PCR10 register */
+      PORT_HAL_SetMuxMode(PORTB,10UL,kPortPinDisabled);
       /* Affects PORTC_PCR9 register */
       PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
       /* Affects PORTC_PCR10 register */
@@ -1538,6 +1540,7 @@ void deinit_adc_pins(uint32_t instance)
     case ADC1_IDX:                      /* ADC1_IDX */
       PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTB,10UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTC,10UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTC,11UL,kPortPinDisabled);

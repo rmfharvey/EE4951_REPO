@@ -254,5 +254,100 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
+  <Bean name="uartCom1" type="fsl_uart">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="uartCom1" />
+      <Device v="UART1" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="PORTE" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="PORTE" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="SPI1" type="fsl_dspi">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="SPI1" />
+      <Device v="SPI1" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="PORTC" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="PORTC" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="SELF_ADC" type="fsl_adc16">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="SELF_ADC" />
+      <Device v="ADC1" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="DUT_ADC" type="fsl_adc16">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="DUT_ADC" />
+      <Device v="ADC0" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="SD_CARD" type="fsl_sdcard">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="SD_CARD" />
+      <Component_version v="1.2.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>
 

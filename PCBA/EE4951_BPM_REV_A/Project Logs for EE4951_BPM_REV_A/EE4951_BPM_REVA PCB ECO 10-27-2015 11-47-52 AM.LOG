@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=J3 Old DesignItemId=2x5 JTAG Header New DesignItemId=2x5 JTAG Header TH
+Change Component Footprint: Designator=J3 Old Footprint=2x5 JTAG Header New Footprint=2x5 Header (1.27mm)
+Change Component Comment : Designator=J3 Old Comment=20021121-00010C4LF New Comment=20021111-00010T4LF

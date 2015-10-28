@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-10-26, 01:33, # CodeGen: 1
+**     Date/Time   : 2015-10-27, 12:43, # CodeGen: 2
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -94,7 +94,7 @@ const adc16_hw_cmp_config_t SELF_ADC_HwConfig0 = {
 
 
 const adc16_chn_config_t SELF_3V_VSENSE = {
-  .chnIdx = kAdc16Chn29,
+  .chnIdx = kAdc16Chn14,
   .convCompletedIntEnable = false,
   .diffConvEnable = false
 };

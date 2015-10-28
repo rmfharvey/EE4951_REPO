@@ -28,7 +28,6 @@
         <Stack_size v="1024" />
         <Heap_size v="0" />
         <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
-        <Vector_table_copy_in_RAM v="yes" />
         <Default_memory_for_interrupts v="INTERNAL RAM" />
         <Default_memory_for_code v="INTERNAL RAM" />
         <Default_memory_for_data v="INTERNAL RAM" />

@@ -1,0 +1,43 @@
+Added Component: Designator=C69(CAP0402R)
+Added Component: Designator=C70(CAP0402R)
+Added Component: Designator=C71(CAP0402R)
+Added Component: Designator=C72(CAP0402R)
+Added Component: Designator=R72(RES0603R)
+Added Component: Designator=R73(RES0402R)
+Added Component: Designator=R74(RES0603R)
+Added Component: Designator=TP11(TESTPOINT - 1.5mm Round Pad)
+Added Component: Designator=U19(SC70)
+Added Pin To Net: NetName=3.3V Pin=C69-1
+Added Pin To Net: NetName=GND Pin=C69-2
+Added Pin To Net: NetName=GND Pin=C70-2
+Added Pin To Net: NetName=GND Pin=C71-2
+Added Pin To Net: NetName=GND Pin=C72-2
+Added Pin To Net: NetName=3.3V Pin=R72-2
+Added Pin To Net: NetName=GND Pin=R74-1
+Added Pin To Net: NetName=GND Pin=U19-2
+Added Pin To Net: NetName=3.3V Pin=U19-5
+Added Pin To Net: NetName=3.3V Pin=U19-6
+Added Pin To Net: NetName=SELF_3V3_VSENSE Pin=C70-1
+Added Pin To Net: NetName=SELF_3V3_VSENSE Pin=R73-2
+Added Pin To Net: NetName=SELF_3V3_VSENSE Pin=TP11-1
+Added Pin To Net: NetName=SELF_3V3_VSENSE Pin=U1-58
+Added Net: Name=SELF_3V3_VSENSE
+Added Pin To Net: NetName=V3_VSENSE_IN Pin=C72-1
+Added Pin To Net: NetName=V3_VSENSE_IN Pin=R72-1
+Added Pin To Net: NetName=V3_VSENSE_IN Pin=R74-2
+Added Pin To Net: NetName=V3_VSENSE_IN Pin=U19-1
+Added Net: Name=V3_VSENSE_IN
+Added Pin To Net: NetName=V3_VSENSE_OUT Pin=C71-1
+Added Pin To Net: NetName=V3_VSENSE_OUT Pin=R73-1
+Added Pin To Net: NetName=V3_VSENSE_OUT Pin=U19-3
+Added Pin To Net: NetName=V3_VSENSE_OUT Pin=U19-4
+Added Net: Name=V3_VSENSE_OUT
+Added Member To Class: ClassName=Power Member=Component C69 0.1uF
+Added Member To Class: ClassName=Power Member=Component C70 15pF
+Added Member To Class: ClassName=Power Member=Component C71 15pF
+Added Member To Class: ClassName=Power Member=Component C72 2.2pF
+Added Member To Class: ClassName=Power Member=Component R72 150k
+Added Member To Class: ClassName=Power Member=Component R73 0R
+Added Member To Class: ClassName=Power Member=Component R74 120k
+Added Member To Class: ClassName=Power Member=Component TP11 NONE
+Added Member To Class: ClassName=Power Member=Component U19 MAX9618AXA+T
