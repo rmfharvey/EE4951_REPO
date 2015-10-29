@@ -1,0 +1,38 @@
+Added Component: Designator=R78(RES0402R)
+Added Component: Designator=R79(RES0402R)
+Added Component: Designator=R80(RES0402R)
+Added Component: Designator=R81(RES0402R)
+Added Component: Designator=S3(TDA04H0JB1 4xSPST)
+Added Pin To Net: NetName=3.3V Pin=R78-1
+Added Pin To Net: NetName=3.3V Pin=R79-1
+Added Pin To Net: NetName=3.3V Pin=R80-1
+Added Pin To Net: NetName=3.3V Pin=R81-1
+Added Pin To Net: NetName=NetR78_2 Pin=R78-2
+Added Pin To Net: NetName=NetR78_2 Pin=S3-1
+Added Net: Name=NetR78_2
+Added Pin To Net: NetName=NetR79_2 Pin=R79-2
+Added Pin To Net: NetName=NetR79_2 Pin=S3-2
+Added Net: Name=NetR79_2
+Added Pin To Net: NetName=NetR80_2 Pin=R80-2
+Added Pin To Net: NetName=NetR80_2 Pin=S3-3
+Added Net: Name=NetR80_2
+Added Pin To Net: NetName=NetR81_2 Pin=R81-2
+Added Pin To Net: NetName=NetR81_2 Pin=S3-4
+Added Net: Name=NetR81_2
+Added Pin To Net: NetName=OPT0 Pin=S3-8
+Added Pin To Net: NetName=OPT0 Pin=U1-4
+Added Net: Name=OPT0
+Added Pin To Net: NetName=OPT1 Pin=S3-7
+Added Pin To Net: NetName=OPT1 Pin=U1-5
+Added Net: Name=OPT1
+Added Pin To Net: NetName=OPT2 Pin=S3-6
+Added Pin To Net: NetName=OPT2 Pin=U1-6
+Added Net: Name=OPT2
+Added Pin To Net: NetName=OPT3 Pin=S3-5
+Added Pin To Net: NetName=OPT3 Pin=U1-7
+Added Net: Name=OPT3
+Added Member To Class: ClassName=Microcontroller Member=Component R78 10k
+Added Member To Class: ClassName=Microcontroller Member=Component R79 10k
+Added Member To Class: ClassName=Microcontroller Member=Component R80 10k
+Added Member To Class: ClassName=Microcontroller Member=Component R81 10k
+Added Member To Class: ClassName=Microcontroller Member=Component S3 TDA04H0JB1

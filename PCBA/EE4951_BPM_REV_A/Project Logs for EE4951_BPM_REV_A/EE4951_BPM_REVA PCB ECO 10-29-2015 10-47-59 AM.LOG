@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=R47 Old Footprint=RES0603R New Footprint=RES0603W
+Change Component Footprint: Designator=R49 Old Footprint=RES0603R New Footprint=RES0603W
+Change Component Footprint: Designator=R52 Old Footprint=RES0603R New Footprint=RES0603W
+Change Component Footprint: Designator=R53 Old Footprint=RES0603R New Footprint=RES0603W
+Added Member To Class: ClassName=OLED Display Member=Component U16 SSD1306

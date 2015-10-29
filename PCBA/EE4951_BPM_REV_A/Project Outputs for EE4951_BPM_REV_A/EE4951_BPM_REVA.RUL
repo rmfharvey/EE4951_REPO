@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\RossHarvey\Documents\School\EE4951_REPO\PCBA\EE4951_BPM_REV_A\EE4951_BPM_REVA.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

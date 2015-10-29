@@ -1,0 +1,8 @@
+Added Component: Designator=Mech1(Standoff M2.5x12mm)
+Added Component: Designator=Mech2(Standoff M2.5x12mm)
+Added Component: Designator=Mech3(Standoff M2.5x12mm)
+Added Component: Designator=Mech4(Standoff M2.5x12mm)
+Added Member To Class: ClassName=Power Member=Component Mech1 Standoff M2.5x12.5mm
+Added Member To Class: ClassName=Power Member=Component Mech2 Standoff M2.5x12.5mm
+Added Member To Class: ClassName=Power Member=Component Mech3 Standoff M2.5x12.5mm
+Added Member To Class: ClassName=Power Member=Component Mech4 Standoff M2.5x12.5mm

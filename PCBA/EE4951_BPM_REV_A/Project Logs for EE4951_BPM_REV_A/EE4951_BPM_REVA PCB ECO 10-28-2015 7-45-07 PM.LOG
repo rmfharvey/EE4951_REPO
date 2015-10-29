@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=DISP_CLK Pin=U1-98
+Removed Pin From Net: NetName=DISP_MOSI Pin=U1-99
+Removed Pin From Net: NetName=DISP_MISO Pin=U1-100
+Removed Pin From Net: NetName=DISP_C\S\ Pin=U16-5
+Added Component: Designator=Mech3(Standoff M2.5x12mm)
+Added Component: Designator=Mech4(Standoff M2.5x12mm)
+Added Component: Designator=R75(RES0402R)
+Added Component: Designator=R76(RES0402R)
+Added Component: Designator=R77(RES0402R)
+Added Pin To Net: NetName=DISP_CLK Pin=R75-2
+Added Pin To Net: NetName=DISP_MOSI Pin=R76-2
+Added Pin To Net: NetName=DISP_MISO Pin=R77-2
+Added Pin To Net: NetName=NetR75_1 Pin=R75-1
+Added Pin To Net: NetName=NetR75_1 Pin=U1-98
+Added Net: Name=NetR75_1
+Added Pin To Net: NetName=NetR76_1 Pin=R76-1
+Added Pin To Net: NetName=NetR76_1 Pin=U1-99
+Added Net: Name=NetR76_1
+Added Pin To Net: NetName=NetR77_1 Pin=R77-1
+Added Pin To Net: NetName=NetR77_1 Pin=U1-100
+Added Net: Name=NetR77_1
+Added Pin To Net: NetName=NetU16_5 Pin=U16-5
+Added Net: Name=NetU16_5
+Added Member To Class: ClassName=Power Member=Component Mech3 Standoff M2.5x12.5mm
+Added Member To Class: ClassName=Power Member=Component Mech4 Standoff M2.5x12.5mm
+Added Member To Class: ClassName=Microcontroller Member=Component R75 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R76 220R
+Added Member To Class: ClassName=Microcontroller Member=Component R77 220R

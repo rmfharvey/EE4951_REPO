@@ -1,0 +1,10 @@
+Added Component: Designator=J4(USB MINI-B 1734035-4)
+Added Pin To Net: NetName=USB_5V Pin=J4-1
+Added Pin To Net: NetName=USBD_N Pin=J4-2
+Added Pin To Net: NetName=USBD_P Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-5
+Added Pin To Net: NetName=GND Pin=J4-SH1
+Added Pin To Net: NetName=GND Pin=J4-SH2
+Added Pin To Net: NetName=GND Pin=J4-SH3
+Added Pin To Net: NetName=GND Pin=J4-SH4
+Added Member To Class: ClassName=Microcontroller Member=Component J4 1734035-4
