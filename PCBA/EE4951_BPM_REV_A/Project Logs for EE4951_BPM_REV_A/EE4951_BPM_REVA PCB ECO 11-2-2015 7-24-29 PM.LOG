@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=V_BAT Pin=NT4-2
+Removed Pin From Net: NetName=V_BAT Pin=NT5-2
+Removed Pin From Net: NetName=V_BAT Pin=NT6-2
+Removed Pin From Net: NetName=V_BAT Pin=NT7-2
+Removed Member From Class: ClassName=Current Measurement Member=NT4
+Removed Member From Class: ClassName=Current Measurement Member=NT5
+Removed Member From Class: ClassName=Current Measurement Member=NT6
+Removed Member From Class: ClassName=Current Measurement Member=NT7
+Added Pin To Net: NetName=V_BAT Pin=R6-3
+Added Pin To Net: NetName=V_BAT Pin=R17-2
+Added Pin To Net: NetName=V_BAT Pin=R63-2
+Added Pin To Net: NetName=V_BAT Pin=R65-2
+Added Pin To Net: NetName=V_BAT Pin=U15-1
+Added Pin To Net: NetName=V_BAT Pin=U15-2
+Added Pin To Net: NetName=V_BAT Pin=U17-1
+Added Pin To Net: NetName=V_BAT Pin=U17-2
+Added Pin To Net: NetName=V_BAT Pin=U18-1
+Added Pin To Net: NetName=V_BAT Pin=U18-2
+Change Net Name : Old Net Name=ISENSE0_N New Net Name=NetM10_2
+Change Net Name : Old Net Name=ISENSE1_N New Net Name=NetM6_2
+Change Net Name : Old Net Name=ISENSE2_N New Net Name=NetM9_2
+Change Net Name : Old Net Name=ISENSE3_N New Net Name=NetR6_2
+Change Net Name : Old Net Name=ISENSE3_P New Net Name=NetR6_4
