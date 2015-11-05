@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DUT_ISENSE1 Pin=U1-55
+Removed Pin From Net: NetName=DUT_ISENSE2 Pin=U1-56
+Added Pin To Net: NetName=DUT_ISENSE2 Pin=U1-55
+Added Pin To Net: NetName=DUT_ISENSE1 Pin=U1-56

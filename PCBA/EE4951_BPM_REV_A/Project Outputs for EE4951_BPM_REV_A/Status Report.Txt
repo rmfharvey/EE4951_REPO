@@ -1,9 +1,12 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [EE4951_BPM_REV_A.PrjPcb]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [EE4951_BPM_REV_A.PrjPcb]
+   Generated File[EE4951_BPM_REVA.TXT]
+   Generated File[EE4951_BPM_REVA.LDP]
+   Generated File[EE4951_BPM_REVA.DRR]
 
 
-Files Generated   : 0
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 12:18:41 AM On 11/4/2015
+Finished Output Generation At 12:32:00 PM On 11/5/2015
