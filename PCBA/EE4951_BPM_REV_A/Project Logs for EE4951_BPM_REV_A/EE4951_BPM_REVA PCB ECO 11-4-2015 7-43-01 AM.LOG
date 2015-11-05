@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE1 Pin=M2-5
+Removed Pin From Net: NetName=DUT_ISENSE_RANGE2 Pin=M12-2
+Added Pin To Net: NetName=DUT_ISENSE_RANGE2 Pin=M2-5
+Added Pin To Net: NetName=DUT_ISENSE_RANGE1 Pin=M12-2
+Change Net Name : Old Net Name=DUT_ISENSE1 New Net Name=DUT_ISENSE2
+Change Net Name : Old Net Name=DUT_ISENSE2 New Net Name=DUT_ISENSE1
+Change Net Name : Old Net Name=DUT_ISENSE_RANGE1 New Net Name=DUT_ISENSE_RANGE2
+Change Net Name : Old Net Name=DUT_ISENSE_RANGE2 New Net Name=DUT_ISENSE_RANGE1
