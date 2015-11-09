@@ -1,0 +1,29 @@
+!SESSION 2015-11-07 17:34:08.473 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.somniumtech.branding.kds.ide
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-07 17:34:31.400
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-11-07 17:34:46.348
+!MESSAGE External elements location /Applications/KDS_3.0.0.app/Contents/eclipse/ProcessorExpert/BoardConfigurations/wizard_data does not exist
+!SESSION 2015-11-07 17:36:06.938 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.somniumtech.branding.kds.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-11-07 17:36:09.832
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-07 17:36:12.138
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-11-07 17:36:15.793
+!MESSAGE External elements location /Applications/KDS_3.0.0.app/Contents/eclipse/ProcessorExpert/BoardConfigurations/wizard_data does not exist
