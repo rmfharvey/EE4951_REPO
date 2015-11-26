@@ -2,9 +2,9 @@
 Version=1.0
 
 [PublishSettings]
-OutputFilePath2=C:\Users\RossHarvey\Documents\School\EE4951_REPO\PCBA\EE4951_BPM_REV_A\.PDF
+OutputFilePath2=C:\Users\RossHarvey\Documents\.PDF
 ReleaseManaged2=0
-OutputBasePath2=C:\Users\RossHarvey\Documents\School\EE4951_REPO\PCBA\EE4951_BPM_REV_A\
+OutputBasePath2=C:\Users\RossHarvey\Documents\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -79,7 +79,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\RossHarvey\Documents\School\EE4951_REPO\PCBA\EE4951_BPM_REV_A\.PDF
+RelativeOutputPath2=C:\Users\RossHarvey\Documents\.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1

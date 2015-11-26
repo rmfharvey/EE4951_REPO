@@ -1,0 +1,82 @@
+/* ###################################################################
+**     Filename    : Events.h
+**     Project     : ee4951_prod_mcu
+**     Processor   : MK22FN512VLL12
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2015-11-26, 11:21, # CodeGen: 0
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file Events.h
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup Events_module Events module documentation
+**  @{
+*/         
+
+#ifndef __Events_H
+#define __Events_H
+/* MODULE Events */
+
+#include "fsl_device_registers.h"
+#include "clockMan1.h"
+#include "pin_mux.h"
+#include "osa1.h"
+#include "debug_console.h"
+#include "dut_range_gpio.h"
+#include "dut_adc.h"
+#include "self_adc.h"
+#include "disp_gpio.h"
+#include "disp_spi.h"
+#include "sd_gpio.h"
+#include "sd_card.h"
+#include "fsl_dspi1.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+
+/*! fsl_dspi1 IRQ handler */
+void SPI0_IRQHandler(void);
+
+/*! disp_spi IRQ handler */
+void SPI1_IRQHandler(void);
+
+/*! self_adc IRQ handler */
+void ADC1_IRQHandler(void);
+
+/*! dut_adc IRQ handler */
+void ADC0_IRQHandler(void);
+
+/* END Events */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif 
+
+#endif 
+/* ifndef __Events_H*/
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/
