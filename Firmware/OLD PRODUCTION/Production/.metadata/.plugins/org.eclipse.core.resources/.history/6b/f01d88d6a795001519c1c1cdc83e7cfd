@@ -1,0 +1,76 @@
+/*
+ * dutisense.cpp
+ *
+ *  Created on: Nov 28, 2015
+ *      Author: RossHarvey
+ */
+
+
+#include <dutisense.h>
+
+
+dutIsense_c::dutIsense_c() {
+	/* 	Auto-initialize current ranges	*/
+	PRV_setCurrentRangeValues(range0, dut_range0_p, 0.01, 25);
+	PRV_setCurrentRangeValues(range1, dut_range1_p, 1.0, 25);
+	PRV_setCurrentRangeValues(range2, dut_range2_p, 100.0, 25);
+	PRV_setCurrentRangeValues(range3, dut_range3_p, 1000.0, 25);
+	numCurrentRanges = NUMRANGES;
+}
+
+dutIsense_c::~dutIsense_c() {
+	// TODO Auto-generated destructor stub
+}
+
+void setCurrentRange(uint8_t range)	{
+	//assert(range<NUMRANGES);
+	switch(range)	{
+		case 0:
+			PRV_enableRange(&range0);
+			break;
+		case 1:
+			PRV_enableRange(&range1);
+			break;
+		case 2:
+			PRV_enableRange(&range2);
+			break;
+		case 3:
+			PRV_enableRange(&range3);
+			break;
+		default:
+			break;
+	}
+}
+
+uint8_t dutIsense_c::getCurrentRange(void)	{
+	if(activeRange==(&range0))
+		return 0U;
+	else if(activeRange==(&range1))
+		return 1U;
+	else if(activeRange==(&range2))
+		return 2U;
+	else if(activeRange==(&range3))
+		return 3U;
+	else
+		return 0xFF;
+}
+
+
+
+
+/*	Private Functions	*/
+void dutIsense_c::PRV_setCurrentRangeValues(currentRange_t *cRange,	uint32_t pinName, float shRes, uint8_t gain)	{
+	cRange->enPinName = pinName;
+	cRange->shuntRes = shRes;
+	cRange->ampGain = gain;
+	cRange->scalingFactor = VREF/((float)0xFFFF*gain*shRes);
+}
+
+void dutIsense_c::PRV_enableRange(currentRange_t *newRange)	{
+	GPIO_DRV_SetPinOutput(newRange->enPinName);
+	GPIO_DRV_ClearPinOutput(activeRange->enPinName);
+	activeRange = newRange;	// Update activeRange
+}
+
+
+

@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=CONV_SEL- Pin=R11-1
+Removed Pin From Net: NetName=CONV_SEL+ Pin=R12-1
+Removed Pin From Net: NetName=CONV_SEL- Pin=R16-2
+Removed Pin From Net: NetName=CONV_SEL+ Pin=U7-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=D4-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=D7-1
+Added Pin To Net: NetName=V3_ISENSE_P Pin=NT2-2
+Added Pin To Net: NetName=CONV_SEL+ Pin=R11-1
+Added Pin To Net: NetName=CONV_SEL- Pin=R12-1
+Added Pin To Net: NetName=CONV_SEL+ Pin=R16-2
+Added Pin To Net: NetName=CONV_SEL- Pin=U7-1

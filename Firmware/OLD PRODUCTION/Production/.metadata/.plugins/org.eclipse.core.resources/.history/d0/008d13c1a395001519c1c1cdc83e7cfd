@@ -1,0 +1,60 @@
+/*
+ * dutisense.h
+ *
+ *  Created on: Nov 28, 2015
+ *      Author: RossHarvey
+ */
+
+#include <stdint.h>
+
+#ifndef SOURCES_DUTISENSE_H_
+#define SOURCES_DUTISENSE_H_
+
+#define NUMRANGES	4U
+
+/****************************************************************************************************
+ * This struct holds all values relevant to the individual current ranges in the project			*
+ * The raw and scaled ADC values will probably never be used here/ but I've included them 			*
+ * 		just in case we want to.																	*
+ ****************************************************************************************************/
+typedef struct CURRENT_RANGE	{
+	uint32_t 			enPinName;			// Enable pin for each current range
+	volatile uint16_t 	rawADCVal;			// 16-bit, unsigned fractional ADC value
+	float				scaledADCVal;		// ADC Val scaled by reference voltage
+	float				shuntRes;			// Current shunt resistance value
+	uint8_t				ampGain;			// Shunt amplifier gain
+	float				scalingFactor;		// Scaling factor
+}currentRange_t;
+
+
+/****************************************************************************************************
+ * This class should handle all DUT I-sense related calls											*
+ ****************************************************************************************************/
+class dutIsense_c {
+public:
+	dutIsense_c();
+	virtual ~dutIsense_c();
+
+	void setCurrentRange(uint8_t range);
+
+	uint8_t returnCurrentRange(void);
+private:
+	uint8_t numCurrentRanges;
+	currentRange_t range0;
+	currentRange_t range1;
+	currentRange_t range2;
+	currentRange_t range3;
+	currentRange_t *activeRange;	// Pointer to whichever range is currently active
+
+	void PRV_setCurrentRangeValues(currentRange_t *cRange, uint32_t pinName, float shRes, uint8_t gain);
+	PRV_enableRange(const currentRange_t newRange)
+};
+
+
+
+
+
+
+
+
+#endif /* SOURCES_DUTISENSE_H_ */

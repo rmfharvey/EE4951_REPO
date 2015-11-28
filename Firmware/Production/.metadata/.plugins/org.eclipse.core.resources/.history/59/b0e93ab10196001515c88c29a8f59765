@@ -1,0 +1,36 @@
+/*
+ * DUTISense.cpp
+ *
+ *  Created on: Nov 28, 2015
+ *      Author: RossHarvey
+ */
+
+#include <DUTISense.h>
+
+DUTISense::DUTISense() {
+	// TODO Auto-generated constructor stub
+
+}
+
+DUTISense::~DUTISense() {
+	// TODO Auto-generated destructor stub
+}
+
+void DUTISense::enRange(uint8_t rng)	{
+	switch(rng)	{
+		case 0:
+			GPIO_DRV_SetPinOutput(range0_p);
+			break;
+		case 0:
+			GPIO_DRV_SetPinOutput(range0_p);
+			break;
+		case 0:
+			GPIO_DRV_SetPinOutput(range0_p);
+			break;
+		case 0:
+			GPIO_DRV_SetPinOutput(range0_p);
+			break;
+		default:
+			break;
+	}
+}
