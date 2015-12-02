@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-11-28, 12:44, # CodeGen: 1
+**     Date/Time   : 2015-12-01, 20:06, # CodeGen: 30
 **     Abstract    :
 **
 **     Settings    :
@@ -330,7 +330,7 @@
 **                  Pin 2                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 3                                  : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Direction                              : Output
 **                  Pin 4                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 5                                  : <Automatic>

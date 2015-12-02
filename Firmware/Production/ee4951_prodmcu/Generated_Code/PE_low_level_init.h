@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-11-28, 12:44, # CodeGen: 1
+**     Date/Time   : 2015-12-01, 19:33, # CodeGen: 27
 **     Abstract    :
 **
 **     Settings    :
@@ -19,7 +19,7 @@
 **          MemModelDev                                    : MemModel_NoFlexMem
 **          Low power mode settings                        : 
 **            Allowed power modes                          : 
-**              High speed run mode                        : Not allowed
+**              High speed run mode                        : Allowed
 **              Very low power modes                       : Not allowed
 **              Low leakage stop mode                      : Not allowed
 **              Very low leakage stop mode                 : Not allowed

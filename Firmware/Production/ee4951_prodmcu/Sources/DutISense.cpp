@@ -9,36 +9,46 @@
 
 
 DutISense::DutISense() {
-	/* 	Auto-initialize current ranges	*/
-	PRV_setCurrentRangeValues(&range0, range0_p, 0.01, 25);
-	PRV_setCurrentRangeValues(&range1, range1_p, 1.0, 25);
-	PRV_setCurrentRangeValues(&range2, range2_p, 100.0, 25);
-	PRV_setCurrentRangeValues(&range3, range3_p, 1000.0, 25);
 	numCurrentRanges = NUMRANGES;
+
+	/* 	Auto-initialize current ranges	*/
+	PRV_initCurrentRange(&range0, range0_p, dut_isense0, 0.01, 25, 0);
+	PRV_initCurrentRange(&range1, range1_p, dut_isense1, 1.0, 25, 1);
+	PRV_initCurrentRange(&range2, range2_p, dut_isense2, 100.0, 25, 2);
+	PRV_initCurrentRange(&range3, range3_p, dut_isense3, 1000.0, 25, 3);
+	activeRange = &range2;			// Set to range1 to avoid assertion in next line
+	PRV_enableRange(&range3);		// Enable range0 (lowest resistance)
 }
 
 DutISense::~DutISense() {
-	// TODO Auto-generated destructor stub
 }
 
-void DutISense::setCurrentRange(uint8_t range)	{
+void DutISense::enableCurrentRange(iRange_t range)	{
 	assert(range<NUMRANGES);
 	switch(range)	{
-		case 0:
+		case 0:		// 40.3nA - 100uA
 			PRV_enableRange(&range0);
 			break;
-		case 1:
+		case 1:		// 403nA - 1mA
 			PRV_enableRange(&range1);
 			break;
-		case 2:
+		case 2:		// 40.3uA - 100mA
 			PRV_enableRange(&range2);
 			break;
-		case 3:
+		case 3:		// 4mA - 10A
 			PRV_enableRange(&range3);
 			break;
 		default:
 			break;
 	}
+}
+
+/********************************************************************************************************************************
+ * Disables active current ranges																									*
+ * Does not change activeRange																									*
+ ********************************************************************************************************************************/
+void DutISense::disableCurrentRange(void)	{
+	GPIO_DRV_ClearPinOutput(activeRange->enPinName);
 }
 
 uint8_t DutISense::getCurrentRange(void)	{
@@ -54,19 +64,87 @@ uint8_t DutISense::getCurrentRange(void)	{
 		return 0xFF;
 }
 
+void DutISense::updateADCVal(void)	{
+	ADC16_DRV_ConfigConvChn(dut_adc_IDX, ADC_CHNGROUP, activeADCChannel);
+	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, ADC_CHNGROUP);
+	//floatADCVal = (float)rawADCVal*(activeRange->scalingFactor);
+#ifdef AUTOSWITCHING
+	switch(activeRange->rangeNum)	{
+	case 3:
+		if(rawADCVal<A_LOTHRESH)
+			PRV_enableRange(&range2);
+		break;
+	case 2:
+		if(rawADCVal>mA_HITHRESH)
+			PRV_enableRange(&range3);
+		else if(rawADCVal<mA_LOTHRESH)
+			PRV_enableRange(&range1);
+		break;
+	case 1:
+		if(rawADCVal>uA_HITHRESH)
+			PRV_enableRange(&range2);
+		else if(rawADCVal<uA_LOTHRESH)
+			PRV_enableRange(&range0);
+		break;
+	case 0:
+		if(rawADCVal>nA_HITHRESH)
+			PRV_enableRange(&range2);
+		break;
+	default:
+		break;
+	}
+#endif
+}
+
+uint16_t DutISense::getADCValRaw(void)	{
+	return rawADCVal;
+}
+
+float DutISense::getADCValScaled(void)	{
+	return floatADCVal;
+}
+
+
+
 
 
 
 /*	Private Functions	*/
-void DutISense::PRV_setCurrentRangeValues(currentRange_t *cRange, uint32_t pinName, float shRes, uint8_t gain)	{
+
+/********************************************************************************************************************************
+ * PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain)			*
+ * Parameters: 	cRange 	- Pointer to the current measurement channel that will be initialized									*
+ *				pinName	- Enable pin (GPO) for current range																	*
+ *				adcCfg	- ADC channel configuration																				*
+ *				shRes	- Current shunt resistor value																			*
+ *				gain	- Amplifier gain																						*
+  * Returns: NULL																												*
+ *																																*
+ * Initializes a current range with all of the appropriate values.  These values should be hard coded in the object constructor	*
+ ********************************************************************************************************************************/
+void DutISense::PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain, uint8_t rngNum)	{
 	cRange->enPinName = pinName;
 	cRange->shuntRes = shRes;
 	cRange->ampGain = gain;
+	cRange->adcChConfig = adcCfg;
 	cRange->scalingFactor = 3.0/((float)0xFFFF*gain*shRes);
+	cRange->rangeNum = rngNum;
 }
 
+/********************************************************************************************************************************
+ * PRV_enableRange(currentRange_t *newRange)																					*
+ * Parameter: newRange - pointer to the current measurement channel that will be enabled										*
+ * Returns: NULL																												*
+ *																																*
+ * For a short period, both ranges will be active so that we don't disconnect the DUT from power								*
+ * New and old enable pins will be set and cleared, respectively																*
+ * The active ADC channel for the DUT current measurement will be updated, but not changed in hardware							*
+ ********************************************************************************************************************************/
 void DutISense::PRV_enableRange(currentRange_t *newRange)	{
 	GPIO_DRV_SetPinOutput(newRange->enPinName);
-	GPIO_DRV_ClearPinOutput(activeRange->enPinName);
-	activeRange = newRange;	// Update activeRange
+	if(newRange!=activeRange)	{
+		GPIO_DRV_ClearPinOutput(activeRange->enPinName);
+		activeRange = newRange;	// Update activeRange
+		activeADCChannel = &newRange->adcChConfig;
+	}
 }

@@ -28,7 +28,6 @@
         <Stack_size v="1024" />
         <Heap_size v="0" />
         <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
-        <Vector_table_copy_in_RAM v="yes" />
         <Default_memory_for_interrupts v="INTERNAL RAM" />
         <Default_memory_for_code v="INTERNAL RAM" />
         <Default_memory_for_data v="INTERNAL RAM" />
@@ -255,11 +254,11 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="DbgCs1" type="fsl_debug_console">
+  <Bean name="debug" type="fsl_debug_console">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="DbgCs1" />
-      <Device v="LPUART0" />
+      <Component_name v="debug" />
+      <Device v="UART1" />
       <Component_version v="1.3.0" />
     </Properties>
     <Methods>
@@ -292,10 +291,91 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
+  <Bean name="adc_trigger" type="fsl_ftm">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="adc_trigger" />
+      <Device v="FTM0" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
   <Bean name="dut_gpio" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>
       <Component_name v="dut_gpio" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="dut_adc" type="fsl_adc16">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="dut_adc" />
+      <Device v="ADC0" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="hw_irqs" type="Init_GPIO">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="hw_irqs" />
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="ts_timer" type="fsl_hwtimer">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="ts_timer" />
+      <Device v="SysTick" />
+      <Counter v="SYST_CVR" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="opt_bits" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="opt_bits" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="gpio1" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="gpio1" />
       <Component_version v="1.3.0" />
     </Properties>
     <Methods>

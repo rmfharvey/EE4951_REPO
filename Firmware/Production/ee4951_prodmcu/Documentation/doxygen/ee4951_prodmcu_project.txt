@@ -25,6 +25,9 @@
 </table>
 <br/>
 
+\page page_components Components 
+- \subpage hw_irqs
+
 */
 
 
@@ -65,6 +68,9 @@
   <tr><td>0x000003FF<br>0x00000000</td><td class="memtypeFLASH">FLASH</td>
 </table>
 <br/>
+
+\page page_components Components 
+- \subpage hw_irqs
 
 */
 

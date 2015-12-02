@@ -11,9 +11,29 @@
 #include <assert.h>
 #include <stdint.h>
 #include "dut_gpio.h"
+#include "dut_adc.h"
 
-#define NUMRANGES	4U
-//#define VREF	3.0F
+#define NUMRANGES		4U
+#define ADC_CHNGROUP	0U
+#define AUTOSWITCHING
+
+
+#define A_LOTHRESH	66		// 10.07mA
+#define mA_HITHRESH 40000	// 60mA
+#define mA_LOTHRESH	40		// 60uA
+#define uA_HITHRESH	30000	// 459uA
+#define uA_LOTHRESH	50		// 765nA
+#define nA_HITHRESH	46000	// 69uA
+
+
+
+typedef enum IRANGE	{
+	nA = 0,
+	uA,
+	mA,
+	A
+}iRange_t;
+
 
 /****************************************************************************************************
  * This struct holds all values relevant to the individual current ranges in the project			*
@@ -22,11 +42,13 @@
  ****************************************************************************************************/
 typedef struct CURRENT_RANGE	{
 	uint32_t 			enPinName;			// Enable pin for each current range
+	adc16_chn_config_t	adcChConfig;		// ADC channel configuration
 	volatile uint16_t 	rawADCVal;			// 16-bit, unsigned fractional ADC value
-	float				scaledADCVal;		// ADC Val scaled by reference voltage
+	float				scaledADCVal;		// ADC Val scaled by reference voltage (Value in amps)
 	float				shuntRes;			// Current shunt resistance value
 	uint8_t				ampGain;			// Shunt amplifier gain
 	float				scalingFactor;		// Scaling factor
+	uint8_t				rangeNum;			// Range number for switches
 }currentRange_t;
 
 
@@ -35,21 +57,26 @@ typedef struct CURRENT_RANGE	{
  ****************************************************************************************************/
 class DutISense {
 public:
-	DutISense();
-	virtual ~DutISense();
-
-	void setCurrentRange(uint8_t range);
-
-	uint8_t getCurrentRange(void);
+	DutISense();								// Constructor auto-initializes all DUT Isense channels
+	virtual ~DutISense();						// Destructor doesn't do anything right now
+	void enableCurrentRange(iRange_t range);	// Sets which range is active
+	void disableCurrentRange(void);				// Disables all Current Ranges
+	uint8_t getCurrentRange(void);				// Returns the active range as an unsigned int in [0,3]
+	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
+	uint16_t getADCValRaw(void);				// Returns raw ADC value
+	float getADCValScaled(void);				// Returns scaled ADC value in volts
 private:
 	uint8_t numCurrentRanges;
+	uint16_t rawADCVal;
+	float floatADCVal;
 	currentRange_t range0;
 	currentRange_t range1;
 	currentRange_t range2;
 	currentRange_t range3;
-	currentRange_t *activeRange;	// Pointer to whichever range is currently active
+	currentRange_t *activeRange;			// Pointer to whichever range is currently active
+	adc16_chn_config_t *activeADCChannel;	// Pointer to whicever ADC channel is currently active
 
-	void PRV_setCurrentRangeValues(currentRange_t *cRange, uint32_t pinName, float shRes, uint8_t gain);
+	void PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain, uint8_t rngNum);
 	void PRV_enableRange(currentRange_t *newRange);
 };
 

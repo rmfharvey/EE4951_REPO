@@ -33,16 +33,103 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "op_sys.h"
-#include "DbgCs1.h"
+#include "debug.h"
 #include "WAIT1.h"
+#include "adc_trigger.h"
 #include "dut_gpio.h"
+#include "dut_adc.h"
+#include "ts_timer.h"
+#include "opt_bits.h"
+#include "testgpio.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
 /* User includes (#include below this line is not maintained by Processor Expert) */
-
+#include "system_timer.h"
 #include "DutISense.h"
 
+//TODO DUT Monitor: Scan ADCs automatically
+//TODO DUT Monitor: Switching ADC ranges automatically.  Maybe hardware compare
+//TODO Self Monitor: Test ADCs
+//TODO Timestamp and packet construction
+
+
+
+/* Global Variables */
+sysTimer_t timer;
+uint8_t	startupOptions;
+DutISense dutIsense;
+bool adcReady = false;
+
+void cycleRanges(DutISense *dutI, uint16_t delay)	{
+	dutI->enableCurrentRange(nA);
+	WAIT1_Waitms(delay);
+	dutI->enableCurrentRange(uA);
+	WAIT1_Waitms(delay);
+	dutI->enableCurrentRange(mA);
+	WAIT1_Waitms(delay);
+	dutI->enableCurrentRange(A);
+	WAIT1_Waitms(delay);
+}
+
+uint8_t getStartupOptions()	{
+	uint8_t temp = 0;
+	if(GPIO_DRV_ReadPinInput(opt3))
+		temp++;
+	temp <<= 1;
+	if(GPIO_DRV_ReadPinInput(opt2))
+		temp++;
+	temp <<= 1;
+	if(GPIO_DRV_ReadPinInput(opt1))
+		temp++;
+	temp <<= 1;
+	if(GPIO_DRV_ReadPinInput(opt0))
+		temp++;
+	return temp;
+}
+
+void updateADCValues(void)	{
+	uint16_t dutCurrentRaw;
+    dutIsense.updateADCVal();
+    dutCurrentRaw = dutIsense.getADCValRaw();
+}
+
+
+
+
+
+
+
+void userInit(void)	{
+	FTM_DRV_Deinit(adc_trigger_IDX);
+	PRINTF("\n\n\rEE4951W Battery Power Monitor\r\nFirmware Rev. A\r\nRoss Harvey\n\n\r");
+
+	PRINTF("Core Clock:\t%d MHz\n\rSystem Clock:\t%d MHz\n\rBus Clock:\t%d MHz\n\rSysTick:\t%d MHz\n\n\r",
+			CLOCK_SYS_GetCoreClockFreq()/1000000,
+			CLOCK_SYS_GetSystemClockFreq()/1000000,
+			CLOCK_SYS_GetBusClockFreq()/1000000,
+			CLOCK_SYS_GetSystickFreq()/1000000);
+
+	dutIsense.enableCurrentRange(A);
+	adcReady=true;
+
+	/* Startup options */
+	startupOptions = getStartupOptions();
+	PRINTF("Startup Options: %04b\n\n\r",startupOptions);
+
+	/* Start timestamp Timer */
+	WAIT1_Waitms(100);
+	PRINTF("Starting Timer\n\r");
+	timer.timestamp=0;
+	HWTIMER_SYS_Start(&ts_timer_Handle);
+
+	/* ADC trigger initialization */
+	FTM_DRV_Init(adc_trigger_IDX, &adc_trigger_InitConfig0);
+	//FTM_DRV_PwmStart(adc_trigger_IDX, &adc_trigger_ChnConfig0, 5U);
+	//FTM_DRV_SetTimeOverflowIntCmd(adc_trigger_IDX, true);
+
+	PRINTF("\n\r");
+}
 
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -51,22 +138,28 @@ int main(void)
 {
   /* Write your local variable definition here */
 
+
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
   /* For example: for(;;) { } */
+  userInit();
 
-  DutISense dutIsense;
-  uint8_t i;
-  uint8_t activeRange;
+
+  //uint8_t i;
+  //uint16_t tempInt;
+  //float tempFloat;
+  //char input[64];
+  cycleRanges(&dutIsense, 500U);
+
+  iRange_t curRange = A;
+
+  dutIsense.enableCurrentRange(curRange);
   while(true)	{
-	  for(i=0;i<4;i++)	{
-		  dutIsense.setCurrentRange(i);
-		  activeRange = dutIsense.getCurrentRange();
-		  WAIT1_Waitms(500);
-	  }
+	  curRange = curRange;
+
   }
 
 

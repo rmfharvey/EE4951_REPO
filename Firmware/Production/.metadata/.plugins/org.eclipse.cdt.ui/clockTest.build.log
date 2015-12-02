@@ -1,0 +1,11 @@
+19:28:01 **** Incremental Build of configuration Debug for project clockTest ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "clockTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16152	    120	   2220	  18492	   483c	clockTest.elf
+'Finished building: clockTest.siz'
+' '
+
+19:28:01 Build Finished (took 379ms)
+

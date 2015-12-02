@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-11-28, 12:49, # CodeGen: 3
+**     Date/Time   : 2015-12-02, 02:07, # CodeGen: 55
 **     Abstract    :
 **
 **     Settings    :
@@ -86,6 +86,47 @@ extern "C" {
 #if CPU_COMMON_INIT
 void Common_Init(void)
 {
+  /* This function contains initialization code which is not part of initialization 
+     methods of peripheral initialization (Init) components used in the project.  
+     This function is generated depending on Init components present 
+     in the project. To remove initialization of a register from the Common_Init() 
+     add Init component that includes initialization of this register.
+     This function is also affected by after reset value optimization property 
+     available in Component view\Generator_Configurations\Active configuration\
+     Optimizations\Utilize after reset values. */
+  /* Enable clock gate of peripherals initialized in Common_Init() */
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+  /* NVICIP59: PRI59=0 */
+  NVICIP59 = NVIC_IP_PRI59(0x00);
+  /* NVICISER1: SETENA|=0x08000000 */
+  NVICISER1 |= NVIC_ISER_SETENA(0x08000000);
+  /* PORTA_PCR13: ISF=0,IRQC=2,LK=0,DSE=0,PFE=0,PS=1 */
+  PORTA_PCR13 = (uint32_t)((PORTA_PCR13 & (uint32_t)~(uint32_t)(
+                 PORT_PCR_ISF_MASK |
+                 PORT_PCR_IRQC(0x0D) |
+                 PORT_PCR_LK_MASK |
+                 PORT_PCR_DSE_MASK |
+                 PORT_PCR_PFE_MASK
+                )) | (uint32_t)(
+                 PORT_PCR_IRQC(0x02) |
+                 PORT_PCR_PS_MASK
+                ));
+  /* PORTA_PCR5: ISF=0,IRQC=9,LK=0,DSE=0,PFE=0 */
+  PORTA_PCR5 = (uint32_t)((PORTA_PCR5 & (uint32_t)~(uint32_t)(
+                PORT_PCR_ISF_MASK |
+                PORT_PCR_IRQC(0x06) |
+                PORT_PCR_LK_MASK |
+                PORT_PCR_DSE_MASK |
+                PORT_PCR_PFE_MASK
+               )) | (uint32_t)(
+                PORT_PCR_IRQC(0x09)
+               ));
+
+  /* Disable clock gate of peripherals initialized in Common_Init() */
 }
 
 #endif /* CPU_COMMON_INIT */
@@ -107,15 +148,44 @@ void Common_Init(void)
 void Components_Init(void)
 {
 
-  /*! DbgCs1 Auto initialization start */
-  /* Enable clock source for LPUART - bitfield LPUART0SRC within SIM_SOPT2 */
-  CLOCK_SYS_SetLpuartSrc(BOARD_DEBUG_UART_INSTANCE,kClockLpuartSrcPllFllSel);
+  /*! debug Auto initialization start */
   /* Debug console initialization */
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
-  /*! DbgCs1 Auto initialization end */
+  /*! debug Auto initialization end */
+  /*! adc_trigger Auto initialization start */
+  NVIC_SetPriority(FTM0_IRQn, 5U);
+  OSA_InstallIntHandler(FTM0_IRQn, adc_trigger_IRQHandler);
+  FTM_DRV_Init(adc_trigger_IDX,&adc_trigger_InitConfig0);
+  FTM_DRV_SetClock(adc_trigger_IDX, kClock_source_FTM_SystemClk, kFtmDividedBy1);
+  FTM_DRV_PwmStart(adc_trigger_IDX,&adc_trigger_ChnConfig0,5U);
+  FTM_DRV_SetTimeOverflowIntCmd(adc_trigger_IDX,true);
+  FTM_DRV_SetFaultIntCmd(adc_trigger_IDX,false);
+  /*! adc_trigger Auto initialization end */
+  
   /*! dut_gpio Auto initialization start */
   GPIO_DRV_Init(NULL,dut_gpio_OutConfig0);
   /*! dut_gpio Auto initialization end */
+  
+  /*! dut_adc Auto initialization start */
+  ADC16_DRV_Init(dut_adc_IDX, &dut_adc_InitConfig0);
+  ADC16_DRV_ConfigConvChn(dut_adc_IDX, 0U, &dut_isense0);
+  /*! dut_adc Auto initialization end */
+
+  /*! ts_timer Auto initialization start */
+  NVIC_SetPriority(SysTick_IRQn, 5U);
+  OSA_InstallIntHandler(SysTick_IRQn, SysTick_Handler);
+  HWTIMER_SYS_Init(&ts_timer_Handle, &FSL_TS_TIMER_LL_DEVIF, FSL_TS_TIMER_LL_ID, NULL);  
+  HWTIMER_SYS_SetPeriod(&ts_timer_Handle, FSL_TS_TIMER_PERIOD_CNF0);                
+  HWTIMER_SYS_RegisterCallback(&ts_timer_Handle, &ts_timer_OnTimeOut, FSL_TS_TIMER_LL_CALLBACK_DATA);
+  /*! ts_timer Auto initialization end */
+  
+  /*! opt_bits Auto initialization start */
+  GPIO_DRV_Init(opt_bits_InpConfig0,NULL);
+  /*! opt_bits Auto initialization end */
+  
+  /*! testgpio Auto initialization start */
+  GPIO_DRV_Init(NULL,testgpio_OutConfig0);
+  /*! testgpio Auto initialization end */
   
 }
 #endif /* CPU_COMPONENTS_INIT */

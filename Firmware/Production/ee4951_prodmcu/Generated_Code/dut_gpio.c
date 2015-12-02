@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-11-28, 12:49, # CodeGen: 3
+**     Date/Time   : 2015-12-01, 20:06, # CodeGen: 30
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -63,14 +63,14 @@ const gpio_output_pin_user_config_t dut_gpio_OutConfig0[] = {
     .config.driveStrength = kPortLowDriveStrength,
   },
   {
-    .pinName = range1_p,
+    .pinName = range2_p,
     .config.outputLogic = 0,
     .config.slewRate = kPortFastSlewRate,
     .config.isOpenDrainEnabled = false,
     .config.driveStrength = kPortLowDriveStrength,
   },
   {
-    .pinName = range2_p,
+    .pinName = range1_p,
     .config.outputLogic = 0,
     .config.slewRate = kPortFastSlewRate,
     .config.isOpenDrainEnabled = false,

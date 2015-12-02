@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-11-28, 12:49, # CodeGen: 3
+**     Date/Time   : 2015-12-02, 01:56, # CodeGen: 52
 **     Abstract    :
 **
 **     Settings    :
@@ -330,7 +330,7 @@
 **                  Pin 2                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 3                                  : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Direction                              : Output
 **                  Pin 4                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 5                                  : <Automatic>
@@ -1293,7 +1293,9 @@
 void hardware_init(void) {
 
   /* Enable clock for PORTs */
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortB);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortC);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortD);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortA);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortE);
 
@@ -1301,11 +1303,17 @@ void hardware_init(void) {
   g_xtal0ClkFreq = 0U;                  /* System oscillator 0 is not enabled */
   g_xtalRtcClkFreq = 32768U;            /* Value of the external 32k crystal or oscillator clock frequency of the RTC in Hz */
   
+  init_adc_pins(ADC0_IDX);
+  init_adc_pins(ADC1_IDX);
+  init_ftm_pins(FTM0_IDX);
+  init_gpio_pins(PORTA_IDX);
   init_gpio_pins(PORTC_IDX);
+  init_gpio_pins(PORTD_IDX);
+  init_gpio_pins(PORTE_IDX);
   init_jtag_pins(JTAG_IDX);
   init_llwu_pins(LLWU_IDX);
-  init_lpuart_pins(LPUART0_IDX);
   init_tpiu_pins(TPIU_IDX);
+  init_uart_pins(UART1_IDX);
 }
 
 /*!
