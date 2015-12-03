@@ -60,15 +60,15 @@
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\adc16\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\ftm\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\gpio\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\pit\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\rtc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\adc16\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\ftm\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\gpio\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\lpuart\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\mcg\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\osc\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\pit\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\port\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\rtc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\sim\MK22F51212\</Path>
@@ -104,18 +104,17 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\startup.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\adc16\fsl_adc16_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\adc16\fsl_adc16_driver.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\ftm\fsl_ftm_common.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\ftm\fsl_ftm_driver.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\gpio\fsl_gpio_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\gpio\fsl_gpio_driver.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\pit\fsl_pit_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\rtc\fsl_rtc_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\adc16\fsl_adc16_hal.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\ftm\fsl_ftm_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\gpio\fsl_gpio_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\mcg\fsl_mcg_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\mcg\fsl_mcg_hal_modes.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\osc\fsl_osc_hal.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\pit\fsl_pit_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\port\fsl_port_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\rtc\fsl_rtc_hal.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\src\sim\MK22F51212\fsl_sim_hal_MK22F51212.c</PathName>
@@ -125,6 +124,7 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\fsl_clock_manager.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\fsl_clock_manager_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer_pit.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer_systick.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\fsl_debug_console.c</PathName>
@@ -169,15 +169,14 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\fsl_device_registers.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\startup.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\inc\fsl_adc16_driver.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\inc\fsl_ftm_driver.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\inc\fsl_gpio_driver.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_adc16_hal.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_ftm_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_gpio_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_lpuart_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_mcg_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_mcg_hal_modes.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_osc_hal.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_pit_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_port_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_rtc_hal.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\hal\inc\fsl_sim_hal.h</PathName>
@@ -187,6 +186,7 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\osa\inc\fsl_os_abstraction_bm.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_clock_manager.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer_pit.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer_systick.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\MK22F51212\fsl_clock_MK22F51212.h</PathName>

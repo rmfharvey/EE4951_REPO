@@ -3,29 +3,25 @@
 **     Filename    : adc_trigger.h
 **     Project     : ee4951_prodmcu
 **     Processor   : MK22FN512VLL12
-**     Component   : fsl_ftm
+**     Component   : fsl_hwtimer
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-02, 01:56, # CodeGen: 52
+**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
 **     Contents    :
-**         FTM_DRV_Init                    - ftm_status_t FTM_DRV_Init(uint32_t instance,const ftm_user_config_t * info);
-**         FTM_DRV_Deinit                  - void FTM_DRV_Deinit(uint32_t instance);
-**         FTM_DRV_PwmStop                 - void FTM_DRV_PwmStop(uint32_t instance,ftm_pwm_param_t * param,uint8_t channel);
-**         FTM_DRV_PwmStart                - ftm_status_t FTM_DRV_PwmStart(uint32_t instance,ftm_pwm_param_t *...
-**         FTM_DRV_QuadDecodeStart         - void FTM_DRV_QuadDecodeStart(uint32_t instance,ftm_phase_params_t *...
-**         FTM_DRV_QuadDecodeStop          - void FTM_DRV_QuadDecodeStop(uint32_t instance);
-**         FTM_DRV_CounterStart            - void FTM_DRV_CounterStart(uint32_t instance,ftm_counting_mode_t...
-**         FTM_DRV_CounterStop             - void FTM_DRV_CounterStop(uint32_t instance);
-**         FTM_DRV_CounterRead             - uint32_t FTM_DRV_CounterRead(uint32_t instance);
-**         FTM_DRV_SetClock                - void FTM_DRV_SetClock(uint8_t instance,ftm_clock_source_t...
-**         FTM_DRV_GetClock                - uint32_t FTM_DRV_GetClock(uint8_t instance);
-**         FTM_DRV_SetTimeOverflowIntCmd   - void FTM_DRV_SetTimeOverflowIntCmd(uint32_t instance,bool overflowEnable);
-**         FTM_DRV_SetFaultIntCmd          - void FTM_DRV_SetFaultIntCmd(uint32_t instance,bool faultEnable);
-**         FTM_DRV_SetupChnInputCapture    - void FTM_DRV_SetupChnInputCapture(uint32_t...
-**         FTM_DRV_SetupChnOutputCompare   - void FTM_DRV_SetupChnOutputCompare(uint32_t...
-**         FTM_DRV_SetupChnDualEdgeCapture - void FTM_DRV_SetupChnDualEdgeCapture(uint32_t...
-**         FTM_DRV_IRQHandler              - void FTM_DRV_IRQHandler(uint32_t instance);
+**         HWTIMER_SYS_Init             - _hwtimer_error_code_t HWTIMER_SYS_Init(hwtimer_t * hwtimer,const...
+**         HWTIMER_SYS_Deinit           - _hwtimer_error_code_t HWTIMER_SYS_Deinit(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_SetPeriod        - _hwtimer_error_code_t HWTIMER_SYS_SetPeriod(hwtimer_t * hwtimer,uint32_t...
+**         HWTIMER_SYS_GetPeriod        - uint32_t HWTIMER_SYS_GetPeriod(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_Start            - _hwtimer_error_code_t HWTIMER_SYS_Start(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_Stop             - _hwtimer_error_code_t HWTIMER_SYS_Stop(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_GetModulo        - uint32_t HWTIMER_SYS_GetModulo(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_GetTime          - _hwtimer_error_code_t HWTIMER_SYS_GetTime(hwtimer_t * hwtimer,hwtimer_time_t...
+**         HWTIMER_SYS_GetTicks         - uint32_t HWTIMER_SYS_GetTicks(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_RegisterCallback - _hwtimer_error_code_t HWTIMER_SYS_RegisterCallback(hwtimer_t *...
+**         HWTIMER_SYS_BlockCallback    - _hwtimer_error_code_t HWTIMER_SYS_BlockCallback(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_UnblockCallback  - _hwtimer_error_code_t HWTIMER_SYS_UnblockCallback(hwtimer_t * hwtimer);
+**         HWTIMER_SYS_CancelCallback   - _hwtimer_error_code_t HWTIMER_SYS_CancelCallback(hwtimer_t * hwtimer);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -68,24 +64,31 @@
 */         
 #ifndef __adc_trigger_H
 #define __adc_trigger_H
-/* MODULE adc_trigger. */
 
+/* MODULE adc_trigger. */
 /* Include inherited beans */
 #include "clockMan1.h"
-#include "op_sys.h"
+
 #include "Cpu.h"
+#include "fsl_hwtimer.h"
+#include "fsl_hwtimer_pit.h"
 
-/*! @brief Device instance number */
-#define adc_trigger_IDX FTM0_IDX
-/*! @brief Device instance number for backward compatibility */
-#define FSL_ADC_TRIGGER adc_trigger_IDX
-
-/*! @brief PWM configuration declaration */
-extern ftm_pwm_param_t adc_trigger_ChnConfig0;
+/** Hw timer structure handle structure. Generated due to enabled auto initialization */
+extern hwtimer_t adc_trigger_Handle;
     
-/*! @brief Basic configuration declaration */
-extern ftm_user_config_t adc_trigger_InitConfig0;
-#endif
+#define FSL_ADC_TRIGGER_LL_CALLBACK_DATA NULL
+    
+#define FSL_ADC_TRIGGER_LL_DEVIF       kPitDevif     
+#define FSL_ADC_TRIGGER_LL_ID          0U
+  
+/* adc_trigger_InitConfig0 */ 
+#define FSL_ADC_TRIGGER_PERIOD_CNF0    5U
+/*! @brief Interrupt service routines used by the component driver */
+void PIT0_IRQHandler(void);
+    
+/* END adc_trigger. */
+
+#endif 
 /* ifndef __adc_trigger_H */
 /*!
 ** @}

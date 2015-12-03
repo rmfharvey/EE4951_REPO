@@ -110,39 +110,26 @@ void ts_timer_OnTimeOut(void* data)
 
 }
 
-#ifdef adc_trigger_IDX
+
+
 /*
 ** ===================================================================
-**     Interrupt handler : adc_trigger_IRQHandler
-**
-**     Description :
-**         Trigger for DUT ADC sampling
-**     Parameters  : None
-**     Returns     : Nothing
+**     Callback    : adc_trigger_OnTimeOut
+**     Description : This callback is called when the timer expires.
+**     Parameters  :
+**       data - User parameter for the callback function.
+**     Returns : Nothing
 ** ===================================================================
 */
-void adc_trigger_IRQHandler(void)
+void adc_trigger_OnTimeOut(void* data)
 {
-    FTM_DRV_IRQHandler(adc_trigger_IDX);
-    //FTM0_SC&=0x7F;
-
-    extern bool adcReady;
-    static uint16_t i=0;
-    //extern DutISense dutIsense;
-    //dutIsense.updateADCVal();
-    if(!i++)
-    	PRINTF(":");
+	 extern bool adcReady;
+	 static uint16_t i=0;
+	 //extern DutISense dutIsense;
+	 //dutIsense.updateADCVal();
+	 if(!i++)
+	   	PRINTF(":");
 }
-#else
-  /* This IRQ handler is not used by adc_trigger component. The purpose may be
-   * that the component has been removed or disabled. It is recommended to 
-   * remove this handler because Processor Expert cannot modify it according to 
-   * possible new request (e.g. in case that another component uses this
-   * interrupt vector). */
-  #warning This IRQ handler is not used by adc_trigger component.\
-           It is recommended to remove this because Processor Expert cannot\
-           modify it according to possible new request.
-#endif
 
 /* END Events */
 

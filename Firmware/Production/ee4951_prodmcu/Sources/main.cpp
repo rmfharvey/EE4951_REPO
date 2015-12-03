@@ -101,7 +101,6 @@ void updateADCValues(void)	{
 
 
 void userInit(void)	{
-	FTM_DRV_Deinit(adc_trigger_IDX);
 	PRINTF("\n\n\rEE4951W Battery Power Monitor\r\nFirmware Rev. A\r\nRoss Harvey\n\n\r");
 
 	PRINTF("Core Clock:\t%d MHz\n\rSystem Clock:\t%d MHz\n\rBus Clock:\t%d MHz\n\rSysTick:\t%d MHz\n\n\r",
@@ -124,9 +123,7 @@ void userInit(void)	{
 	HWTIMER_SYS_Start(&ts_timer_Handle);
 
 	/* ADC trigger initialization */
-	FTM_DRV_Init(adc_trigger_IDX, &adc_trigger_InitConfig0);
-	//FTM_DRV_PwmStart(adc_trigger_IDX, &adc_trigger_ChnConfig0, 5U);
-	//FTM_DRV_SetTimeOverflowIntCmd(adc_trigger_IDX, true);
+
 
 	PRINTF("\n\r");
 }
@@ -160,6 +157,13 @@ int main(void)
   while(true)	{
 	  curRange = curRange;
 
+	  /*extern bool adcReady;
+	     static uint16_t i=0;
+	     //extern DutISense dutIsense;
+	     //dutIsense.updateADCVal();
+	     if(!i++)
+	     	PRINTF(":");
+	  */
   }
 
 

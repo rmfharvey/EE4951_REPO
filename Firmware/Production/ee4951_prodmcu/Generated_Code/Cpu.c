@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-02, 02:07, # CodeGen: 55
+**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
 **     Abstract    :
 **
 **     Settings    :
@@ -153,13 +153,12 @@ void Components_Init(void)
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
   /*! debug Auto initialization end */
   /*! adc_trigger Auto initialization start */
-  NVIC_SetPriority(FTM0_IRQn, 5U);
-  OSA_InstallIntHandler(FTM0_IRQn, adc_trigger_IRQHandler);
-  FTM_DRV_Init(adc_trigger_IDX,&adc_trigger_InitConfig0);
-  FTM_DRV_SetClock(adc_trigger_IDX, kClock_source_FTM_SystemClk, kFtmDividedBy1);
-  FTM_DRV_PwmStart(adc_trigger_IDX,&adc_trigger_ChnConfig0,5U);
-  FTM_DRV_SetTimeOverflowIntCmd(adc_trigger_IDX,true);
-  FTM_DRV_SetFaultIntCmd(adc_trigger_IDX,false);
+  NVIC_SetPriority(PIT0_IRQn, 5U);
+  OSA_InstallIntHandler(PIT0_IRQn, PIT0_IRQHandler);
+  HWTIMER_SYS_Init(&adc_trigger_Handle, &FSL_ADC_TRIGGER_LL_DEVIF, FSL_ADC_TRIGGER_LL_ID, NULL);  
+  HWTIMER_SYS_SetPeriod(&adc_trigger_Handle, FSL_ADC_TRIGGER_PERIOD_CNF0);                
+  HWTIMER_SYS_RegisterCallback(&adc_trigger_Handle, &adc_trigger_OnTimeOut, FSL_ADC_TRIGGER_LL_CALLBACK_DATA);
+  HWTIMER_SYS_Start(&adc_trigger_Handle);
   /*! adc_trigger Auto initialization end */
   
   /*! dut_gpio Auto initialization start */

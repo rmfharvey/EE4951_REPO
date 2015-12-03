@@ -3,12 +3,11 @@
 **     Filename    : adc_trigger.c
 **     Project     : ee4951_prodmcu
 **     Processor   : MK22FN512VLL12
-**     Component   : fsl_ftm
+**     Component   : fsl_hwtimer
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-02, 01:56, # CodeGen: 52
-**     Comment     :
+**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -50,26 +49,21 @@
 **  @{
 */         
 
-/* adc_trigger. */
+/* MODULE adc_trigger. */
 
 #include "Events.h"
 #include "adc_trigger.h"
 
-ftm_pwm_param_t adc_trigger_ChnConfig0 = {
-  .mode = kFtmEdgeAlignedPWM,
-  .edgeMode = kFtmHighTrue,
-  .uFrequencyHZ = 200000U,
-  .uDutyCyclePercent = 10U,
-  .uFirstEdgeDelayPercent = 0U,
-};
+hwtimer_t adc_trigger_Handle;
+  
+extern void HWTIMER_SYS_PitIsrAction(uint8_t pitChannel);
+  
+void PIT0_IRQHandler(void)
+{
+  HWTIMER_SYS_PitIsrAction(0U);
+}
+    
 
-
-ftm_user_config_t adc_trigger_InitConfig0 = {
-  .tofFrequency      = 0U,
-  .isWriteProtection = false,
-  .BDMMode           = kFtmBdmMode_00,
-  .syncMethod        = (uint32_t)(kFtmUseSoftwareTrig)
-};
 /* END adc_trigger. */
 
 /*!

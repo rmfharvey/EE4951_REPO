@@ -3,7 +3,7 @@
   <Header>
     <Name>ee4951_prodmcu</Name>
     <SavedBy>RossHarvey</SavedBy>
-    <ModificationStamp>47</ModificationStamp>
+    <ModificationStamp>50</ModificationStamp>
     <Date>2015-11-28</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.1.RT7_b1531-0480</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>59</ProjectCompNumb>
+    <ProjectCompNumb>62</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -3778,9 +3778,9 @@
       <Value11>true</Value11>
       <ItemId12>49</ItemId12>
       <Value12>true</Value12>
-      <ItemId13>53</ItemId13>
+      <ItemId13>55</ItemId13>
       <Value13>true</Value13>
-      <ItemId14>55</ItemId14>
+      <ItemId14>60</ItemId14>
       <Value14>true</Value14>
     </BoolList_BeanConfig>
     <BoolList_TaskConfig>
@@ -3883,9 +3883,9 @@
       <Value11>true</Value11>
       <ItemId12>49</ItemId12>
       <Value12>true</Value12>
-      <ItemId13>53</ItemId13>
+      <ItemId13>55</ItemId13>
       <Value13>true</Value13>
-      <ItemId14>55</ItemId14>
+      <ItemId14>60</ItemId14>
       <Value14>true</Value14>
     </BoolList_BeanConfig>
     <BoolList_TaskConfig>
@@ -29445,10 +29445,10 @@
   </Bean>
   <Bean>
     <Repository>file:/${ProcessorExpert_loc}/Repositories/KSDK130_Repository</Repository>
-    <ComponentUUID>com.freescale.processorexpert.ksdk.fsl_ftm</ComponentUUID>
-    <BeanType>fsl_ftm</BeanType>
+    <ComponentUUID>com.freescale.processorexpert.ksdk.fsl_hwtimer</ComponentUUID>
+    <BeanType>fsl_hwtimer</BeanType>
     <Name>adc_trigger</Name>
-    <CompNumb>53</CompNumb>
+    <CompNumb>60</CompNumb>
     <CompEnabled>true</CompEnabled>
     <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>CLOCKS_LDD</IconName>
@@ -29468,7 +29468,21 @@
         <ItemSymbol>PeriphDevice</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>FTM0</Value>
+        <Value>PIT</Value>
+        <SharedPrphMode>false</SharedPrphMode>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Counter</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>PIT_CVAL0</Value>
+        <SharedPrphMode>false</SharedPrphMode>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PeriodDevice</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>PIT_LDVAL0</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -29483,43 +29497,17 @@
         <ItemSymbol>Settings</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>Counter</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>FTM0_CNT</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PropertiesItem</ItemSymbol>
-        <ListItemCount>1</ListItemCount>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>MainConfigurationsGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ftmQuadCfg_group</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmQuadCfg</ItemSymbol>
+        <ItemSymbol>Configurations</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <ListItemCount>1</ListItemCount>
         <UserReadOnly>false</UserReadOnly>
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ftmQuadCfg_0</ItemSymbol>
+        <ItemSymbol>ConfigurationName0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
@@ -29527,439 +29515,61 @@
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ftmQuadCfg_NAME0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_QdConfig0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmQuadCfg_TYPE0</ItemSymbol>
-        <Value>ftm_phase_params_t</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmQuadCfg_READONLY0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadPhaseFilter0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadPhaseValue0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadPhasePol0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>kFtmQuadPhaseNormal</EnumSymbVal>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg_group</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <ListItemCount>1</ListItemCount>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg_0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg_NAME0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_ChnConfig0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg_TYPE0</ItemSymbol>
-        <Value>ftm_pwm_param_t</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmPwmCfg_READONLY0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChannelMode0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>2</Index>
-        <EnumSymbVal>kFtmEdgeAlignedPWM</EnumSymbVal>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChannelEdgeMode0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>kFtmHighTrue</EnumSymbVal>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>Frequency0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>200000</Value>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChannelDuty0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>10</Value>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChannelFirstEdge0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmCfg_group</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmCfg</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <ListItemCount>1</ListItemCount>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmCfg_0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmCfg_NAME0</ItemSymbol>
+        <ItemSymbol>ConfigName0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value>adc_trigger_InitConfig0</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ftmCfg_TYPE0</ItemSymbol>
-        <Value>ftm_user_config_t</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ftmCfg_READONLY0</ItemSymbol>
+        <ItemSymbol>Period0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Value>5 µs</Value>
+        <RuntimeSetting>0</RuntimeSetting>
+        <ReqDevPrescHigh>-1</ReqDevPrescHigh>
+        <ReqDevPrescLow>-1</ReqDevPrescLow>
+        <ReqDevPrescSlow>-1</ReqDevPrescSlow>
+        <ReqDevPrescSpeedMode3>-1</ReqDevPrescSpeedMode3>
+        <ReqDevPrescSpeedMode4>-1</ReqDevPrescSpeedMode4>
+        <ReqDevPrescSpeedMode5>-1</ReqDevPrescSpeedMode5>
+        <ReqDevPrescSpeedMode6>-1</ReqDevPrescSpeedMode6>
+        <ReqDevPrescSpeedMode7>-1</ReqDevPrescSpeedMode7>
+        <ReqExtCompPrescHigh>-1</ReqExtCompPrescHigh>
+        <ReqExtCompPrescLow>-1</ReqExtCompPrescLow>
+        <ReqExtCompPrescSlow>-1</ReqExtCompPrescSlow>
+        <ReqExtCompPrescSpeedMode3>-1</ReqExtCompPrescSpeedMode3>
+        <ReqExtCompPrescSpeedMode4>-1</ReqExtCompPrescSpeedMode4>
+        <ReqExtCompPrescSpeedMode5>-1</ReqExtCompPrescSpeedMode5>
+        <ReqExtCompPrescSpeedMode6>-1</ReqExtCompPrescSpeedMode6>
+        <ReqExtCompPrescSpeedMode7>-1</ReqExtCompPrescSpeedMode7>
+        <ReqSrcClkPrescHigh>-1</ReqSrcClkPrescHigh>
+        <ReqSrcClkPrescLow>-1</ReqSrcClkPrescLow>
+        <ReqSrcClkPrescSlow>-1</ReqSrcClkPrescSlow>
+        <ReqSrcClkPrescSpeedMode3>-1</ReqSrcClkPrescSpeedMode3>
+        <ReqSrcClkPrescSpeedMode4>-1</ReqSrcClkPrescSpeedMode4>
+        <ReqSrcClkPrescSpeedMode5>-1</ReqSrcClkPrescSpeedMode5>
+        <ReqSrcClkPrescSpeedMode6>-1</ReqSrcClkPrescSpeedMode6>
+        <ReqSrcClkPrescSpeedMode7>-1</ReqSrcClkPrescSpeedMode7>
+        <InitValue>5 us</InitValue>
+        <Precision>5.0</Precision>
+        <PrecInProc>true</PrecInProc>
+        <LowLimit />
+        <HighLimit />
+        <List lines_count="0" />
+        <UnitText>us</UnitText>
+        <MinCounterTicks>0</MinCounterTicks>
+        <SpecificClockConfiguration>true</SpecificClockConfiguration>
+        <SpecificClkCfg1_SpeedMode0>true</SpecificClkCfg1_SpeedMode0>
+        <SpecificClkCfg1_SpeedMode1>false</SpecificClkCfg1_SpeedMode1>
+        <SpecificClkCfg1_SpeedMode2>true</SpecificClkCfg1_SpeedMode2>
+        <SpecificClkCfg1_SpeedMode3>true</SpecificClkCfg1_SpeedMode3>
+        <SpecificClkCfg1_SpeedMode4>true</SpecificClkCfg1_SpeedMode4>
+        <SpecificClkCfg1_SpeedMode5>true</SpecificClkCfg1_SpeedMode5>
+        <SpecificClkCfg1_SpeedMode6>true</SpecificClkCfg1_SpeedMode6>
+        <SpecificClkCfg1_SpeedMode7>true</SpecificClkCfg1_SpeedMode7>
       </ItemState>
       <ItemState>
-        <ItemSymbol>OvFrequency0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>BdmMode0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>kFtmBdmMode_00</EnumSymbVal>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>WriteProtection0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>Triggers0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>SwTriggerMask0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>HwTrigger0Mask0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>HwTrigger1Mask0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>HwTrigger2Mask0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PinsItem</ItemSymbol>
-        <ListItemCount>1</ListItemCount>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PinsGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinsGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp0FeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPin0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FBa_AD0/FTM0_FLT0/SPI1_SOUT</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp1FeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPin1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp2FeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPin2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>ADC1_SE15/PTB11/SPI1_SCK/LPUART0_TX/FBa_AD18/FTM0_FLT2</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp3FeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPinGrp3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FaultPin3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/FTM0_FLT3</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ExtClkPinGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ExtClkPin</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseAPinGrpFeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseAPinGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseAPin</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseBPinGrpFeatureCondGroup</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseBPinGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>PhaseBPin</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>SynchTriggerPinGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>TRIG0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>SynchTriggerPin0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>TRIG1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>SynchTriggerPin1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>TRIG2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>SynchTriggerPin2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FBa_AD0/FTM0_FLT0/SPI1_SOUT</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>AutoInitItem</ItemSymbol>
+        <ItemSymbol>HiddenItem</ItemSymbol>
         <ListItemCount>1</ListItemCount>
       </ItemState>
       <ItemState>
@@ -29977,38 +29587,27 @@
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ClockSource</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ExtClockFreq</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
-        <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
-        <Base>DEC</Base>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ClockPrescaler</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>kFtmDividedBy1</EnumSymbVal>
-      </ItemState>
-      <ItemState>
         <ItemSymbol>InitConfig</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value>adc_trigger_InitConfig0</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>TimOVFInt</ItemSymbol>
+        <ItemSymbol>CfgIndex</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>0</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>HwTimerStructureHandle</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>adc_trigger_Handle</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>StartTimer</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
@@ -30016,15 +29615,7 @@
         <Value>true</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>TimFaultInt</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitGrp</ItemSymbol>
+        <ItemSymbol>CallbackGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
@@ -30032,12 +29623,13 @@
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ListItemCount>8</ListItemCount>
-        <ItemSymbol>InitChannels</ItemSymbol>
-        <Expanded>true</Expanded>
+        <ItemSymbol>OnTimeOut</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>adc_trigger_OnTimeOut</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnInit0</ItemSymbol>
+        <ItemSymbol>ParamGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
@@ -30045,71 +29637,29 @@
         <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnInitConfig0</ItemSymbol>
+        <ItemSymbol>Param</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value />
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnPinGrp0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin0</ItemSymbol>
+        <ItemSymbol>UserParamExtDeclaration</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value />
-        <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnInit1</ItemSymbol>
+        <ItemSymbol>InterruptGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
         <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnInitConfig1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
+        <ItemSymbol>TimerInt</ItemSymbol>
+        <Value>INT_PIT0</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnPinGrp1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin1</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp2</ItemSymbol>
+        <ItemSymbol>TimerIntPriorityGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
@@ -30117,221 +29667,25 @@
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
-        <ItemSymbol>ChnPin2</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin3</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit4</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig4</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_ChnConfig0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp4</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin4</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FBa_AD2/EWM_IN/SPI1_PCS0</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit5</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig5</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_ChnConfig0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp5</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin5</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/FTM0_CH5/FBa_AD1/EWM_OUT_b/SPI1_SCK</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit6</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig6</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp6</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin6</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInit7</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnInitConfig7</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_ChnConfig0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPinGrp7</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>ChnPin7</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value>PTD7/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN</Value>
-        <SharedPrphMode>false</SharedPrphMode>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadInitGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadInitA</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadInitB</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Value />
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>QuadInitMode</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>kFtmQuadPhaseEncode</EnumSymbVal>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>InterrupsHiddenItem</ItemSymbol>
-        <ListItemCount>1</ListItemCount>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>InterruptsGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>Int</ItemSymbol>
-        <Value>INT_FTM0</Value>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>IntPriorityGrp</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
-        <UserReadOnly>false</UserReadOnly>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
-        <Expanded>true</Expanded>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>IntPriority</ItemSymbol>
+        <ItemSymbol>TimerIntPriority</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>high priority</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>IntInstall</ItemSymbol>
+        <ItemSymbol>TimerIntInstall</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>TimerIsrName</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>PIT0_IRQHandler</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LinkItem</ItemSymbol>
@@ -30347,13 +29701,21 @@
         <ItemSymbol>Link0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>intMan1</Value>
+        <Value>clockMan1</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Link1</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>clockMan1</Value>
+        <Value>intMan1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>IsComponentLinkedByOsa</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LinkOSAGrp</ItemSymbol>
@@ -30361,13 +29723,13 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>false</Value>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>LinkOSA</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>op_sys</Value>
+        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>InhrItem</ItemSymbol>
@@ -30377,6 +29739,8 @@
         <ItemSymbol>InhrGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
         <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
@@ -30384,14 +29748,14 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Index>0</Index>
-        <RegCompType>fsl_ftm_hal</RegCompType>
+        <RegCompType>fsl_pit_hal</RegCompType>
         <RegCompRepository>file:/${ProcessorExpert_loc}/Repositories/KSDK130_Repository</RegCompRepository>
         <InheritedComponentState>
           <Repository>file:/${ProcessorExpert_loc}/Repositories/KSDK130_Repository</Repository>
-          <ComponentUUID>com.freescale.processorexpert.ksdk.fsl_ftm_hal</ComponentUUID>
-          <BeanType>fsl_ftm_hal</BeanType>
-          <Name>fsl_ftm_hal1</Name>
-          <CompNumb>54</CompNumb>
+          <ComponentUUID>com.freescale.processorexpert.ksdk.fsl_pit_hal</ComponentUUID>
+          <BeanType>fsl_pit_hal</BeanType>
+          <Name>fsl_pit_hal2</Name>
+          <CompNumb>61</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>HAL4</IconName>
@@ -30405,13 +29769,13 @@
               <ItemSymbol>DeviceName</ItemSymbol>
               <ReadOnly>true</ReadOnly>
               <UserReadOnly>true</UserReadOnly>
-              <Value>fsl_ftm_hal1</Value>
+              <Value>fsl_pit_hal2</Value>
             </ItemState>
             <ItemState>
               <ItemSymbol>PeriphDevice</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
+              <Value>PIT</Value>
               <SharedPrphMode>false</SharedPrphMode>
             </ItemState>
             <ItemState>
@@ -30433,963 +29797,155 @@
               <ListItemCount>1</ListItemCount>
             </ItemState>
             <ItemState>
-              <ItemSymbol>fsl_ftm_halgroup</ItemSymbol>
+              <ItemSymbol>fsl_pit_halgroup</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetClockSource</ItemSymbol>
+              <ItemSymbol>PIT_HAL_Enable</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetClockSource</UsrMethodName>
+              <UsrMethodName>PIT_HAL_Enable</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_GetClockSource</ItemSymbol>
+              <ItemSymbol>PIT_HAL_Disable</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetClockSource</UsrMethodName>
+              <UsrMethodName>PIT_HAL_Disable</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetClockPs</ItemSymbol>
+              <ItemSymbol>PIT_HAL_SetTimerRunInDebugCmd</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetClockPs</UsrMethodName>
+              <UsrMethodName>PIT_HAL_SetTimerRunInDebugCmd</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_GetClockPs</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetClockPs</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_EnableTimerOverflowInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_EnableTimerOverflowInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_DisableTimerOverflowInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_DisableTimerOverflowInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_IsOverflowIntEnabled</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_IsOverflowIntEnabled</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_ClearTimerOverflow</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_ClearTimerOverflow</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_HasTimerOverflowed</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_HasTimerOverflowed</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCpwms</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCpwms</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCounter</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCounter</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetCounter</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetCounter</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetMod</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetMod</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetMod</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetMod</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCounterInitVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCounterInitVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetCounterInitVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetCounterInitVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnMSnBAMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnMSnBAMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnEdgeLevel</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnEdgeLevel</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetChnMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetChnMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetChnEdgeLevel</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetChnEdgeLevel</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnDmaCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnDmaCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_IsChnDma</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_IsChnDma</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_IsChnIntEnabled</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_IsChnIntEnabled</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_EnableChnInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_EnableChnInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_DisableChnInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_DisableChnInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_HasChnEventOccurred</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_HasChnEventOccurred</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_ClearChnEventFlag</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_ClearChnEventFlag</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnCountVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnCountVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetChnCountVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetChnCountVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetChnEventStatus</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetChnEventStatus</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_ClearChnEventStatus</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_ClearChnEventStatus</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetOutmaskReg</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetOutmaskReg</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnOutputMask</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnOutputMask</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnOutputInitStateCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnOutputInitStateCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnOutputPolarityCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnOutputPolarityCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnFaultInputPolarityCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnFaultInputPolarityCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_EnableFaultInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_EnableFaultInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_DisableFaultInt</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_DisableFaultInt</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetFaultControlMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetFaultControlMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCaptureTestCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCaptureTestCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetWriteProtectionCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetWriteProtectionCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_Enable</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_Enable</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetInitChnOutputCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInitChnOutputCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetPwmSyncMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetPwmSyncMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetSoftwareTriggerCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetSoftwareTriggerCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetHardwareSyncTriggerSrc</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetHardwareSyncTriggerSrc</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetOutmaskPwmSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetOutmaskPwmSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCountReinitSyncCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCountReinitSyncCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetMaxLoadingCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetMaxLoadingCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetMinLoadingCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetMinLoadingCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetChnPairIndex</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetChnPairIndex</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnFaultCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnFaultCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnPwmSyncCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnPwmSyncCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnDeadtimeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnDeadtimeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnDecapCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnDecapCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualEdgeCaptureCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualEdgeCaptureCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnCompCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnCompCmd</UsrMethodName>
+              <ItemSymbol>PIT_HAL_SetTimerChainCmd_FSL_HAS_CHAIN_MODE</ItemSymbol>
+              <ReadOnly>false</ReadOnly>
+              <UserReadOnly>false</UserReadOnly>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnCombineCmd</ItemSymbol>
+              <ItemSymbol>PIT_HAL_SetTimerChainCmd</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnCombineCmd</UsrMethodName>
+              <UsrMethodName>PIT_HAL_SetTimerChainCmd</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetDeadtimePrescale</ItemSymbol>
+              <ItemSymbol>PIT_HAL_StartTimer</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDeadtimePrescale</UsrMethodName>
+              <UsrMethodName>PIT_HAL_StartTimer</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetDeadtimeCount</ItemSymbol>
+              <ItemSymbol>PIT_HAL_StopTimer</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDeadtimeCount</UsrMethodName>
+              <UsrMethodName>PIT_HAL_StopTimer</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetInitTriggerCmd</ItemSymbol>
+              <ItemSymbol>PIT_HAL_IsTimerRunning</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInitTriggerCmd</UsrMethodName>
+              <UsrMethodName>PIT_HAL_IsTimerRunning</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnTriggerCmd</ItemSymbol>
+              <ItemSymbol>PIT_HAL_SetTimerPeriodByCount</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnTriggerCmd</UsrMethodName>
+              <UsrMethodName>PIT_HAL_SetTimerPeriodByCount</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_IsChnTriggerGenerated</ItemSymbol>
+              <ItemSymbol>PIT_HAL_GetTimerPeriodByCount</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_IsChnTriggerGenerated</UsrMethodName>
+              <UsrMethodName>PIT_HAL_GetTimerPeriodByCount</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_GetDetectedFaultInput</ItemSymbol>
+              <ItemSymbol>PIT_HAL_ReadTimerCount</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetDetectedFaultInput</UsrMethodName>
+              <UsrMethodName>PIT_HAL_ReadTimerCount</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_IsWriteProtectionEnabled</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_IsWriteProtectionEnabled</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadDecoderCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadDecoderCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadPhaseAFilterCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadPhaseAFilterCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadPhaseBFilterCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadPhaseBFilterCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadPhaseAPolarity</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadPhaseAPolarity</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadPhaseBPolarity</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadPhaseBPolarity</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetQuadMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetQuadMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetQuadDir</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetQuadDir</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_GetQuadTimerOverflowDir</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_GetQuadTimerOverflowDir</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnInputCaptureFilter</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnInputCaptureFilter</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetFaultInputFilterVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetFaultInputFilterVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetFaultInputFilterCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetFaultInputFilterCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetFaultInputCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetFaultInputCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetDualChnInvertCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetDualChnInvertCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetInvctrlReg</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInvctrlReg</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnSoftwareCtrlCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnSoftwareCtrlCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetChnSoftwareCtrlVal</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetChnSoftwareCtrlVal</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetPwmLoadCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetPwmLoadCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetPwmLoadChnSelCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetPwmLoadChnSelCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetGlobalTimeBaseOutputCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetGlobalTimeBaseOutputCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetGlobalTimeBaseCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetGlobalTimeBaseCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetBdmMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetBdmMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetTofFreq</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetTofFreq</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetSyncMode</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetSyncMode</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetSwoctrlHardwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetSwoctrlHardwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetInvctrlHardwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInvctrlHardwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetOutmaskHardwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetOutmaskHardwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetModCntinCvHardwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetModCntinCvHardwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCounterHardwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCounterHardwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetSwoctrlSoftwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetSwoctrlSoftwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetInvctrlSoftwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInvctrlSoftwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetOutmaskSoftwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetOutmaskSoftwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetModCntinCvSoftwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetModCntinCvSoftwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetCounterSoftwareSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCounterSoftwareSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetPwmSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetPwmSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetSwoctrlPwmSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetSwoctrlPwmSyncModeCmd</UsrMethodName>
-            </ItemState>
-            <ItemState>
-              <ItemSymbol>FTM_HAL_SetInvctrlPwmSyncModeCmd</ItemSymbol>
-              <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <Value>true</Value>
-              <LastSelection>true</LastSelection>
-              <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetInvctrlPwmSyncModeCmd</UsrMethodName>
+              <ItemSymbol>PIT_HAL_ReadLifetimeTimerCount_FSL_HAS_LIFETIME_TIMER</ItemSymbol>
+              <ReadOnly>false</ReadOnly>
+              <UserReadOnly>false</UserReadOnly>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_SetCntinPwmSyncModeCmd</ItemSymbol>
+              <ItemSymbol>PIT_HAL_ReadLifetimeTimerCount</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+              <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_SetCntinPwmSyncModeCmd</UsrMethodName>
+              <UsrMethodName>PIT_HAL_ReadLifetimeTimerCount</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_Reset</ItemSymbol>
+              <ItemSymbol>PIT_HAL_SetIntCmd</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_Reset</UsrMethodName>
+              <UsrMethodName>PIT_HAL_SetIntCmd</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_Init</ItemSymbol>
+              <ItemSymbol>PIT_HAL_GetIntCmd</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_Init</UsrMethodName>
+              <UsrMethodName>PIT_HAL_GetIntCmd</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_EnablePwmMode</ItemSymbol>
+              <ItemSymbol>PIT_HAL_ClearIntFlag</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_EnablePwmMode</UsrMethodName>
+              <UsrMethodName>PIT_HAL_ClearIntFlag</UsrMethodName>
             </ItemState>
             <ItemState>
-              <ItemSymbol>FTM_HAL_DisablePwmMode</ItemSymbol>
+              <ItemSymbol>PIT_HAL_IsIntPending</ItemSymbol>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
               <Value>true</Value>
               <LastSelection>true</LastSelection>
               <LastUserSel>always</LastUserSel>
-              <UsrMethodName>FTM_HAL_DisablePwmMode</UsrMethodName>
+              <UsrMethodName>PIT_HAL_IsIntPending</UsrMethodName>
             </ItemState>
           </Methods>
           <Events />
@@ -31402,162 +29958,126 @@
         <ListItemCount>1</ListItemCount>
       </ItemState>
       <ItemState>
-        <ItemSymbol>fsl_ftmgroup</ItemSymbol>
+        <ItemSymbol>fsl_hwtimergroup</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_Init</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_Init</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_Init</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_Init</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_Deinit</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_Deinit</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_Deinit</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_Deinit</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_PwmStop</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_SetPeriod</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_PwmStop</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_SetPeriod</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_PwmStart</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_GetPeriod</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_PwmStart</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_GetPeriod</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_QuadDecodeStart</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_Start</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_QuadDecodeStart</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_Start</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_QuadDecodeStop</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_Stop</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_QuadDecodeStop</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_Stop</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_CounterStart</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_GetModulo</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_CounterStart</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_GetModulo</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_CounterStop</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_GetTime</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_CounterStop</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_GetTime</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_CounterRead</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_GetTicks</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_CounterRead</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_GetTicks</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_SetClock</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_RegisterCallback</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetClock</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_RegisterCallback</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_GetClock</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_BlockCallback</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_GetClock</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_BlockCallback</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_SetTimeOverflowIntCmd</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_UnblockCallback</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetTimeOverflowIntCmd</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_UnblockCallback</UsrMethodName>
       </ItemState>
       <ItemState>
-        <ItemSymbol>FTM_DRV_SetFaultIntCmd</ItemSymbol>
+        <ItemSymbol>HWTIMER_SYS_CancelCallback</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
         <Value>true</Value>
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetFaultIntCmd</UsrMethodName>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FTM_DRV_SetupChnInputCapture</ItemSymbol>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-        <LastSelection>true</LastSelection>
-        <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetupChnInputCapture</UsrMethodName>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FTM_DRV_SetupChnOutputCompare</ItemSymbol>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-        <LastSelection>true</LastSelection>
-        <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetupChnOutputCompare</UsrMethodName>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FTM_DRV_SetupChnDualEdgeCapture</ItemSymbol>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-        <LastSelection>true</LastSelection>
-        <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_SetupChnDualEdgeCapture</UsrMethodName>
-      </ItemState>
-      <ItemState>
-        <ItemSymbol>FTM_DRV_IRQHandler</ItemSymbol>
-        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
-        <LastSelection>true</LastSelection>
-        <LastUserSel>always</LastUserSel>
-        <UsrMethodName>FTM_DRV_IRQHandler</UsrMethodName>
+        <UsrMethodName>HWTIMER_SYS_CancelCallback</UsrMethodName>
       </ItemState>
     </Methods>
     <Events>
@@ -31577,20 +30097,20 @@
         <Value>Events</Value>
       </ItemState>
       <ItemState>
-        <ItemSymbol>IrqHandler</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ItemSymbol>Callback</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>true</Value>
         <Expanded>true</Expanded>
-        <LastSelection>false</LastSelection>
-        <LastUserSel>yes</LastUserSel>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
       </ItemState>
       <ItemState>
-        <ItemSymbol>IrqHandlerName</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ItemSymbol>CallbackName</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>adc_trigger_IRQHandler</Value>
+        <Value>adc_trigger_OnTimeOut</Value>
       </ItemState>
     </Events>
   </Bean>

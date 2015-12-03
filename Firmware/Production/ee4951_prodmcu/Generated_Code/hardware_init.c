@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-02, 01:56, # CodeGen: 52
+**     Date/Time   : 2015-12-03, 11:25, # CodeGen: 57
 **     Abstract    :
 **
 **     Settings    :
@@ -1295,8 +1295,8 @@ void hardware_init(void) {
   /* Enable clock for PORTs */
   SIM_HAL_EnableClock(SIM,kSimClockGatePortB);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortC);
-  SIM_HAL_EnableClock(SIM,kSimClockGatePortD);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortA);
+  SIM_HAL_EnableClock(SIM,kSimClockGatePortD);
   SIM_HAL_EnableClock(SIM,kSimClockGatePortE);
 
   /* Setup board clock source. */
@@ -1305,7 +1305,6 @@ void hardware_init(void) {
   
   init_adc_pins(ADC0_IDX);
   init_adc_pins(ADC1_IDX);
-  init_ftm_pins(FTM0_IDX);
   init_gpio_pins(PORTA_IDX);
   init_gpio_pins(PORTC_IDX);
   init_gpio_pins(PORTD_IDX);

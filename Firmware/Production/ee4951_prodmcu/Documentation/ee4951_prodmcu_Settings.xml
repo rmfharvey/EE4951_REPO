@@ -291,11 +291,12 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="adc_trigger" type="fsl_ftm">
+  <Bean name="adc_trigger" type="fsl_hwtimer">
     <Enabled v="Y" />
     <Properties>
       <Component_name v="adc_trigger" />
-      <Device v="FTM0" />
+      <Device v="PIT" />
+      <Counter v="PIT_CVAL0" />
       <Component_version v="1.3.0" />
     </Properties>
     <Methods>

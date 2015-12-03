@@ -174,14 +174,6 @@ Module "pin_mux"   (component PinSettings)
                 enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user selected 
                 pins or pins selected in pin items in components. Call this method code to un-route desired pins into ADC0, 
                 ADC1 peripherals.
-   - pin_mux_init_ftm_pins -FTM method configures registers according to settings  of routing and electrical features. This 
-                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
-                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
-                FTM0, FTM1, FTM2, FTM3 peripherals.
-   - pin_mux_deinit_ftm_pins -FTM method de-configures muxing registers according to settings of routing. This method is 
-                enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user selected 
-                pins or pins selected in pin items in components. Call this method code to un-route desired pins into FTM0, 
-                FTM1, FTM2, FTM3 peripherals.
    - pin_mux_init_gpio_pins -GPIO method configures registers according to settings  of routing and electrical features. This 
                 method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
                 selected pins or pins selected in pin items in components. Call this method code to route desired pins into PTA,
@@ -287,25 +279,21 @@ Module "WAIT1"     (component Wait)
    - WAIT1_WaitOSms -If an RTOS is enabled, this routine will use a non-blocking wait method. Otherwise it will do a 
                 busy/blocking wait.
 
-Module "adc_trigger" (component fsl_ftm)
-   - adc_trigger_FTM_DRV_Init -Initializes the FTM driver.
-   - adc_trigger_FTM_DRV_Deinit -Shuts down the FTM driver.
-   - adc_trigger_FTM_DRV_PwmStop -Stops the channel PWM.
-   - adc_trigger_FTM_DRV_PwmStart -Configures the duty cycle and frequency and starts outputting the PWM on a specified channel 
-                .
-   - adc_trigger_FTM_DRV_QuadDecodeStart -Configures the parameters and activates the quadrature decode mode.
-   - adc_trigger_FTM_DRV_QuadDecodeStop -Deactivates the quadrature decode mode.
-   - adc_trigger_FTM_DRV_CounterStart -Starts the FTM counter.
-   - adc_trigger_FTM_DRV_CounterStop -Stops the FTM counter.
-   - adc_trigger_FTM_DRV_CounterRead -Reads back the current value of the FTM counter.
-   - adc_trigger_FTM_DRV_SetClock -Sets the FTM clock source.
-   - adc_trigger_FTM_DRV_GetClock -Retrieves the frequency of the clock source feeding the FTM counter.
-   - adc_trigger_FTM_DRV_SetTimeOverflowIntCmd -Enables or disables the timer overflow interrupt.
-   - adc_trigger_FTM_DRV_SetFaultIntCmd -Enables or disables the fault interrupt.
-   - adc_trigger_FTM_DRV_SetupChnInputCapture -Enables capturing an input signal on the channel using the function parameters.
-   - adc_trigger_FTM_DRV_SetupChnOutputCompare -Configures the FTM to generate timed pulses.
-   - adc_trigger_FTM_DRV_SetupChnDualEdgeCapture -Configures the dual edge capture mode of the FTM.
-   - adc_trigger_FTM_DRV_IRQHandler -Action to take when an FTM interrupt is triggered.
+Module "adc_trigger" (component fsl_hwtimer)
+   - adc_trigger_HWTIMER_SYS_Init -Initializes a caller allocated structure according to given parameters.
+   - adc_trigger_HWTIMER_SYS_Deinit -Deinitializes the HwTimer.
+   - adc_trigger_HWTIMER_SYS_SetPeriod -Sets the period of the HwTimer.
+   - adc_trigger_HWTIMER_SYS_GetPeriod -Gets the period of the HwTimer.
+   - adc_trigger_HWTIMER_SYS_Start -Enables the timer and leaves it running.
+   - adc_trigger_HWTIMER_SYS_Stop -The timer stops counting after this function is called.
+   - adc_trigger_HWTIMER_SYS_GetModulo -The function returns period of the timer in sub-ticks.
+   - adc_trigger_HWTIMER_SYS_GetTime -The function reads the current value of the HwTimer.
+   - adc_trigger_HWTIMER_SYS_GetTicks -The function reads the current value of the HwTimer.
+   - adc_trigger_HWTIMER_SYS_RegisterCallback -Registers function to be called when the timer expires.
+   - adc_trigger_HWTIMER_SYS_BlockCallback -The function is used to block callbacks in circumstances when execution of the 
+                callback function is undesired.
+   - adc_trigger_HWTIMER_SYS_UnblockCallback -The function is used to unblock previously blocked callbacks.
+   - adc_trigger_HWTIMER_SYS_CancelCallback -The function cancels pending callback, if any.
 
 Module "dut_gpio"  (component fsl_gpio)
    - dut_gpio_GPIO_DRV_Init -Initializes all GPIO pins used by the board.

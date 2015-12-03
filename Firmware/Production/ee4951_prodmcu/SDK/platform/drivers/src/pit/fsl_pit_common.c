@@ -30,20 +30,19 @@
 
 #include "fsl_device_registers.h"
 
-#if FSL_FEATURE_SOC_FTM_COUNT
+#if FSL_FEATURE_SOC_PIT_COUNT
 
 /*******************************************************************************
  * Variables
  ******************************************************************************/
 
-/* Table of base addresses for FTM instances. */
-FTM_Type * const g_ftmBase[FTM_INSTANCE_COUNT] = FTM_BASE_PTRS;
+/* Table of base addresses for pit instances. */
+PIT_Type * const g_pitBase[] = PIT_BASE_PTRS;
 
-/* Table to save FTM IRQ enum numbers defined in CMSIS header file. */
-const IRQn_Type g_ftmIrqId[FTM_INSTANCE_COUNT] = FTM_IRQS;
+/* Table to save PIT IRQ enum numbers defined in CMSIS files. */
+const IRQn_Type g_pitIrqId[] = PIT_IRQS;
 
-#endif /* FSL_FEATURE_SOC_FTM_COUNT */
-
+#endif /* FSL_FEATURE_SOC_PIT_COUNT */
 /*******************************************************************************
  * EOF
  ******************************************************************************/
