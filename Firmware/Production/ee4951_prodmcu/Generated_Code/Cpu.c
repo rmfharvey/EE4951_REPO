@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
+**     Date/Time   : 2015-12-03, 22:57, # CodeGen: 72
 **     Abstract    :
 **
 **     Settings    :
@@ -148,17 +148,12 @@ void Common_Init(void)
 void Components_Init(void)
 {
 
-  /*! debug Auto initialization start */
-  /* Debug console initialization */
-  DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
-  /*! debug Auto initialization end */
   /*! adc_trigger Auto initialization start */
   NVIC_SetPriority(PIT0_IRQn, 5U);
   OSA_InstallIntHandler(PIT0_IRQn, PIT0_IRQHandler);
   HWTIMER_SYS_Init(&adc_trigger_Handle, &FSL_ADC_TRIGGER_LL_DEVIF, FSL_ADC_TRIGGER_LL_ID, NULL);  
   HWTIMER_SYS_SetPeriod(&adc_trigger_Handle, FSL_ADC_TRIGGER_PERIOD_CNF0);                
   HWTIMER_SYS_RegisterCallback(&adc_trigger_Handle, &adc_trigger_OnTimeOut, FSL_ADC_TRIGGER_LL_CALLBACK_DATA);
-  HWTIMER_SYS_Start(&adc_trigger_Handle);
   /*! adc_trigger Auto initialization end */
   
   /*! dut_gpio Auto initialization start */
@@ -170,14 +165,6 @@ void Components_Init(void)
   ADC16_DRV_ConfigConvChn(dut_adc_IDX, 0U, &dut_isense0);
   /*! dut_adc Auto initialization end */
 
-  /*! ts_timer Auto initialization start */
-  NVIC_SetPriority(SysTick_IRQn, 5U);
-  OSA_InstallIntHandler(SysTick_IRQn, SysTick_Handler);
-  HWTIMER_SYS_Init(&ts_timer_Handle, &FSL_TS_TIMER_LL_DEVIF, FSL_TS_TIMER_LL_ID, NULL);  
-  HWTIMER_SYS_SetPeriod(&ts_timer_Handle, FSL_TS_TIMER_PERIOD_CNF0);                
-  HWTIMER_SYS_RegisterCallback(&ts_timer_Handle, &ts_timer_OnTimeOut, FSL_TS_TIMER_LL_CALLBACK_DATA);
-  /*! ts_timer Auto initialization end */
-  
   /*! opt_bits Auto initialization start */
   GPIO_DRV_Init(opt_bits_InpConfig0,NULL);
   /*! opt_bits Auto initialization end */
@@ -186,6 +173,10 @@ void Components_Init(void)
   GPIO_DRV_Init(NULL,testgpio_OutConfig0);
   /*! testgpio Auto initialization end */
   
+  /*! DbgCs1 Auto initialization start */
+  /* Debug console initialization */
+  DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
+  /*! DbgCs1 Auto initialization end */
 }
 #endif /* CPU_COMPONENTS_INIT */
 

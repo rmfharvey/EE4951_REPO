@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
+**     Date/Time   : 2015-12-05, 10:49, # CodeGen: 77
 **     Contents    :
 **         HWTIMER_SYS_Init             - _hwtimer_error_code_t HWTIMER_SYS_Init(hwtimer_t * hwtimer,const...
 **         HWTIMER_SYS_Deinit           - _hwtimer_error_code_t HWTIMER_SYS_Deinit(hwtimer_t * hwtimer);
@@ -81,8 +81,10 @@ extern hwtimer_t adc_trigger_Handle;
 #define FSL_ADC_TRIGGER_LL_DEVIF       kPitDevif     
 #define FSL_ADC_TRIGGER_LL_ID          0U
   
-/* adc_trigger_InitConfig0 */ 
+/* adc_trigger_200k_config */ 
 #define FSL_ADC_TRIGGER_PERIOD_CNF0    5U
+/* adc_trigger_40k_config */ 
+#define FSL_ADC_TRIGGER_PERIOD_CNF1    25U
 /*! @brief Interrupt service routines used by the component driver */
 void PIT0_IRQHandler(void);
     

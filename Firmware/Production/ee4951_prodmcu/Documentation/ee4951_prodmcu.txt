@@ -260,14 +260,6 @@ Module "intMan1"   (component fsl_interrupt_manager)
    - intMan1_INT_SYS_EnableIRQGlobal -Enables system interrupt.
    - intMan1_INT_SYS_DisableIRQGlobal -Disable system interrupt.
 
-Module "debug"     (component fsl_debug_console)
-   - debug_DbgConsole_Init -Init the UART/LPUART used for debug messages.
-   - debug_DbgConsole_DeInit -Deinit the UART/LPUART used for debug messages.
-   - debug_debug_printf -Prints formatted output to the standard output stream.
-   - debug_debug_putchar -Writes a character to stdout.
-   - debug_debug_scanf -Reads formatted data from the standard input stream.
-   - debug_debug_getchar -Reads a character from standard input.
-
 Module "WAIT1"     (component Wait)
    - WAIT1_Wait10Cycles -Wait for 10 CPU cycles.
    - WAIT1_Wait100Cycles -Wait for 100 CPU cycles.
@@ -332,22 +324,6 @@ Module "hw_irqs"   (component Init_GPIO_VAR0)
                 Call this method in user code to initialize the module. By default, the method is called by PE automatically; 
                 see "Call Init method" property of the component for more details.
 
-Module "ts_timer"  (component fsl_hwtimer)
-   - ts_timer_HWTIMER_SYS_Init -Initializes a caller allocated structure according to given parameters.
-   - ts_timer_HWTIMER_SYS_Deinit -Deinitializes the HwTimer.
-   - ts_timer_HWTIMER_SYS_SetPeriod -Sets the period of the HwTimer.
-   - ts_timer_HWTIMER_SYS_GetPeriod -Gets the period of the HwTimer.
-   - ts_timer_HWTIMER_SYS_Start -Enables the timer and leaves it running.
-   - ts_timer_HWTIMER_SYS_Stop -The timer stops counting after this function is called.
-   - ts_timer_HWTIMER_SYS_GetModulo -The function returns period of the timer in sub-ticks.
-   - ts_timer_HWTIMER_SYS_GetTime -The function reads the current value of the HwTimer.
-   - ts_timer_HWTIMER_SYS_GetTicks -The function reads the current value of the HwTimer.
-   - ts_timer_HWTIMER_SYS_RegisterCallback -Registers function to be called when the timer expires.
-   - ts_timer_HWTIMER_SYS_BlockCallback -The function is used to block callbacks in circumstances when execution of the 
-                callback function is undesired.
-   - ts_timer_HWTIMER_SYS_UnblockCallback -The function is used to unblock previously blocked callbacks.
-   - ts_timer_HWTIMER_SYS_CancelCallback -The function cancels pending callback, if any.
-
 Module "opt_bits"  (component fsl_gpio)
    - opt_bits_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
    - opt_bits_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.
@@ -377,6 +353,14 @@ Module "testgpio"  (component fsl_gpio)
    - testgpio_GPIO_DRV_SetDigitalFilterCmd -Enables or disables the digital filter in a single port.
    - testgpio_GPIO_DRV_IsPinIntPending -Reads the individual pin-interrupt status flag.
    - testgpio_GPIO_DRV_ClearPinIntFlag -Clears the individual GPIO pin interrupt status flag.
+
+Module "DbgCs1"    (component fsl_debug_console)
+   - DbgCs1_DbgConsole_Init -Init the UART/LPUART used for debug messages.
+   - DbgCs1_DbgConsole_DeInit -Deinit the UART/LPUART used for debug messages.
+   - DbgCs1_debug_printf -Prints formatted output to the standard output stream.
+   - DbgCs1_debug_putchar -Writes a character to stdout.
+   - DbgCs1_debug_scanf -Reads formatted data from the standard input stream.
+   - DbgCs1_debug_getchar -Reads a character from standard input.
 
 Module "Cpu"       (component MK22FN512LL12_4SDK)
    - Cpu_SystemInit -This method configures the oscillator (PLL) that is part of the microcontroller device. SystemInit is 

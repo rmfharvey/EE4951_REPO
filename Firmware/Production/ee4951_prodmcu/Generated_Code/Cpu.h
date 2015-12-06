@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 11:31, # CodeGen: 59
+**     Date/Time   : 2015-12-03, 22:23, # CodeGen: 71
 **     Abstract    :
 **
 **     Settings    :
@@ -78,15 +78,15 @@
 #include "fsl_interrupt_manager.h"
 #include "fsl_os_abstraction.h"
 #include "op_sys.h"
-#include "fsl_uart_hal.h"
-#include "fsl_lpuart_hal.h"
-#include "fsl_debug_console.h"
 #include "fsl_pit_hal.h"
 #include "fsl_hwtimer.h"
 #include "fsl_gpio_hal.h"
 #include "fsl_gpio_driver.h"
 #include "fsl_adc16_hal.h"
 #include "fsl_adc16_driver.h"
+#include "fsl_uart_hal.h"
+#include "fsl_lpuart_hal.h"
+#include "fsl_debug_console.h"
 #include "core_cm4_PEx.h"
 #include <assert.h>
 

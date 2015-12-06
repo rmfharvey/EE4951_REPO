@@ -33,20 +33,20 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "op_sys.h"
-#include "debug.h"
 #include "WAIT1.h"
 #include "adc_trigger.h"
 #include "dut_gpio.h"
 #include "dut_adc.h"
-#include "ts_timer.h"
 #include "opt_bits.h"
 #include "testgpio.h"
+#include "DbgCs1.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "system_timer.h"
 #include "DutISense.h"
+
 
 //TODO DUT Monitor: Scan ADCs automatically
 //TODO DUT Monitor: Switching ADC ranges automatically.  Maybe hardware compare
@@ -94,14 +94,38 @@ void updateADCValues(void)	{
     dutCurrentRaw = dutIsense.getADCValRaw();
 }
 
+/* Deprecated in production */
+void setIRangeFromStartup(uint8_t opt)	{
+	iRange_t curRange;
 
+	switch(opt)	{
+	case 0:
+		curRange=nA;
+		break;
+	case 1:
+		curRange=uA;
+		break;
+	case 2:
+		curRange=mA;
+		break;
+	case 3:
+		curRange=A;
+		break;
+	default:
+		curRange=A;
+		break;
+	}
+	dutIsense.enableCurrentRange(curRange);
+}
 
 
 
 
 
 void userInit(void)	{
-	PRINTF("\n\n\rEE4951W Battery Power Monitor\r\nFirmware Rev. A\r\nRoss Harvey\n\n\r");
+	PRINTF("\n\n\rEE4951W Battery Power Monitor\r\n"
+			"Firmware Rev. A\r\n"
+			"Ross Harvey\n\n\r");
 
 	PRINTF("Core Clock:\t%d MHz\n\rSystem Clock:\t%d MHz\n\rBus Clock:\t%d MHz\n\rSysTick:\t%d MHz\n\n\r",
 			CLOCK_SYS_GetCoreClockFreq()/1000000,
@@ -109,24 +133,31 @@ void userInit(void)	{
 			CLOCK_SYS_GetBusClockFreq()/1000000,
 			CLOCK_SYS_GetSystickFreq()/1000000);
 
+	/* Set initial current range */
+	cycleRanges(&dutIsense, 500);
 	dutIsense.enableCurrentRange(A);
-	adcReady=true;
+	WAIT1_Waitms(1);
 
 	/* Startup options */
 	startupOptions = getStartupOptions();
 	PRINTF("Startup Options: %04b\n\n\r",startupOptions);
+	//setIRangeFromStartup(startupOptions);
 
-	/* Start timestamp Timer */
-	WAIT1_Waitms(100);
-	PRINTF("Starting Timer\n\r");
-	timer.timestamp=0;
-	HWTIMER_SYS_Start(&ts_timer_Handle);
+	/* Start ADC Trigger Timer	*/
+	uint8_t temp=0;
+	PRINTF("Starting ADC Trigger: ");
+	if(HWTIMER_SYS_Start(&adc_trigger_Handle)==kHwtimerSuccess)	{
+		PRINTF("Success\n\r");
+	}
+	else	{
+		PRINTF("Failed\n\r");
+	}
 
-	/* ADC trigger initialization */
 
 
 	PRINTF("\n\r");
 }
+
 
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -149,21 +180,35 @@ int main(void)
   //uint16_t tempInt;
   //float tempFloat;
   //char input[64];
-  cycleRanges(&dutIsense, 500U);
+  //cycleRanges(&dutIsense, 500U);
 
-  iRange_t curRange = A;
-
-  dutIsense.enableCurrentRange(curRange);
+  uint32_t i=0;
   while(true)	{
-	  curRange = curRange;
-
-	  /*extern bool adcReady;
-	     static uint16_t i=0;
-	     //extern DutISense dutIsense;
-	     //dutIsense.updateADCVal();
-	     if(!i++)
-	     	PRINTF(":");
-	  */
+	  i++;
+	 /* uint8_t range = getStartupOptions();
+	  setIRangeFromStartup(range);
+	  switch(range){
+	  case 3:
+	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense3);
+	  		dutIsense.enableCurrentRange(A);
+	  		break;
+	  	case 2:
+	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense2);
+	  		dutIsense.enableCurrentRange(mA);
+	  		break;
+	  	case 1:
+	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense1);
+	  		dutIsense.enableCurrentRange(uA);
+	  		break;
+	  	case 0:
+	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense0);
+	  		dutIsense.enableCurrentRange(nA);
+	  		break;
+	  	default:
+	  		break;
+	  }
+	  PRINTF("%05d\r",ADC16_DRV_GetConvValueRAW(dut_adc_IDX,0U));
+	  WAIT1_Waitms(100);*/
   }
 
 

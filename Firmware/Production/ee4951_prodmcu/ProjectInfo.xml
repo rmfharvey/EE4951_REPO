@@ -42,9 +42,9 @@
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\MK22F51212\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\osa\inc\</Path>
+      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\inc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\inc\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\inc\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\include\</Path>
@@ -88,10 +88,10 @@
   <FILES>
     <GeneratedCs>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\DbgCs1.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\WAIT1.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\adc_trigger.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\clockMan1.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\debug.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_adc.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_gpio.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\hardware_init.c</PathName>
@@ -99,7 +99,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\opt_bits.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\pin_mux.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\testgpio.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\ts_timer.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\system_MK22F51212.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\startup.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\drivers\src\adc16\fsl_adc16_common.c</PathName>
@@ -125,7 +124,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\fsl_clock_manager_common.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer_pit.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\hwtimer\fsl_hwtimer_systick.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\fsl_debug_console.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\fsl_misc_utilities.c</PathName>
@@ -138,6 +136,7 @@
     </GeneratedCs>
     <GeneratedHs>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\DbgCs1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\Init_Config.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\PE_low_level_init.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\PTA_Config.h</PathName>
@@ -146,7 +145,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\adc_trigger.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\board.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\clockMan1.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\debug.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_adc.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_gpio.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\hw_irqs.h</PathName>
@@ -154,7 +152,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\opt_bits.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\pin_mux.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\testgpio.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\ts_timer.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\arm_math.h</PathName>
@@ -187,7 +184,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_clock_manager.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer_pit.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_hwtimer_systick.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\clock\MK22F51212\fsl_clock_MK22F51212.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\inc\fsl_debug_console.h</PathName>

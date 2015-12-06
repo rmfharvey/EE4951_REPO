@@ -32,7 +32,7 @@
       <GenExtraFileSrcDir11>Repositories\lib\doxygen\</GenExtraFileSrcDir11>
       <XtraAge0>1199790746</XtraAge0>
       <XtraAge1>1199790746</XtraAge1>
-      <XtraAge2>1199790899</XtraAge2>
+      <XtraAge2>1199813357</XtraAge2>
       <XtraAge4>1199790746</XtraAge4>
       <XtraAge5>1199790746</XtraAge5>
       <XtraAge6>1199790746</XtraAge6>
@@ -268,78 +268,6 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\src\uart\fsl_uart_hal.c</SrcFileName>
-        <OrigSrcFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</OrigSrcFileHash>
-        <ReviewedSrcFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\hal\src\uart\fsl_uart_hal.c</PrjFileName>
-        <PrjFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\inc\fsl_uart_hal.h</SrcFileName>
-        <OrigSrcFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</OrigSrcFileHash>
-        <ReviewedSrcFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\hal\inc\fsl_uart_hal.h</PrjFileName>
-        <PrjFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\src\lpuart\fsl_lpuart_hal.c</SrcFileName>
-        <OrigSrcFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</OrigSrcFileHash>
-        <ReviewedSrcFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</PrjFileName>
-        <PrjFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\inc\fsl_lpuart_hal.h</SrcFileName>
-        <OrigSrcFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</OrigSrcFileHash>
-        <ReviewedSrcFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\hal\inc\fsl_lpuart_hal.h</PrjFileName>
-        <PrjFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\fsl_debug_console.c</SrcFileName>
-        <OrigSrcFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</OrigSrcFileHash>
-        <ReviewedSrcFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\utilities\src\fsl_debug_console.c</PrjFileName>
-        <PrjFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\print_scan.c</SrcFileName>
-        <OrigSrcFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</OrigSrcFileHash>
-        <ReviewedSrcFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\utilities\src\print_scan.c</PrjFileName>
-        <PrjFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\print_scan.h</SrcFileName>
-        <OrigSrcFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</OrigSrcFileHash>
-        <ReviewedSrcFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\utilities\src\print_scan.h</PrjFileName>
-        <PrjFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\inc\fsl_debug_console.h</SrcFileName>
-        <OrigSrcFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</OrigSrcFileHash>
-        <ReviewedSrcFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\utilities\inc\fsl_debug_console.h</PrjFileName>
-        <PrjFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</PrjFileHash>
-        <NoMoreGenerated>false</NoMoreGenerated>
-        <NotCreatedByDefault>false</NotCreatedByDefault>
-      </SynchronizedStaticFile>
-      <SynchronizedStaticFile>
         <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\src\pit\fsl_pit_hal.c</SrcFileName>
         <OrigSrcFileHash>605B81549D69DB5F2FB00F6415FA144F282DF00285518FB884D43040FD114D3CB454DB1970CDEF3D42AC0F912A366FC2CC6412F9EA980E22D4E8F0A5149AC061</OrigSrcFileHash>
         <ReviewedSrcFileHash>605B81549D69DB5F2FB00F6415FA144F282DF00285518FB884D43040FD114D3CB454DB1970CDEF3D42AC0F912A366FC2CC6412F9EA980E22D4E8F0A5149AC061</ReviewedSrcFileHash>
@@ -529,20 +457,74 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\system\src\hwtimer\fsl_hwtimer_systick.c</SrcFileName>
-        <OrigSrcFileHash>FAB6AFC4A699CC944518AE7B1665899D3D60055D04D787D66C7656B7BDDCDB4D9F32AE1ECCFE11ED2F64800C194CB1D481F704EA546ED4594E55930E771FBA9F</OrigSrcFileHash>
-        <ReviewedSrcFileHash>FAB6AFC4A699CC944518AE7B1665899D3D60055D04D787D66C7656B7BDDCDB4D9F32AE1ECCFE11ED2F64800C194CB1D481F704EA546ED4594E55930E771FBA9F</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\system\src\hwtimer\fsl_hwtimer_systick.c</PrjFileName>
-        <PrjFileHash>FAB6AFC4A699CC944518AE7B1665899D3D60055D04D787D66C7656B7BDDCDB4D9F32AE1ECCFE11ED2F64800C194CB1D481F704EA546ED4594E55930E771FBA9F</PrjFileHash>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\src\uart\fsl_uart_hal.c</SrcFileName>
+        <OrigSrcFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</OrigSrcFileHash>
+        <ReviewedSrcFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\src\uart\fsl_uart_hal.c</PrjFileName>
+        <PrjFileHash>7BF0D13CD5B520F8BC911E31B3DC5F8CDA9D712667AF1BBF380AC807CAEAB3C7A80E3D352041C3D6899201C905BC6884CCB32E9017E6195E3BE7E559FCB57CE7</PrjFileHash>
         <NoMoreGenerated>false</NoMoreGenerated>
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\system\inc\fsl_hwtimer_systick.h</SrcFileName>
-        <OrigSrcFileHash>1DCC6A64C5407C8A107C3AB798D7F6854B7211E98551E7B4EE1A95038B48753BE8661CED258C957E2E2AFC23ADBD1EAB2C3A99DBD690F824E79826FCE178E015</OrigSrcFileHash>
-        <ReviewedSrcFileHash>1DCC6A64C5407C8A107C3AB798D7F6854B7211E98551E7B4EE1A95038B48753BE8661CED258C957E2E2AFC23ADBD1EAB2C3A99DBD690F824E79826FCE178E015</ReviewedSrcFileHash>
-        <PrjFileName>SDK\platform\system\inc\fsl_hwtimer_systick.h</PrjFileName>
-        <PrjFileHash>1DCC6A64C5407C8A107C3AB798D7F6854B7211E98551E7B4EE1A95038B48753BE8661CED258C957E2E2AFC23ADBD1EAB2C3A99DBD690F824E79826FCE178E015</PrjFileHash>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\inc\fsl_uart_hal.h</SrcFileName>
+        <OrigSrcFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</OrigSrcFileHash>
+        <ReviewedSrcFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\inc\fsl_uart_hal.h</PrjFileName>
+        <PrjFileHash>BCC191CE4A63842E972463E243A7B13F15B726F2A5162132128C5F0DCEF8159BDE7B354407DB00A45B0A4B2D2CE6CA0C4E63E8697E002974F971DF330139F66C</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\src\lpuart\fsl_lpuart_hal.c</SrcFileName>
+        <OrigSrcFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</OrigSrcFileHash>
+        <ReviewedSrcFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</PrjFileName>
+        <PrjFileHash>349973B331ED2C175777DDEA123E30E40547397CEBF212912C7928267A2F26568F15EBE608906B62788440E327B892DF9AD4855CB02EE993621DD35396570F2C</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\hal\inc\fsl_lpuart_hal.h</SrcFileName>
+        <OrigSrcFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</OrigSrcFileHash>
+        <ReviewedSrcFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\inc\fsl_lpuart_hal.h</PrjFileName>
+        <PrjFileHash>5C3E798FE189993CCE0E0EF0FA92657A417E556AD07B8A613C6F42510ABD2628ED07CA8F9FABCD094E1E8E94930603CEA3F062E8D28A5EFE8F81830E843815E5</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\fsl_debug_console.c</SrcFileName>
+        <OrigSrcFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</OrigSrcFileHash>
+        <ReviewedSrcFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\utilities\src\fsl_debug_console.c</PrjFileName>
+        <PrjFileHash>A274C820C0EB5415935A7021E947F97E4B8DFF50D409C8899D72B1F5F3F9796243B0AD4B763BD625479D0C06D5F1ACA82378978E7D25050913329CCC4BCBCAF7</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\print_scan.c</SrcFileName>
+        <OrigSrcFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</OrigSrcFileHash>
+        <ReviewedSrcFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\utilities\src\print_scan.c</PrjFileName>
+        <PrjFileHash>2D00F628DA5A6FD2FFBB1208F0BF664149F31CB8C93E6B058ECAA60FAF2DCBF723F36B7F5AE4CDE0CA5BB9B9341BF0F76E278839DC826BD532C665F626AAB9B9</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\src\print_scan.h</SrcFileName>
+        <OrigSrcFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</OrigSrcFileHash>
+        <ReviewedSrcFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\utilities\src\print_scan.h</PrjFileName>
+        <PrjFileHash>28128A4550312590F78950A6F4972BD0EDC4404579C67B7504834D799D982F1FD6E751DFBA5C74A7AE1D7044608C5313F793F533BC97AA7289C089A4D11B7F37</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\Freescale\KSDK_1.3.0\platform\utilities\inc\fsl_debug_console.h</SrcFileName>
+        <OrigSrcFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</OrigSrcFileHash>
+        <ReviewedSrcFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\utilities\inc\fsl_debug_console.h</PrjFileName>
+        <PrjFileHash>12BFC59EBF196704C0889091A615DBBABC3DEAF60EA7025E8C613E6940393C01BCFCE8F9D4F67F441CED72B6C759E544BEB2C765224E92D3CA4935001349CC58</PrjFileHash>
         <NoMoreGenerated>false</NoMoreGenerated>
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
@@ -729,16 +711,15 @@
       <GenEventModules lines_count="1">
         <Line>Events</Line>
       </GenEventModules>
-      <GenMethodsInEvents lines_count="3">
-        <Line>ts_timer_OnTimeOut</Line>
+      <GenMethodsInEvents lines_count="2">
         <Line>ADC0_IRQHandler</Line>
         <Line>adc_trigger_OnTimeOut</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="13">
+      <GenAllModules lines_count="12">
         <Line>adc_trigger</Line>
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
-        <Line>debug</Line>
+        <Line>DbgCs1</Line>
         <Line>dut_adc</Line>
         <Line>dut_gpio</Line>
         <Line>Events</Line>
@@ -746,27 +727,25 @@
         <Line>opt_bits</Line>
         <Line>pin_mux</Line>
         <Line>testgpio</Line>
-        <Line>ts_timer</Line>
         <Line>WAIT1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="11">
+      <GenBeanModules lines_count="10">
         <Line>clockMan1</Line>
         <Line>pin_mux</Line>
         <Line>op_sys</Line>
-        <Line>debug</Line>
         <Line>WAIT1</Line>
         <Line>adc_trigger</Line>
         <Line>dut_gpio</Line>
         <Line>dut_adc</Line>
-        <Line>ts_timer</Line>
         <Line>opt_bits</Line>
         <Line>testgpio</Line>
+        <Line>DbgCs1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>50</ProjectModificationStamp>
+    <ProjectModificationStamp>63</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>false</Generated>
@@ -795,8 +774,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1199791097</HeaderAge>
-    <CodeAge>1199791097</CodeAge>
+    <HeaderAge>1199813357</HeaderAge>
+    <CodeAge>1199814447</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>2</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -1323,8 +1302,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1199790899</HeaderAge>
-    <CodeAge>1199790899</CodeAge>
+    <HeaderAge>1199813357</HeaderAge>
+    <CodeAge>1199813357</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>51</GenNumMethods>
     <hardware_init>true</hardware_init>
@@ -2060,242 +2039,6 @@
     <ExtraFile0>SDK\platform\system\inc\fsl_interrupt_manager.h</ExtraFile0>
     <ExtraFile1>SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</ExtraFile1>
   </ComponentID_16>
-  <ComponentID_21>
-    <Generated>true</Generated>
-    <GenCompName>debug</GenCompName>
-    <GenComponentVersion>1.3.0</GenComponentVersion>
-    <GenDriverVersion>01.00</GenDriverVersion>
-    <GenEventModule />
-    <HeaderAge>1199790746</HeaderAge>
-    <CodeAge>1199790746</CodeAge>
-    <AsemblAge>-1</AsemblAge>
-    <GenNumMethods>6</GenNumMethods>
-    <DbgConsole_Init>true</DbgConsole_Init>
-    <DbgConsole_DeInit>true</DbgConsole_DeInit>
-    <debug_printf>true</debug_printf>
-    <debug_putchar>true</debug_putchar>
-    <debug_scanf>true</debug_scanf>
-    <debug_getchar>true</debug_getchar>
-    <GenNumEvents>0</GenNumEvents>
-    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenMethodPos>0</GenMethodPos>
-    <GenExtraFilesCount>4</GenExtraFilesCount>
-    <ExtraFile0>SDK\platform\utilities\inc\fsl_debug_console.h</ExtraFile0>
-    <ExtraFile1>SDK\platform\utilities\src\print_scan.h</ExtraFile1>
-    <ExtraFile2>SDK\platform\utilities\src\print_scan.c</ExtraFile2>
-    <ExtraFile3>SDK\platform\utilities\src\fsl_debug_console.c</ExtraFile3>
-    <InhrCompID_22>
-      <Generated>true</Generated>
-      <GenCompName>fsl_uart_hal1</GenCompName>
-      <GenComponentVersion>1.3.0</GenComponentVersion>
-      <GenDriverVersion>01.00</GenDriverVersion>
-      <GenEventModule />
-      <HeaderAge>-1</HeaderAge>
-      <CodeAge>-1</CodeAge>
-      <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>108</GenNumMethods>
-      <UART_HAL_Init>true</UART_HAL_Init>
-      <UART_HAL_EnableTransmitter>true</UART_HAL_EnableTransmitter>
-      <UART_HAL_DisableTransmitter>true</UART_HAL_DisableTransmitter>
-      <UART_HAL_IsTransmitterEnabled>true</UART_HAL_IsTransmitterEnabled>
-      <UART_HAL_EnableReceiver>true</UART_HAL_EnableReceiver>
-      <UART_HAL_DisableReceiver>true</UART_HAL_DisableReceiver>
-      <UART_HAL_IsReceiverEnabled>true</UART_HAL_IsReceiverEnabled>
-      <UART_HAL_SetBaudRate>true</UART_HAL_SetBaudRate>
-      <UART_HAL_SetBaudRateDivisor>true</UART_HAL_SetBaudRateDivisor>
-      <UART_HAL_SetBaudRateFineAdjust>true</UART_HAL_SetBaudRateFineAdjust>
-      <UART_HAL_SetBitCountPerChar>true</UART_HAL_SetBitCountPerChar>
-      <UART_HAL_SetParityMode>true</UART_HAL_SetParityMode>
-      <UART_HAL_GetDataRegAddr>true</UART_HAL_GetDataRegAddr>
-      <UART_HAL_SetIntMode>true</UART_HAL_SetIntMode>
-      <UART_HAL_GetIntMode>true</UART_HAL_GetIntMode>
-      <UART_HAL_SetTxDmaCmd>true</UART_HAL_SetTxDmaCmd>
-      <UART_HAL_GetTxDmaCmd>true</UART_HAL_GetTxDmaCmd>
-      <UART_HAL_SetRxDmaCmd>true</UART_HAL_SetRxDmaCmd>
-      <UART_HAL_GetRxDmaCmd>true</UART_HAL_GetRxDmaCmd>
-      <UART_HAL_Putchar>true</UART_HAL_Putchar>
-      <UART_HAL_Putchar9>true</UART_HAL_Putchar9>
-      <UART_HAL_Getchar>true</UART_HAL_Getchar>
-      <UART_HAL_Getchar9>true</UART_HAL_Getchar9>
-      <UART_HAL_SendDataPolling>true</UART_HAL_SendDataPolling>
-      <UART_HAL_ReceiveDataPolling>true</UART_HAL_ReceiveDataPolling>
-      <UART_HAL_SetBit10AsParityBit>true</UART_HAL_SetBit10AsParityBit>
-      <UART_HAL_IsBit10SetAsParityBit>true</UART_HAL_IsBit10SetAsParityBit>
-      <UART_HAL_IsCurrentDataWithNoise>true</UART_HAL_IsCurrentDataWithNoise>
-      <UART_HAL_IsCurrentDataWithParityError>true</UART_HAL_IsCurrentDataWithParityError>
-      <UART_HAL_GetStatusFlag>true</UART_HAL_GetStatusFlag>
-      <UART_HAL_ClearStatusFlag>true</UART_HAL_ClearStatusFlag>
-      <UART_HAL_SetTxFifoCmd>true</UART_HAL_SetTxFifoCmd>
-      <UART_HAL_SetRxFifoCmd>true</UART_HAL_SetRxFifoCmd>
-      <UART_HAL_GetTxFifoSize>true</UART_HAL_GetTxFifoSize>
-      <UART_HAL_GetRxFifoSize>true</UART_HAL_GetRxFifoSize>
-      <UART_HAL_FlushTxFifo>true</UART_HAL_FlushTxFifo>
-      <UART_HAL_FlushRxFifo>true</UART_HAL_FlushRxFifo>
-      <UART_HAL_IsTxFifoEmpty>true</UART_HAL_IsTxFifoEmpty>
-      <UART_HAL_IsRxFifoEmpty>true</UART_HAL_IsRxFifoEmpty>
-      <UART_HAL_SetTxFifoWatermark>true</UART_HAL_SetTxFifoWatermark>
-      <UART_HAL_GetTxFifoWatermark>true</UART_HAL_GetTxFifoWatermark>
-      <UART_HAL_GetTxDatawordCountInFifo>true</UART_HAL_GetTxDatawordCountInFifo>
-      <UART_HAL_SetRxFifoWatermark>true</UART_HAL_SetRxFifoWatermark>
-      <UART_HAL_GetRxDatawordCountInFifo>true</UART_HAL_GetRxDatawordCountInFifo>
-      <UART_HAL_GetRxFifoWatermark>true</UART_HAL_GetRxFifoWatermark>
-      <UART_HAL_SetWaitModeOperation>true</UART_HAL_SetWaitModeOperation>
-      <UART_HAL_GetWaitModeOperation>true</UART_HAL_GetWaitModeOperation>
-      <UART_HAL_SetLoopCmd>true</UART_HAL_SetLoopCmd>
-      <UART_HAL_SetReceiverSource>true</UART_HAL_SetReceiverSource>
-      <UART_HAL_SetTransmitterDir>true</UART_HAL_SetTransmitterDir>
-      <UART_HAL_PutReceiverInStandbyMode>true</UART_HAL_PutReceiverInStandbyMode>
-      <UART_HAL_PutReceiverInNormalMode>true</UART_HAL_PutReceiverInNormalMode>
-      <UART_HAL_IsReceiverInStandby>true</UART_HAL_IsReceiverInStandby>
-      <UART_HAL_SetReceiverWakeupMethod>true</UART_HAL_SetReceiverWakeupMethod>
-      <UART_HAL_GetReceiverWakeupMethod>true</UART_HAL_GetReceiverWakeupMethod>
-      <UART_HAL_ConfigIdleLineDetect>true</UART_HAL_ConfigIdleLineDetect>
-      <UART_HAL_SetBreakCharTransmitLength>true</UART_HAL_SetBreakCharTransmitLength>
-      <UART_HAL_SetBreakCharDetectLength>true</UART_HAL_SetBreakCharDetectLength>
-      <UART_HAL_SetBreakCharCmd>true</UART_HAL_SetBreakCharCmd>
-      <UART_HAL_SetMatchAddress>true</UART_HAL_SetMatchAddress>
-      <UART_HAL_SetSendMsbFirstCmd>true</UART_HAL_SetSendMsbFirstCmd>
-      <UART_HAL_SetReceiverRtsCmd>true</UART_HAL_SetReceiverRtsCmd>
-      <UART_HAL_SetTransmitterRtsCmd>true</UART_HAL_SetTransmitterRtsCmd>
-      <UART_HAL_SetTransmitterRtsPolarityMode>true</UART_HAL_SetTransmitterRtsPolarityMode>
-      <UART_HAL_SetTransmitterCtsCmd>true</UART_HAL_SetTransmitterCtsCmd>
-      <UART_HAL_SetInfraredOperation>true</UART_HAL_SetInfraredOperation>
-      <UART_HAL_EnableISO7816>true</UART_HAL_EnableISO7816>
-      <UART_HAL_DisableISO7816>true</UART_HAL_DisableISO7816>
-      <UART_HAL_IsISO7816Enabled>true</UART_HAL_IsISO7816Enabled>
-      <UART_HAL_ConfigureNackOnOverflow>true</UART_HAL_ConfigureNackOnOverflow>
-      <UART_HAL_Is6NackOnOverflowEnabled>true</UART_HAL_Is6NackOnOverflowEnabled>
-      <UART_HAL_ConfigureNackOnError>true</UART_HAL_ConfigureNackOnError>
-      <UART_HAL_Is6NackOnOnErrorEnabled>true</UART_HAL_Is6NackOnOnErrorEnabled>
-      <UART_HAL_ConfigureInitialCharacterDetection>true</UART_HAL_ConfigureInitialCharacterDetection>
-      <UART_HAL_IsInitialCharacterDetectionEnabled>true</UART_HAL_IsInitialCharacterDetectionEnabled>
-      <UART_HAL_SetTransferProtocolType>true</UART_HAL_SetTransferProtocolType>
-      <UART_HAL_GetTransferProtocolType>true</UART_HAL_GetTransferProtocolType>
-      <UART_HAL_SetISO7816IntMode>true</UART_HAL_SetISO7816IntMode>
-      <UART_HAL_GetISO7816IntMode>true</UART_HAL_GetISO7816IntMode>
-      <UART_HAL_ClearISO7816InterruptStatus>true</UART_HAL_ClearISO7816InterruptStatus>
-      <UART_HAL_GetISO7816InterruptStatus>true</UART_HAL_GetISO7816InterruptStatus>
-      <UART_HAL_SetISO7816Etu>true</UART_HAL_SetISO7816Etu>
-      <UART_HAL_ResetISO7816WaitTimer>true</UART_HAL_ResetISO7816WaitTimer>
-      <UART_HAL_ResetISO7816CharacterWaitTimer>true</UART_HAL_ResetISO7816CharacterWaitTimer>
-      <UART_HAL_ResetISO7816BlockWaitTimer>true</UART_HAL_ResetISO7816BlockWaitTimer>
-      <UART_HAL_SetWaitTimeMultipllier>true</UART_HAL_SetWaitTimeMultipllier>
-      <UART_HAL_GetWaitTimeMultipllier>true</UART_HAL_GetWaitTimeMultipllier>
-      <UART_HAL_ResetWaitTimeMultipllier>true</UART_HAL_ResetWaitTimeMultipllier>
-      <UART_HAL_SetGuardBandInteger>true</UART_HAL_SetGuardBandInteger>
-      <UART_HAL_GetGuardBandInteger>true</UART_HAL_GetGuardBandInteger>
-      <UART_HAL_SetFDMultiplier>true</UART_HAL_SetFDMultiplier>
-      <UART_HAL_GetFDMultiplier>true</UART_HAL_GetFDMultiplier>
-      <UART_HAL_SetTxNACKThreshold>true</UART_HAL_SetTxNACKThreshold>
-      <UART_HAL_GetTxNACKThreshold>true</UART_HAL_GetTxNACKThreshold>
-      <UART_HAL_SetRxNACKThreshold>true</UART_HAL_SetRxNACKThreshold>
-      <UART_HAL_GetRxNACKThreshold>true</UART_HAL_GetRxNACKThreshold>
-      <UART_HAL_SetTLen>true</UART_HAL_SetTLen>
-      <UART_HAL_GetTLen>true</UART_HAL_GetTLen>
-      <UART_HAL_SetAtrDurationTimer>true</UART_HAL_SetAtrDurationTimer>
-      <UART_HAL_GetAtrDurationTimer>true</UART_HAL_GetAtrDurationTimer>
-      <UART_HAL_SetWorkWaitTimeInteger>true</UART_HAL_SetWorkWaitTimeInteger>
-      <UART_HAL_GetWorkWaitTimeInteger>true</UART_HAL_GetWorkWaitTimeInteger>
-      <UART_HAL_SetCharacterWaitTimeInteger>true</UART_HAL_SetCharacterWaitTimeInteger>
-      <UART_HAL_GetCharacterWaitTimeInteger>true</UART_HAL_GetCharacterWaitTimeInteger>
-      <UART_HAL_SetBlockWaitTimeInteger>true</UART_HAL_SetBlockWaitTimeInteger>
-      <UART_HAL_GetBlockWaitTimeInteger>true</UART_HAL_GetBlockWaitTimeInteger>
-      <UART_HAL_SetBlockGuardTimeInteger>true</UART_HAL_SetBlockGuardTimeInteger>
-      <UART_HAL_GetBlockGuardTimeInteger>true</UART_HAL_GetBlockGuardTimeInteger>
-      <GenNumEvents>0</GenNumEvents>
-      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-      <GenMethodPos>0</GenMethodPos>
-      <GenExtraFilesCount>2</GenExtraFilesCount>
-      <ExtraFile0>SDK\platform\hal\inc\fsl_uart_hal.h</ExtraFile0>
-      <ExtraFile1>SDK\platform\hal\src\uart\fsl_uart_hal.c</ExtraFile1>
-    </InhrCompID_22>
-    <InhrCompID_23>
-      <Generated>true</Generated>
-      <GenCompName>fsl_lpuart_hal1</GenCompName>
-      <GenComponentVersion>1.3.0</GenComponentVersion>
-      <GenDriverVersion>01.00</GenDriverVersion>
-      <GenEventModule />
-      <HeaderAge>-1</HeaderAge>
-      <CodeAge>-1</CodeAge>
-      <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>63</GenNumMethods>
-      <LPUART_HAL_Init>true</LPUART_HAL_Init>
-      <LPUART_HAL_SetTransmitterCmd>true</LPUART_HAL_SetTransmitterCmd>
-      <LPUART_HAL_GetTransmitterCmd>true</LPUART_HAL_GetTransmitterCmd>
-      <LPUART_HAL_SetReceiverCmd>true</LPUART_HAL_SetReceiverCmd>
-      <LPUART_HAL_GetReceiverCmd>true</LPUART_HAL_GetReceiverCmd>
-      <LPUART_HAL_SetBaudRate>true</LPUART_HAL_SetBaudRate>
-      <LPUART_HAL_SetBaudRateDivisor>true</LPUART_HAL_SetBaudRateDivisor>
-      <LPUART_HAL_SetOversamplingRatio>true</LPUART_HAL_SetOversamplingRatio>
-      <LPUART_HAL_SetBothEdgeSamplingCmd>true</LPUART_HAL_SetBothEdgeSamplingCmd>
-      <LPUART_HAL_SetBitCountPerChar>true</LPUART_HAL_SetBitCountPerChar>
-      <LPUART_HAL_SetParityMode>true</LPUART_HAL_SetParityMode>
-      <LPUART_HAL_SetStopBitCount>true</LPUART_HAL_SetStopBitCount>
-      <LPUART_HAL_GetDataRegAddr>true</LPUART_HAL_GetDataRegAddr>
-      <LPUART_HAL_SetIntMode>true</LPUART_HAL_SetIntMode>
-      <LPUART_HAL_GetIntMode>true</LPUART_HAL_GetIntMode>
-      <LPUART_HAL_SetTxDmaCmd>true</LPUART_HAL_SetTxDmaCmd>
-      <LPUART_HAL_SetRxDmaCmd>true</LPUART_HAL_SetRxDmaCmd>
-      <LPUART_HAL_IsTxDmaEnabled>true</LPUART_HAL_IsTxDmaEnabled>
-      <LPUART_HAL_IsRxDmaEnabled>true</LPUART_HAL_IsRxDmaEnabled>
-      <LPUART_HAL_Putchar>true</LPUART_HAL_Putchar>
-      <LPUART_HAL_Putchar9>true</LPUART_HAL_Putchar9>
-      <LPUART_HAL_Putchar10>true</LPUART_HAL_Putchar10>
-      <LPUART_HAL_Getchar>true</LPUART_HAL_Getchar>
-      <LPUART_HAL_Getchar9>true</LPUART_HAL_Getchar9>
-      <LPUART_HAL_Getchar10>true</LPUART_HAL_Getchar10>
-      <LPUART_HAL_SendDataPolling>true</LPUART_HAL_SendDataPolling>
-      <LPUART_HAL_ReceiveDataPolling>true</LPUART_HAL_ReceiveDataPolling>
-      <LPUART_HAL_GetStatusFlag>true</LPUART_HAL_GetStatusFlag>
-      <LPUART_HAL_ClearStatusFlag>true</LPUART_HAL_ClearStatusFlag>
-      <LPUART_HAL_SetIdleChar>true</LPUART_HAL_SetIdleChar>
-      <LPUART_HAL_GetIdleChar>true</LPUART_HAL_GetIdleChar>
-      <LPUART_HAL_IsCurrentDataWithNoise>true</LPUART_HAL_IsCurrentDataWithNoise>
-      <LPUART_HAL_IsCurrentDataWithFrameError>true</LPUART_HAL_IsCurrentDataWithFrameError>
-      <LPUART_HAL_SetTxSpecialChar>true</LPUART_HAL_SetTxSpecialChar>
-      <LPUART_HAL_IsCurrentDataWithParityError>true</LPUART_HAL_IsCurrentDataWithParityError>
-      <LPUART_HAL_IsReceiveBufferEmpty>true</LPUART_HAL_IsReceiveBufferEmpty>
-      <LPUART_HAL_WasPreviousReceiverStateIdle>true</LPUART_HAL_WasPreviousReceiverStateIdle>
-      <LPUART_HAL_SetWaitModeOperation>true</LPUART_HAL_SetWaitModeOperation>
-      <LPUART_HAL_GetWaitModeOperation>true</LPUART_HAL_GetWaitModeOperation>
-      <LPUART_HAL_SetLoopbackCmd>true</LPUART_HAL_SetLoopbackCmd>
-      <LPUART_HAL_SetSingleWireCmd>true</LPUART_HAL_SetSingleWireCmd>
-      <LPUART_HAL_SetTxdirInSinglewireMode>true</LPUART_HAL_SetTxdirInSinglewireMode>
-      <LPUART_HAL_SetReceiverInStandbyMode>true</LPUART_HAL_SetReceiverInStandbyMode>
-      <LPUART_HAL_PutReceiverInNormalMode>true</LPUART_HAL_PutReceiverInNormalMode>
-      <LPUART_HAL_IsReceiverInStandby>true</LPUART_HAL_IsReceiverInStandby>
-      <LPUART_HAL_SetReceiverWakeupMode>true</LPUART_HAL_SetReceiverWakeupMode>
-      <LPUART_HAL_GetReceiverWakeupMode>true</LPUART_HAL_GetReceiverWakeupMode>
-      <LPUART_HAL_SetIdleLineDetect>true</LPUART_HAL_SetIdleLineDetect>
-      <LPUART_HAL_SetBreakCharTransmitLength>true</LPUART_HAL_SetBreakCharTransmitLength>
-      <LPUART_HAL_SetBreakCharDetectLength>true</LPUART_HAL_SetBreakCharDetectLength>
-      <LPUART_HAL_QueueBreakCharToSend>true</LPUART_HAL_QueueBreakCharToSend>
-      <LPUART_HAL_SetMatchAddressMode>true</LPUART_HAL_SetMatchAddressMode>
-      <LPUART_HAL_SetMatchAddressReg1>true</LPUART_HAL_SetMatchAddressReg1>
-      <LPUART_HAL_SetMatchAddressReg2>true</LPUART_HAL_SetMatchAddressReg2>
-      <LPUART_HAL_SetSendMsbFirstCmd>true</LPUART_HAL_SetSendMsbFirstCmd>
-      <LPUART_HAL_SetReceiveResyncCmd>true</LPUART_HAL_SetReceiveResyncCmd>
-      <LPUART_HAL_SetCtsSource>true</LPUART_HAL_SetCtsSource>
-      <LPUART_HAL_SetCtsMode>true</LPUART_HAL_SetCtsMode>
-      <LPUART_HAL_SetTxCtsCmd>true</LPUART_HAL_SetTxCtsCmd>
-      <LPUART_HAL_SetRxRtsCmd>true</LPUART_HAL_SetRxRtsCmd>
-      <LPUART_HAL_SetTxRtsCmd>true</LPUART_HAL_SetTxRtsCmd>
-      <LPUART_HAL_SetTxRtsPolarityMode>true</LPUART_HAL_SetTxRtsPolarityMode>
-      <LPUART_HAL_SetInfrared>true</LPUART_HAL_SetInfrared>
-      <GenNumEvents>0</GenNumEvents>
-      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-      <GenMethodPos>0</GenMethodPos>
-      <GenExtraFilesCount>2</GenExtraFilesCount>
-      <ExtraFile0>SDK\platform\hal\inc\fsl_lpuart_hal.h</ExtraFile0>
-      <ExtraFile1>SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</ExtraFile1>
-    </InhrCompID_23>
-  </ComponentID_21>
   <ComponentID_24>
     <Generated>true</Generated>
     <GenCompName>WAIT1</GenCompName>
@@ -2439,7 +2182,7 @@
     <GenComponentVersion>1.3.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1199791097</HeaderAge>
+    <HeaderAge>1199920690</HeaderAge>
     <CodeAge>1199791097</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>13</GenNumMethods>
@@ -2750,75 +2493,6 @@
     <ExtraFile5>Static_Code\System\Peripherals_Init.h</ExtraFile5>
     <ExtraFile6>Static_Code\System\Peripherals_Init.c</ExtraFile6>
   </ComponentID_40>
-  <ComponentID_48>
-    <Generated>true</Generated>
-    <GenCompName>ts_timer</GenCompName>
-    <GenComponentVersion>1.3.0</GenComponentVersion>
-    <GenDriverVersion>01.00</GenDriverVersion>
-    <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1199790746</HeaderAge>
-    <CodeAge>1199790746</CodeAge>
-    <AsemblAge>-1</AsemblAge>
-    <GenNumMethods>13</GenNumMethods>
-    <HWTIMER_SYS_Init>true</HWTIMER_SYS_Init>
-    <HWTIMER_SYS_Deinit>true</HWTIMER_SYS_Deinit>
-    <HWTIMER_SYS_SetPeriod>true</HWTIMER_SYS_SetPeriod>
-    <HWTIMER_SYS_GetPeriod>true</HWTIMER_SYS_GetPeriod>
-    <HWTIMER_SYS_Start>true</HWTIMER_SYS_Start>
-    <HWTIMER_SYS_Stop>true</HWTIMER_SYS_Stop>
-    <HWTIMER_SYS_GetModulo>true</HWTIMER_SYS_GetModulo>
-    <HWTIMER_SYS_GetTime>true</HWTIMER_SYS_GetTime>
-    <HWTIMER_SYS_GetTicks>true</HWTIMER_SYS_GetTicks>
-    <HWTIMER_SYS_RegisterCallback>true</HWTIMER_SYS_RegisterCallback>
-    <HWTIMER_SYS_BlockCallback>true</HWTIMER_SYS_BlockCallback>
-    <HWTIMER_SYS_UnblockCallback>true</HWTIMER_SYS_UnblockCallback>
-    <HWTIMER_SYS_CancelCallback>true</HWTIMER_SYS_CancelCallback>
-    <GenNumEvents>1</GenNumEvents>
-    <Callback_Selected>2</Callback_Selected>
-    <Callback_Name>ts_timer_OnTimeOut</Callback_Name>
-    <Callback_Priority>interrupts disabled</Callback_Priority>
-    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenMethodPos>0</GenMethodPos>
-    <GenExtraFilesCount>4</GenExtraFilesCount>
-    <ExtraFile0>SDK\platform\system\inc\fsl_hwtimer_systick.h</ExtraFile0>
-    <ExtraFile1>SDK\platform\system\inc\fsl_hwtimer.h</ExtraFile1>
-    <ExtraFile2>SDK\platform\system\src\hwtimer\fsl_hwtimer_systick.c</ExtraFile2>
-    <ExtraFile3>SDK\platform\system\src\hwtimer\fsl_hwtimer.c</ExtraFile3>
-    <InhrCompID_52>
-      <Generated>true</Generated>
-      <GenCompName>fsl_pit_hal1</GenCompName>
-      <GenComponentVersion>1.3.0</GenComponentVersion>
-      <GenDriverVersion>01.00</GenDriverVersion>
-      <GenEventModule />
-      <HeaderAge>-1</HeaderAge>
-      <CodeAge>-1</CodeAge>
-      <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>13</GenNumMethods>
-      <PIT_HAL_Enable>true</PIT_HAL_Enable>
-      <PIT_HAL_Disable>true</PIT_HAL_Disable>
-      <PIT_HAL_SetTimerRunInDebugCmd>true</PIT_HAL_SetTimerRunInDebugCmd>
-      <PIT_HAL_StartTimer>true</PIT_HAL_StartTimer>
-      <PIT_HAL_StopTimer>true</PIT_HAL_StopTimer>
-      <PIT_HAL_IsTimerRunning>true</PIT_HAL_IsTimerRunning>
-      <PIT_HAL_SetTimerPeriodByCount>true</PIT_HAL_SetTimerPeriodByCount>
-      <PIT_HAL_GetTimerPeriodByCount>true</PIT_HAL_GetTimerPeriodByCount>
-      <PIT_HAL_ReadTimerCount>true</PIT_HAL_ReadTimerCount>
-      <PIT_HAL_SetIntCmd>true</PIT_HAL_SetIntCmd>
-      <PIT_HAL_GetIntCmd>true</PIT_HAL_GetIntCmd>
-      <PIT_HAL_ClearIntFlag>true</PIT_HAL_ClearIntFlag>
-      <PIT_HAL_IsIntPending>true</PIT_HAL_IsIntPending>
-      <GenNumEvents>0</GenNumEvents>
-      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-      <GenMethodPos>0</GenMethodPos>
-      <GenExtraFilesCount>2</GenExtraFilesCount>
-      <ExtraFile0>SDK\platform\hal\inc\fsl_pit_hal.h</ExtraFile0>
-      <ExtraFile1>SDK\platform\hal\src\pit\fsl_pit_hal.c</ExtraFile1>
-    </InhrCompID_52>
-  </ComponentID_48>
   <ComponentID_49>
     <Generated>true</Generated>
     <GenCompName>opt_bits</GenCompName>
@@ -3109,6 +2783,242 @@
       <ExtraFile1>SDK\platform\hal\src\port\fsl_port_hal.c</ExtraFile1>
     </InhrCompID_57>
   </ComponentID_55>
+  <ComponentID_68>
+    <Generated>true</Generated>
+    <GenCompName>DbgCs1</GenCompName>
+    <GenComponentVersion>1.3.0</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1199815729</HeaderAge>
+    <CodeAge>1199813357</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>6</GenNumMethods>
+    <DbgConsole_Init>true</DbgConsole_Init>
+    <DbgConsole_DeInit>true</DbgConsole_DeInit>
+    <debug_printf>true</debug_printf>
+    <debug_putchar>true</debug_putchar>
+    <debug_scanf>true</debug_scanf>
+    <debug_getchar>true</debug_getchar>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>4</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\utilities\inc\fsl_debug_console.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\utilities\src\print_scan.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\utilities\src\print_scan.c</ExtraFile2>
+    <ExtraFile3>SDK\platform\utilities\src\fsl_debug_console.c</ExtraFile3>
+    <InhrCompID_69>
+      <Generated>true</Generated>
+      <GenCompName>fsl_uart_hal1</GenCompName>
+      <GenComponentVersion>1.3.0</GenComponentVersion>
+      <GenDriverVersion>01.00</GenDriverVersion>
+      <GenEventModule />
+      <HeaderAge>-1</HeaderAge>
+      <CodeAge>-1</CodeAge>
+      <AsemblAge>-1</AsemblAge>
+      <GenNumMethods>108</GenNumMethods>
+      <UART_HAL_Init>true</UART_HAL_Init>
+      <UART_HAL_EnableTransmitter>true</UART_HAL_EnableTransmitter>
+      <UART_HAL_DisableTransmitter>true</UART_HAL_DisableTransmitter>
+      <UART_HAL_IsTransmitterEnabled>true</UART_HAL_IsTransmitterEnabled>
+      <UART_HAL_EnableReceiver>true</UART_HAL_EnableReceiver>
+      <UART_HAL_DisableReceiver>true</UART_HAL_DisableReceiver>
+      <UART_HAL_IsReceiverEnabled>true</UART_HAL_IsReceiverEnabled>
+      <UART_HAL_SetBaudRate>true</UART_HAL_SetBaudRate>
+      <UART_HAL_SetBaudRateDivisor>true</UART_HAL_SetBaudRateDivisor>
+      <UART_HAL_SetBaudRateFineAdjust>true</UART_HAL_SetBaudRateFineAdjust>
+      <UART_HAL_SetBitCountPerChar>true</UART_HAL_SetBitCountPerChar>
+      <UART_HAL_SetParityMode>true</UART_HAL_SetParityMode>
+      <UART_HAL_GetDataRegAddr>true</UART_HAL_GetDataRegAddr>
+      <UART_HAL_SetIntMode>true</UART_HAL_SetIntMode>
+      <UART_HAL_GetIntMode>true</UART_HAL_GetIntMode>
+      <UART_HAL_SetTxDmaCmd>true</UART_HAL_SetTxDmaCmd>
+      <UART_HAL_GetTxDmaCmd>true</UART_HAL_GetTxDmaCmd>
+      <UART_HAL_SetRxDmaCmd>true</UART_HAL_SetRxDmaCmd>
+      <UART_HAL_GetRxDmaCmd>true</UART_HAL_GetRxDmaCmd>
+      <UART_HAL_Putchar>true</UART_HAL_Putchar>
+      <UART_HAL_Putchar9>true</UART_HAL_Putchar9>
+      <UART_HAL_Getchar>true</UART_HAL_Getchar>
+      <UART_HAL_Getchar9>true</UART_HAL_Getchar9>
+      <UART_HAL_SendDataPolling>true</UART_HAL_SendDataPolling>
+      <UART_HAL_ReceiveDataPolling>true</UART_HAL_ReceiveDataPolling>
+      <UART_HAL_SetBit10AsParityBit>true</UART_HAL_SetBit10AsParityBit>
+      <UART_HAL_IsBit10SetAsParityBit>true</UART_HAL_IsBit10SetAsParityBit>
+      <UART_HAL_IsCurrentDataWithNoise>true</UART_HAL_IsCurrentDataWithNoise>
+      <UART_HAL_IsCurrentDataWithParityError>true</UART_HAL_IsCurrentDataWithParityError>
+      <UART_HAL_GetStatusFlag>true</UART_HAL_GetStatusFlag>
+      <UART_HAL_ClearStatusFlag>true</UART_HAL_ClearStatusFlag>
+      <UART_HAL_SetTxFifoCmd>true</UART_HAL_SetTxFifoCmd>
+      <UART_HAL_SetRxFifoCmd>true</UART_HAL_SetRxFifoCmd>
+      <UART_HAL_GetTxFifoSize>true</UART_HAL_GetTxFifoSize>
+      <UART_HAL_GetRxFifoSize>true</UART_HAL_GetRxFifoSize>
+      <UART_HAL_FlushTxFifo>true</UART_HAL_FlushTxFifo>
+      <UART_HAL_FlushRxFifo>true</UART_HAL_FlushRxFifo>
+      <UART_HAL_IsTxFifoEmpty>true</UART_HAL_IsTxFifoEmpty>
+      <UART_HAL_IsRxFifoEmpty>true</UART_HAL_IsRxFifoEmpty>
+      <UART_HAL_SetTxFifoWatermark>true</UART_HAL_SetTxFifoWatermark>
+      <UART_HAL_GetTxFifoWatermark>true</UART_HAL_GetTxFifoWatermark>
+      <UART_HAL_GetTxDatawordCountInFifo>true</UART_HAL_GetTxDatawordCountInFifo>
+      <UART_HAL_SetRxFifoWatermark>true</UART_HAL_SetRxFifoWatermark>
+      <UART_HAL_GetRxDatawordCountInFifo>true</UART_HAL_GetRxDatawordCountInFifo>
+      <UART_HAL_GetRxFifoWatermark>true</UART_HAL_GetRxFifoWatermark>
+      <UART_HAL_SetWaitModeOperation>true</UART_HAL_SetWaitModeOperation>
+      <UART_HAL_GetWaitModeOperation>true</UART_HAL_GetWaitModeOperation>
+      <UART_HAL_SetLoopCmd>true</UART_HAL_SetLoopCmd>
+      <UART_HAL_SetReceiverSource>true</UART_HAL_SetReceiverSource>
+      <UART_HAL_SetTransmitterDir>true</UART_HAL_SetTransmitterDir>
+      <UART_HAL_PutReceiverInStandbyMode>true</UART_HAL_PutReceiverInStandbyMode>
+      <UART_HAL_PutReceiverInNormalMode>true</UART_HAL_PutReceiverInNormalMode>
+      <UART_HAL_IsReceiverInStandby>true</UART_HAL_IsReceiverInStandby>
+      <UART_HAL_SetReceiverWakeupMethod>true</UART_HAL_SetReceiverWakeupMethod>
+      <UART_HAL_GetReceiverWakeupMethod>true</UART_HAL_GetReceiverWakeupMethod>
+      <UART_HAL_ConfigIdleLineDetect>true</UART_HAL_ConfigIdleLineDetect>
+      <UART_HAL_SetBreakCharTransmitLength>true</UART_HAL_SetBreakCharTransmitLength>
+      <UART_HAL_SetBreakCharDetectLength>true</UART_HAL_SetBreakCharDetectLength>
+      <UART_HAL_SetBreakCharCmd>true</UART_HAL_SetBreakCharCmd>
+      <UART_HAL_SetMatchAddress>true</UART_HAL_SetMatchAddress>
+      <UART_HAL_SetSendMsbFirstCmd>true</UART_HAL_SetSendMsbFirstCmd>
+      <UART_HAL_SetReceiverRtsCmd>true</UART_HAL_SetReceiverRtsCmd>
+      <UART_HAL_SetTransmitterRtsCmd>true</UART_HAL_SetTransmitterRtsCmd>
+      <UART_HAL_SetTransmitterRtsPolarityMode>true</UART_HAL_SetTransmitterRtsPolarityMode>
+      <UART_HAL_SetTransmitterCtsCmd>true</UART_HAL_SetTransmitterCtsCmd>
+      <UART_HAL_SetInfraredOperation>true</UART_HAL_SetInfraredOperation>
+      <UART_HAL_EnableISO7816>true</UART_HAL_EnableISO7816>
+      <UART_HAL_DisableISO7816>true</UART_HAL_DisableISO7816>
+      <UART_HAL_IsISO7816Enabled>true</UART_HAL_IsISO7816Enabled>
+      <UART_HAL_ConfigureNackOnOverflow>true</UART_HAL_ConfigureNackOnOverflow>
+      <UART_HAL_Is6NackOnOverflowEnabled>true</UART_HAL_Is6NackOnOverflowEnabled>
+      <UART_HAL_ConfigureNackOnError>true</UART_HAL_ConfigureNackOnError>
+      <UART_HAL_Is6NackOnOnErrorEnabled>true</UART_HAL_Is6NackOnOnErrorEnabled>
+      <UART_HAL_ConfigureInitialCharacterDetection>true</UART_HAL_ConfigureInitialCharacterDetection>
+      <UART_HAL_IsInitialCharacterDetectionEnabled>true</UART_HAL_IsInitialCharacterDetectionEnabled>
+      <UART_HAL_SetTransferProtocolType>true</UART_HAL_SetTransferProtocolType>
+      <UART_HAL_GetTransferProtocolType>true</UART_HAL_GetTransferProtocolType>
+      <UART_HAL_SetISO7816IntMode>true</UART_HAL_SetISO7816IntMode>
+      <UART_HAL_GetISO7816IntMode>true</UART_HAL_GetISO7816IntMode>
+      <UART_HAL_ClearISO7816InterruptStatus>true</UART_HAL_ClearISO7816InterruptStatus>
+      <UART_HAL_GetISO7816InterruptStatus>true</UART_HAL_GetISO7816InterruptStatus>
+      <UART_HAL_SetISO7816Etu>true</UART_HAL_SetISO7816Etu>
+      <UART_HAL_ResetISO7816WaitTimer>true</UART_HAL_ResetISO7816WaitTimer>
+      <UART_HAL_ResetISO7816CharacterWaitTimer>true</UART_HAL_ResetISO7816CharacterWaitTimer>
+      <UART_HAL_ResetISO7816BlockWaitTimer>true</UART_HAL_ResetISO7816BlockWaitTimer>
+      <UART_HAL_SetWaitTimeMultipllier>true</UART_HAL_SetWaitTimeMultipllier>
+      <UART_HAL_GetWaitTimeMultipllier>true</UART_HAL_GetWaitTimeMultipllier>
+      <UART_HAL_ResetWaitTimeMultipllier>true</UART_HAL_ResetWaitTimeMultipllier>
+      <UART_HAL_SetGuardBandInteger>true</UART_HAL_SetGuardBandInteger>
+      <UART_HAL_GetGuardBandInteger>true</UART_HAL_GetGuardBandInteger>
+      <UART_HAL_SetFDMultiplier>true</UART_HAL_SetFDMultiplier>
+      <UART_HAL_GetFDMultiplier>true</UART_HAL_GetFDMultiplier>
+      <UART_HAL_SetTxNACKThreshold>true</UART_HAL_SetTxNACKThreshold>
+      <UART_HAL_GetTxNACKThreshold>true</UART_HAL_GetTxNACKThreshold>
+      <UART_HAL_SetRxNACKThreshold>true</UART_HAL_SetRxNACKThreshold>
+      <UART_HAL_GetRxNACKThreshold>true</UART_HAL_GetRxNACKThreshold>
+      <UART_HAL_SetTLen>true</UART_HAL_SetTLen>
+      <UART_HAL_GetTLen>true</UART_HAL_GetTLen>
+      <UART_HAL_SetAtrDurationTimer>true</UART_HAL_SetAtrDurationTimer>
+      <UART_HAL_GetAtrDurationTimer>true</UART_HAL_GetAtrDurationTimer>
+      <UART_HAL_SetWorkWaitTimeInteger>true</UART_HAL_SetWorkWaitTimeInteger>
+      <UART_HAL_GetWorkWaitTimeInteger>true</UART_HAL_GetWorkWaitTimeInteger>
+      <UART_HAL_SetCharacterWaitTimeInteger>true</UART_HAL_SetCharacterWaitTimeInteger>
+      <UART_HAL_GetCharacterWaitTimeInteger>true</UART_HAL_GetCharacterWaitTimeInteger>
+      <UART_HAL_SetBlockWaitTimeInteger>true</UART_HAL_SetBlockWaitTimeInteger>
+      <UART_HAL_GetBlockWaitTimeInteger>true</UART_HAL_GetBlockWaitTimeInteger>
+      <UART_HAL_SetBlockGuardTimeInteger>true</UART_HAL_SetBlockGuardTimeInteger>
+      <UART_HAL_GetBlockGuardTimeInteger>true</UART_HAL_GetBlockGuardTimeInteger>
+      <GenNumEvents>0</GenNumEvents>
+      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+      <GenMethodPos>0</GenMethodPos>
+      <GenExtraFilesCount>2</GenExtraFilesCount>
+      <ExtraFile0>SDK\platform\hal\inc\fsl_uart_hal.h</ExtraFile0>
+      <ExtraFile1>SDK\platform\hal\src\uart\fsl_uart_hal.c</ExtraFile1>
+    </InhrCompID_69>
+    <InhrCompID_70>
+      <Generated>true</Generated>
+      <GenCompName>fsl_lpuart_hal1</GenCompName>
+      <GenComponentVersion>1.3.0</GenComponentVersion>
+      <GenDriverVersion>01.00</GenDriverVersion>
+      <GenEventModule />
+      <HeaderAge>-1</HeaderAge>
+      <CodeAge>-1</CodeAge>
+      <AsemblAge>-1</AsemblAge>
+      <GenNumMethods>63</GenNumMethods>
+      <LPUART_HAL_Init>true</LPUART_HAL_Init>
+      <LPUART_HAL_SetTransmitterCmd>true</LPUART_HAL_SetTransmitterCmd>
+      <LPUART_HAL_GetTransmitterCmd>true</LPUART_HAL_GetTransmitterCmd>
+      <LPUART_HAL_SetReceiverCmd>true</LPUART_HAL_SetReceiverCmd>
+      <LPUART_HAL_GetReceiverCmd>true</LPUART_HAL_GetReceiverCmd>
+      <LPUART_HAL_SetBaudRate>true</LPUART_HAL_SetBaudRate>
+      <LPUART_HAL_SetBaudRateDivisor>true</LPUART_HAL_SetBaudRateDivisor>
+      <LPUART_HAL_SetOversamplingRatio>true</LPUART_HAL_SetOversamplingRatio>
+      <LPUART_HAL_SetBothEdgeSamplingCmd>true</LPUART_HAL_SetBothEdgeSamplingCmd>
+      <LPUART_HAL_SetBitCountPerChar>true</LPUART_HAL_SetBitCountPerChar>
+      <LPUART_HAL_SetParityMode>true</LPUART_HAL_SetParityMode>
+      <LPUART_HAL_SetStopBitCount>true</LPUART_HAL_SetStopBitCount>
+      <LPUART_HAL_GetDataRegAddr>true</LPUART_HAL_GetDataRegAddr>
+      <LPUART_HAL_SetIntMode>true</LPUART_HAL_SetIntMode>
+      <LPUART_HAL_GetIntMode>true</LPUART_HAL_GetIntMode>
+      <LPUART_HAL_SetTxDmaCmd>true</LPUART_HAL_SetTxDmaCmd>
+      <LPUART_HAL_SetRxDmaCmd>true</LPUART_HAL_SetRxDmaCmd>
+      <LPUART_HAL_IsTxDmaEnabled>true</LPUART_HAL_IsTxDmaEnabled>
+      <LPUART_HAL_IsRxDmaEnabled>true</LPUART_HAL_IsRxDmaEnabled>
+      <LPUART_HAL_Putchar>true</LPUART_HAL_Putchar>
+      <LPUART_HAL_Putchar9>true</LPUART_HAL_Putchar9>
+      <LPUART_HAL_Putchar10>true</LPUART_HAL_Putchar10>
+      <LPUART_HAL_Getchar>true</LPUART_HAL_Getchar>
+      <LPUART_HAL_Getchar9>true</LPUART_HAL_Getchar9>
+      <LPUART_HAL_Getchar10>true</LPUART_HAL_Getchar10>
+      <LPUART_HAL_SendDataPolling>true</LPUART_HAL_SendDataPolling>
+      <LPUART_HAL_ReceiveDataPolling>true</LPUART_HAL_ReceiveDataPolling>
+      <LPUART_HAL_GetStatusFlag>true</LPUART_HAL_GetStatusFlag>
+      <LPUART_HAL_ClearStatusFlag>true</LPUART_HAL_ClearStatusFlag>
+      <LPUART_HAL_SetIdleChar>true</LPUART_HAL_SetIdleChar>
+      <LPUART_HAL_GetIdleChar>true</LPUART_HAL_GetIdleChar>
+      <LPUART_HAL_IsCurrentDataWithNoise>true</LPUART_HAL_IsCurrentDataWithNoise>
+      <LPUART_HAL_IsCurrentDataWithFrameError>true</LPUART_HAL_IsCurrentDataWithFrameError>
+      <LPUART_HAL_SetTxSpecialChar>true</LPUART_HAL_SetTxSpecialChar>
+      <LPUART_HAL_IsCurrentDataWithParityError>true</LPUART_HAL_IsCurrentDataWithParityError>
+      <LPUART_HAL_IsReceiveBufferEmpty>true</LPUART_HAL_IsReceiveBufferEmpty>
+      <LPUART_HAL_WasPreviousReceiverStateIdle>true</LPUART_HAL_WasPreviousReceiverStateIdle>
+      <LPUART_HAL_SetWaitModeOperation>true</LPUART_HAL_SetWaitModeOperation>
+      <LPUART_HAL_GetWaitModeOperation>true</LPUART_HAL_GetWaitModeOperation>
+      <LPUART_HAL_SetLoopbackCmd>true</LPUART_HAL_SetLoopbackCmd>
+      <LPUART_HAL_SetSingleWireCmd>true</LPUART_HAL_SetSingleWireCmd>
+      <LPUART_HAL_SetTxdirInSinglewireMode>true</LPUART_HAL_SetTxdirInSinglewireMode>
+      <LPUART_HAL_SetReceiverInStandbyMode>true</LPUART_HAL_SetReceiverInStandbyMode>
+      <LPUART_HAL_PutReceiverInNormalMode>true</LPUART_HAL_PutReceiverInNormalMode>
+      <LPUART_HAL_IsReceiverInStandby>true</LPUART_HAL_IsReceiverInStandby>
+      <LPUART_HAL_SetReceiverWakeupMode>true</LPUART_HAL_SetReceiverWakeupMode>
+      <LPUART_HAL_GetReceiverWakeupMode>true</LPUART_HAL_GetReceiverWakeupMode>
+      <LPUART_HAL_SetIdleLineDetect>true</LPUART_HAL_SetIdleLineDetect>
+      <LPUART_HAL_SetBreakCharTransmitLength>true</LPUART_HAL_SetBreakCharTransmitLength>
+      <LPUART_HAL_SetBreakCharDetectLength>true</LPUART_HAL_SetBreakCharDetectLength>
+      <LPUART_HAL_QueueBreakCharToSend>true</LPUART_HAL_QueueBreakCharToSend>
+      <LPUART_HAL_SetMatchAddressMode>true</LPUART_HAL_SetMatchAddressMode>
+      <LPUART_HAL_SetMatchAddressReg1>true</LPUART_HAL_SetMatchAddressReg1>
+      <LPUART_HAL_SetMatchAddressReg2>true</LPUART_HAL_SetMatchAddressReg2>
+      <LPUART_HAL_SetSendMsbFirstCmd>true</LPUART_HAL_SetSendMsbFirstCmd>
+      <LPUART_HAL_SetReceiveResyncCmd>true</LPUART_HAL_SetReceiveResyncCmd>
+      <LPUART_HAL_SetCtsSource>true</LPUART_HAL_SetCtsSource>
+      <LPUART_HAL_SetCtsMode>true</LPUART_HAL_SetCtsMode>
+      <LPUART_HAL_SetTxCtsCmd>true</LPUART_HAL_SetTxCtsCmd>
+      <LPUART_HAL_SetRxRtsCmd>true</LPUART_HAL_SetRxRtsCmd>
+      <LPUART_HAL_SetTxRtsCmd>true</LPUART_HAL_SetTxRtsCmd>
+      <LPUART_HAL_SetTxRtsPolarityMode>true</LPUART_HAL_SetTxRtsPolarityMode>
+      <LPUART_HAL_SetInfrared>true</LPUART_HAL_SetInfrared>
+      <GenNumEvents>0</GenNumEvents>
+      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+      <GenMethodPos>0</GenMethodPos>
+      <GenExtraFilesCount>2</GenExtraFilesCount>
+      <ExtraFile0>SDK\platform\hal\inc\fsl_lpuart_hal.h</ExtraFile0>
+      <ExtraFile1>SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</ExtraFile1>
+    </InhrCompID_70>
+  </ComponentID_68>
   <UsedSrcFiles>
     <SrcFile0>Drivers\PEx_Kinetis.src=1194226771</SrcFile0>
     <SrcFile1>Drivers\Kinetis\fsl_mcg_hal.drv=-1</SrcFile1>
@@ -3181,10 +3091,10 @@
     <SrcFile68>Drivers\Common\KinetisCommon_Init.inc=1183486427</SrcFile68>
     <SrcFile69>Drivers\Common\HeaderFreescale.h=1183486427</SrcFile69>
     <SrcFile70>Drivers\Kinetis\fsl_lpuart_hal.drv=-1</SrcFile70>
-    <SrcFile71>Drivers\Kinetis\fsl_debug_console.drv=-1</SrcFile71>
-    <SrcFile72>Drivers\Common\Header.doxy=1183486427</SrcFile72>
-    <SrcFile73>Drivers\Kinetis\fsl_uart_hal.drv=-1</SrcFile73>
-    <SrcFile74>Drivers\fsl_adc16.src=-1</SrcFile74>
+    <SrcFile71>Drivers\Common\Header.doxy=1183486427</SrcFile71>
+    <SrcFile72>Drivers\Kinetis\fsl_debug_console.drv=-1</SrcFile72>
+    <SrcFile73>Drivers\fsl_adc16.src=-1</SrcFile73>
+    <SrcFile74>Drivers\Kinetis\fsl_uart_hal.drv=-1</SrcFile74>
     <SrcFile75>Drivers\Kinetis\fsl_os_abstraction.drv=-1</SrcFile75>
     <SrcFile76>Drivers\Kinetis\InitClockGate_MK22FN512LL12_4SDK.prg=1194226772</SrcFile76>
     <SrcFile77>Drivers\Common\WaitWaitms.Inc=1195878511</SrcFile77>

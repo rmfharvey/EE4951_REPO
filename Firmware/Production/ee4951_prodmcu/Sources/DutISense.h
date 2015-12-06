@@ -22,7 +22,7 @@
 #define mA_HITHRESH 40000	// 60mA
 #define mA_LOTHRESH	40		// 60uA
 #define uA_HITHRESH	30000	// 459uA
-#define uA_LOTHRESH	50		// 765nA
+#define uA_LOTHRESH	800		// 765nA	was 50
 #define nA_HITHRESH	46000	// 69uA
 
 

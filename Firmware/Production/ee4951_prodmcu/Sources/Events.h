@@ -34,14 +34,13 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "op_sys.h"
-#include "debug.h"
 #include "WAIT1.h"
 #include "adc_trigger.h"
 #include "dut_gpio.h"
 #include "dut_adc.h"
-#include "ts_timer.h"
 #include "opt_bits.h"
 #include "testgpio.h"
+#include "DbgCs1.h"
 #include "system_timer.h"
 
 #ifdef __cplusplus
