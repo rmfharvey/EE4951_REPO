@@ -41,6 +41,7 @@
 #include "opt_bits.h"
 #include "testgpio.h"
 #include "DbgCs1.h"
+#include "self_adc.h"
 #include "system_timer.h"
 
 #ifdef __cplusplus
@@ -96,6 +97,18 @@ void ts_timer_OnTimeOut(void* data);
 ** ===================================================================
 */
 void adc_trigger_OnTimeOut(void* data);
+
+/*
+** ===================================================================
+**     Interrupt handler : ADC1_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void ADC1_IRQHandler(void);
 
 /* END Events */
 

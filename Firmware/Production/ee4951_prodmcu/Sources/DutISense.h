@@ -58,7 +58,6 @@ typedef struct CURRENT_RANGE	{
 class DutISense {
 public:
 	DutISense();								// Constructor auto-initializes all DUT Isense channels
-	virtual ~DutISense();						// Destructor doesn't do anything right now
 	void enableCurrentRange(iRange_t range);	// Sets which range is active
 	void disableCurrentRange(void);				// Disables all Current Ranges
 	uint8_t getCurrentRange(void);				// Returns the active range as an unsigned int in [0,3]
@@ -74,7 +73,7 @@ private:
 	currentRange_t range2;
 	currentRange_t range3;
 	currentRange_t *activeRange;			// Pointer to whichever range is currently active
-	adc16_chn_config_t *activeADCChannel;	// Pointer to whicever ADC channel is currently active
+	adc16_chn_config_t *activeADCChannel;	// Pointer to whichever ADC channel is currently active
 
 	void PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain, uint8_t rngNum);
 	void PRV_enableRange(currentRange_t *newRange);

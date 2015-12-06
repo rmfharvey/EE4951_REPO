@@ -30,6 +30,7 @@
 #include "Cpu.h"
 #include "Events.h"
 #include "DutISense.h"
+#include "DutVSense.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -79,15 +80,31 @@ void PORTA_IRQHandler(void)	{
 */
 void adc_trigger_OnTimeOut(void* data)
 {
-	 static uint8_t i=0;
+	 static uint8_t count=0;
 	 extern DutISense dutIsense;
-	 dutIsense.updateADCVal();
-	 //PRINTF("%d     \r",dutIsense.getADCValRaw());
-	 if(!i++)	{
-		 PRINTF("%05d\r",dutIsense.getADCValRaw());
-		 //PRINTF(":");
-	 }
+	 extern DutVSense dutVsense;
 
+	 if(count&0b1)
+		 dutVsense.updateADCVal();
+	 else
+		 dutIsense.updateADCVal();
+	 if(!count++)
+		 PRINTF("I: %05d\tV: %05d\r",dutIsense.getADCValRaw(), dutVsense.getADCValRaw());
+}
+
+/*
+** ===================================================================
+**     Interrupt handler : ADC1_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void ADC1_IRQHandler(void)
+{
+  /* Write your code here ... */
 }
 
 /* END Events */

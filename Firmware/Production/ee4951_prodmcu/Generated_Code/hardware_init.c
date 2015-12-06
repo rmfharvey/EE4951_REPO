@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 22:23, # CodeGen: 71
+**     Date/Time   : 2015-12-06, 13:15, # CodeGen: 81
 **     Abstract    :
 **
 **     Settings    :
@@ -1305,6 +1305,7 @@ void hardware_init(void) {
   
   init_adc_pins(ADC0_IDX);
   init_adc_pins(ADC1_IDX);
+  init_cmp_pins(CMP0_IDX);
   init_gpio_pins(PORTA_IDX);
   init_gpio_pins(PORTC_IDX);
   init_gpio_pins(PORTD_IDX);

@@ -1,9 +1,11 @@
 /*
- * system_timer.h
+ * system_timer.h  (Deprecated as of 2015-12-4)
  *
  *  Created on: Dec 1, 2015
  *      Author: RossHarvey
  */
+
+
 
 #ifndef SOURCES_SYSTEM_TIMER_H_
 #define SOURCES_SYSTEM_TIMER_H_

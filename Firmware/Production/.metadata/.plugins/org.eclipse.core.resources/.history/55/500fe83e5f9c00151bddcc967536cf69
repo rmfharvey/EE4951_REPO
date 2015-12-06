@@ -1,0 +1,31 @@
+/*
+ * DutVSense.cpp
+ *
+ *  Created on: Dec 6, 2015
+ *      Author: RossHarvey
+ */
+
+#include <DutVSense.h>
+
+DutVSense::DutVSense() {
+	scalingFactor
+	rawADCVal
+	floatADCVal
+	adcConfig
+
+}
+
+void DutVSense::updateADCVal(void)	{
+
+}
+
+uint16_t DutVSense::getADCValRaw(void)	{
+
+}
+
+float DutVSense::getADCValScaled(void)	{
+
+}
+
+
+

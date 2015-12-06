@@ -1,0 +1,16 @@
+/*
+ * SelfPower.h
+ *
+ *  Created on: Dec 6, 2015
+ *      Author: RossHarvey
+ */
+
+#ifndef SOURCES_SELFPOWER_H_
+#define SOURCES_SELFPOWER_H_
+
+class SelfPower {
+public:
+	SelfPower();
+};
+
+#endif /* SOURCES_SELFPOWER_H_ */

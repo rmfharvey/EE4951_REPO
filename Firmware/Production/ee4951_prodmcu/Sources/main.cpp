@@ -40,26 +40,28 @@
 #include "opt_bits.h"
 #include "testgpio.h"
 #include "DbgCs1.h"
+#include "self_adc.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "system_timer.h"
 #include "DutISense.h"
+#include "DutVSense.h"
 
 
-//TODO DUT Monitor: Scan ADCs automatically
-//TODO DUT Monitor: Switching ADC ranges automatically.  Maybe hardware compare
 //TODO Self Monitor: Test ADCs
 //TODO Timestamp and packet construction
+//TODO Test interrupt driven Vsense and Isense switching
 
 
 
 /* Global Variables */
-sysTimer_t timer;
+//sysTimer_t timer;
 uint8_t	startupOptions;
 DutISense dutIsense;
-bool adcReady = false;
+DutVSense dutVsense;
+
 
 void cycleRanges(DutISense *dutI, uint16_t delay)	{
 	dutI->enableCurrentRange(nA);
@@ -88,11 +90,6 @@ uint8_t getStartupOptions()	{
 	return temp;
 }
 
-void updateADCValues(void)	{
-	uint16_t dutCurrentRaw;
-    dutIsense.updateADCVal();
-    dutCurrentRaw = dutIsense.getADCValRaw();
-}
 
 /* Deprecated in production */
 void setIRangeFromStartup(uint8_t opt)	{
@@ -144,7 +141,6 @@ void userInit(void)	{
 	//setIRangeFromStartup(startupOptions);
 
 	/* Start ADC Trigger Timer	*/
-	uint8_t temp=0;
 	PRINTF("Starting ADC Trigger: ");
 	if(HWTIMER_SYS_Start(&adc_trigger_Handle)==kHwtimerSuccess)	{
 		PRINTF("Success\n\r");
@@ -184,8 +180,10 @@ int main(void)
 
   uint32_t i=0;
   while(true)	{
+
+
 	  i++;
-	 /* uint8_t range = getStartupOptions();
+	  /*uint8_t range = getStartupOptions();
 	  setIRangeFromStartup(range);
 	  switch(range){
 	  case 3:
@@ -208,7 +206,8 @@ int main(void)
 	  		break;
 	  }
 	  PRINTF("%05d\r",ADC16_DRV_GetConvValueRAW(dut_adc_IDX,0U));
-	  WAIT1_Waitms(100);*/
+	  */
+	  WAIT1_Waitms(100);
   }
 
 

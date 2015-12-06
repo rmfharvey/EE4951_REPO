@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 22:23, # CodeGen: 71
+**     Date/Time   : 2015-12-06, 13:15, # CodeGen: 81
 **     Abstract    :
 **
 **     Settings    :
@@ -1245,6 +1245,8 @@
 **         hardware_init          - void hardware_init(void);
 **         init_adc_pins          - void init_adc_pins(uint32_t instance);
 **         deinit_adc_pins        - void deinit_adc_pins(uint32_t instance);
+**         init_cmp_pins          - void init_cmp_pins(uint32_t instance);
+**         deinit_cmp_pins        - void deinit_cmp_pins(uint32_t instance);
 **         init_gpio_pins         - void init_gpio_pins(uint32_t instance);
 **         deinit_gpio_pins       - void deinit_gpio_pins(uint32_t instance);
 **         init_jtag_pins         - void init_jtag_pins(uint32_t instance);

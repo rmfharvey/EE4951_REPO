@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 22:57, # CodeGen: 72
+**     Date/Time   : 2015-12-06, 13:15, # CodeGen: 81
 **     Abstract    :
 **
 **     Settings    :
@@ -177,6 +177,11 @@ void Components_Init(void)
   /* Debug console initialization */
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
   /*! DbgCs1 Auto initialization end */
+  /*! self_adc Auto initialization start */
+  ADC16_DRV_Init(self_adc_IDX, &self_adc_InitConfig0);
+  ADC16_DRV_ConfigConvChn(self_adc_IDX, 0U, &self3v3_vsense);
+  /*! self_adc Auto initialization end */
+
 }
 #endif /* CPU_COMPONENTS_INIT */
 

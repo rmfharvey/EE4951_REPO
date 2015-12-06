@@ -1,0 +1,45 @@
+/*
+ * SelfPower.h
+ *
+ *  Created on: Dec 6, 2015
+ *      Author: RossHarvey
+ */
+
+#ifndef SOURCES_SELFPOWER_H_
+#define SOURCES_SELFPOWER_H_
+
+
+
+typedef struct SELF_CURRENT_RANGE	{
+	adc16_chn_config_t	adcChConfig;		// ADC channel configuration
+	volatile uint16_t 	rawADCVal;			// 16-bit, unsigned fractional ADC value
+	float				scaledADCVal;		// ADC Val scaled by reference voltage (Value in amps)
+	float				shuntRes;			// Current shunt resistance value
+	uint8_t				ampGain;			// Shunt amplifier gain
+	float				scalingFactor;		// Scaling factor
+}selfCurrentRange_t;
+
+
+typedef struct SELF_VOLTAGE_RANGE	{
+	adc16_chn_config_t	adcChConfig;		// ADC channel configuration
+	volatile uint16_t 	rawADCVal;			// 16-bit, unsigned fractional ADC value
+	float				scaledADCVal;		// ADC Val scaled by reference voltage (Value in amps)
+	float				topResistance;		// Resistor divider top
+	float				bottomResistance;	// Resistor divider bottom
+	float				scalingFactor;		// Scaling factor
+}selfVoltageRange_t;
+
+
+
+class SelfPower {
+
+public:
+	SelfPower();
+private:
+	selfCurrentRange_t
+	selfCurrentRange_t
+	selfVoltageRange_t
+	selfVoltageRange_t
+};
+
+#endif /* SOURCES_SELFPOWER_H_ */

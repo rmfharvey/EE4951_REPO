@@ -155,9 +155,12 @@
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se19</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_dm3</td><td>alt0</td><td>Input</td></tr>
 			<tr>
-				<td rowspan='3'>22</td><td rowspan='3'>VDDA</td><td rowspan='3'><small><i>same</i></small></td>
-				<td bgcolor='#F8FF9A'>ADC0</td><td bgcolor='#F8FF9A'>adc_vref_vdda</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
+				<td rowspan='6'>22</td><td rowspan='6'>VDDA</td><td rowspan='6'><small><i>same</i></small></td>
+				<td bgcolor='#F8FF9A'>ADC1</td><td bgcolor='#F8FF9A'>adc_vrefh</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
 			</tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_dp29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_vref_vdda</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vdda</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F7DCFF'><td>SUPPLY</td><td>pwr_vdda0</td><td>alt0</td><td>Input</td></tr>
 			<tr>
@@ -171,9 +174,12 @@
 			</tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vrefl</td><td>alt0</td><td>Input</td></tr>
 			<tr>
-				<td rowspan='3'>25</td><td rowspan='3'>VSSA</td><td rowspan='3'><small><i>same</i></small></td>
-				<td bgcolor='#F8FF9A'>ADC0</td><td bgcolor='#F8FF9A'>adc_vref_vssa</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
+				<td rowspan='6'>25</td><td rowspan='6'>VSSA</td><td rowspan='6'><small><i>same</i></small></td>
+				<td bgcolor='#F8FF9A'>ADC1</td><td bgcolor='#F8FF9A'>adc_vrefl</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
 			</tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se30</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_dm29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_vref_vssa</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vssa</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F7DCFF'><td>SUPPLY</td><td>pwr_vssa0</td><td>alt0</td><td>Input</td></tr>
 			<tr>
@@ -1878,9 +1884,12 @@
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se19</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_dm3</td><td>alt0</td><td>Input</td></tr>
 			<tr>
-				<td rowspan='3'>22</td><td rowspan='3'>VDDA</td><td rowspan='3'><small><i>same</i></small></td>
-				<td bgcolor='#F8FF9A'>ADC0</td><td bgcolor='#F8FF9A'>adc_vref_vdda</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
+				<td rowspan='6'>22</td><td rowspan='6'>VDDA</td><td rowspan='6'><small><i>same</i></small></td>
+				<td bgcolor='#F8FF9A'>ADC1</td><td bgcolor='#F8FF9A'>adc_vrefh</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
 			</tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_dp29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_vref_vdda</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vdda</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F7DCFF'><td>SUPPLY</td><td>pwr_vdda0</td><td>alt0</td><td>Input</td></tr>
 			<tr>
@@ -1894,9 +1903,12 @@
 			</tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vrefl</td><td>alt0</td><td>Input</td></tr>
 			<tr>
-				<td rowspan='3'>25</td><td rowspan='3'>VSSA</td><td rowspan='3'><small><i>same</i></small></td>
-				<td bgcolor='#F8FF9A'>ADC0</td><td bgcolor='#F8FF9A'>adc_vref_vssa</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
+				<td rowspan='6'>25</td><td rowspan='6'>VSSA</td><td rowspan='6'><small><i>same</i></small></td>
+				<td bgcolor='#F8FF9A'>ADC1</td><td bgcolor='#F8FF9A'>adc_vrefl</td><td bgcolor='#F8FF9A'>alt0</td><td bgcolor='#F8FF9A'>Input</td>
 			</tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_se30</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_dm29</td><td>alt0</td><td>Input</td></tr>
+			<tr bgcolor='#F8FF9A'><td>ADC0</td><td>adc_vref_vssa</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F8FF9A'><td>ADC1</td><td>adc_vref_vssa</td><td>alt0</td><td>Input</td></tr>
 			<tr bgcolor='#F7DCFF'><td>SUPPLY</td><td>pwr_vssa0</td><td>alt0</td><td>Input</td></tr>
 			<tr>

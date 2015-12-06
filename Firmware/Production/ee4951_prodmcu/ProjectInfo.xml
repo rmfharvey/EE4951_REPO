@@ -98,6 +98,7 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\op_sys.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\opt_bits.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\pin_mux.c</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\self_adc.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\testgpio.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\system_MK22F51212.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\startup.c</PathName>
@@ -151,6 +152,7 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\op_sys.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\opt_bits.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\pin_mux.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\self_adc.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\testgpio.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
@@ -190,7 +192,9 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\inc\fsl_misc_utilities.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\print_scan.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\DutISense.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\DutVSense.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\Events.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\SelfPower.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\system_timer.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\IO_Map\core_cm4_PEx.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\Peripherals\PTA_Init.h</PathName>

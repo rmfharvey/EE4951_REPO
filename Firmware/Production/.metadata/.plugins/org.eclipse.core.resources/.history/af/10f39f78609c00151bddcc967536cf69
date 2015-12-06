@@ -1,0 +1,30 @@
+/*
+ * DutVSense.cpp
+ *
+ *  Created on: Dec 6, 2015
+ *      Author: RossHarvey
+ */
+
+#include <DutVSense.h>
+
+DutVSense::DutVSense() {
+	scalingFactor = 0.0003814697266;
+	adcConfig = dut_vsense;
+
+}
+
+void DutVSense::updateADCVal(void)	{
+	ADC16_DRV_ConfigConvChn(dut_adc_IDX, SELFADC_CHNGROUP, adcConfig);
+
+}
+
+uint16_t DutVSense::getADCValRaw(void)	{
+
+}
+
+float DutVSense::getADCValScaled(void)	{
+
+}
+
+
+

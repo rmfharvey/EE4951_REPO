@@ -1,0 +1,21 @@
+/*
+ * DutVSense.h
+ *
+ *  Created on: Dec 6, 2015
+ *      Author: RossHarvey
+ */
+
+#ifndef SOURCES_DUTVSENSE_H_
+#define SOURCES_DUTVSENSE_H_
+
+class DutVSense {
+public:
+	DutVSense();
+private:
+	float scalingFactor;
+	uint16_t rawADCVal;
+	float floatADCVal;
+	adc16_chn_config_t *adcConfig;
+};
+
+#endif /* SOURCES_DUTVSENSE_H_ */

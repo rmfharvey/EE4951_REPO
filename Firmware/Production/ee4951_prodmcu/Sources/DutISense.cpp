@@ -16,12 +16,10 @@ DutISense::DutISense() {
 	PRV_initCurrentRange(&range1, range1_p, dut_isense1, 1.0, 25, 1);
 	PRV_initCurrentRange(&range2, range2_p, dut_isense2, 100.0, 25, 2);
 	PRV_initCurrentRange(&range3, range3_p, dut_isense3, 1000.0, 25, 3);
-	activeRange = &range2;			// Set to range1 to avoid assertion in next line
-	PRV_enableRange(&range3);		// Enable range0 (lowest resistance)
+	activeRange = &range2;
+	PRV_enableRange(&range3);
 }
 
-DutISense::~DutISense() {
-}
 
 void DutISense::enableCurrentRange(iRange_t range)	{
 	assert(range<NUMRANGES);
@@ -66,6 +64,7 @@ uint8_t DutISense::getCurrentRange(void)	{
 
 void DutISense::updateADCVal(void)	{
 	ADC16_DRV_ConfigConvChn(dut_adc_IDX, ADC_CHNGROUP, activeADCChannel);
+
 	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, ADC_CHNGROUP);
 	//floatADCVal = (float)rawADCVal*(activeRange->scalingFactor);
 #ifdef AUTOSWITCHING

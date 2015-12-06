@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 22:23, # CodeGen: 71
+**     Date/Time   : 2015-12-06, 13:15, # CodeGen: 81
 **     Abstract    :
 **
 **     Settings    :
@@ -1319,6 +1319,12 @@ void init_adc_pins(uint32_t instance)
       PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
       /* Affects PORTB_PCR1 register */
       PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      /* Affects PORTC_PCR9 register */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      /* Affects PORTC_PCR10 register */
+      PORT_HAL_SetMuxMode(PORTC,10UL,kPortPinDisabled);
+      /* Affects PORTC_PCR11 register */
+      PORT_HAL_SetMuxMode(PORTC,11UL,kPortPinDisabled);
       break;
     default:
       break;
@@ -1343,6 +1349,42 @@ void deinit_adc_pins(uint32_t instance)
     case ADC1_IDX:                      /* ADC1_IDX */
       PORT_HAL_SetMuxMode(PORTB,0UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTB,1UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,10UL,kPortPinDisabled);
+      PORT_HAL_SetMuxMode(PORTC,11UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_cmp_pins
+* Description   : CMP method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_cmp_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case CMP0_IDX:                      /* CMP0_IDX */
+      /* Affects PORTC_PCR9 register */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
+      break;
+    default:
+      break;
+  }
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_cmp_pins
+* Description   : CMP method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_cmp_pins(uint32_t instance)
+{
+  switch(instance) {    
+    case CMP0_IDX:                      /* CMP0_IDX */
+      PORT_HAL_SetMuxMode(PORTC,9UL,kPortPinDisabled);
       break;
     default:
       break;
