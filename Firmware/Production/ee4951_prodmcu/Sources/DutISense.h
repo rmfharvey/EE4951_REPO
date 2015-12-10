@@ -16,16 +16,14 @@
 #define NUMRANGES		4U
 #define ADC_CHNGROUP	0U
 #define AUTOSWITCHING
+#define RNGSWITCHHYS	3U
 
-
-#define A_LOTHRESH	66		// 10.07mA
-#define mA_HITHRESH 40000	// 60mA
-#define mA_LOTHRESH	40		// 60uA
-#define uA_HITHRESH	30000	// 459uA
-#define uA_LOTHRESH	800		// 765nA	was 50
-#define nA_HITHRESH	46000	// 69uA
-
-
+#define A_LOTHRESH	33		// 5mA
+#define mA_HITHRESH 45875	// 70mA
+#define mA_LOTHRESH	82		// 500uA
+#define uA_HITHRESH	45875	// 700uA
+#define uA_LOTHRESH	33		// 500nA	66		// 1uA
+#define nA_HITHRESH	45875	//		16384	// 100uA
 
 typedef enum IRANGE	{
 	nA = 0,

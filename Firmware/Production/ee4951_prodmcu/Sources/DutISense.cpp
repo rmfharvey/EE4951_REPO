@@ -63,34 +63,36 @@ uint8_t DutISense::getCurrentRange(void)	{
 }
 
 void DutISense::updateADCVal(void)	{
+	static uint8_t outOfRangeCount = 0;
 	ADC16_DRV_ConfigConvChn(dut_adc_IDX, ADC_CHNGROUP, activeADCChannel);
 
 	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, ADC_CHNGROUP);
 	//floatADCVal = (float)rawADCVal*(activeRange->scalingFactor);
 #ifdef AUTOSWITCHING
+
 	switch(activeRange->rangeNum)	{
 	case 3:
 		if(rawADCVal<A_LOTHRESH)
 			PRV_enableRange(&range2);
-		break;
-	case 2:
-		if(rawADCVal>mA_HITHRESH)
-			PRV_enableRange(&range3);
-		else if(rawADCVal<mA_LOTHRESH)
-			PRV_enableRange(&range1);
-		break;
-	case 1:
-		if(rawADCVal>uA_HITHRESH)
-			PRV_enableRange(&range2);
-		else if(rawADCVal<uA_LOTHRESH)
-			PRV_enableRange(&range0);
-		break;
-	case 0:
-		if(rawADCVal>nA_HITHRESH)
-			PRV_enableRange(&range2);
-		break;
-	default:
-		break;
+			break;
+		case 2:
+			if(rawADCVal>mA_HITHRESH)
+				PRV_enableRange(&range3);
+			else if(rawADCVal<mA_LOTHRESH)
+				PRV_enableRange(&range1);
+			break;
+		case 1:
+			if(rawADCVal>uA_HITHRESH)
+				PRV_enableRange(&range2);
+			else if(rawADCVal<uA_LOTHRESH)
+				PRV_enableRange(&range0);
+			break;
+		case 0:
+			if(rawADCVal>nA_HITHRESH)
+				PRV_enableRange(&range1);
+			break;
+		default:
+			break;
 	}
 #endif
 }
@@ -143,3 +145,99 @@ void DutISense::PRV_enableRange(currentRange_t *newRange)	{
 		activeADCChannel = &newRange->adcChConfig;
 	}
 }
+
+/*
+switch(activeRange->rangeNum)	{
+	case 3:
+		if(rawADCVal<A_LOTHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range2);
+			}
+			else
+				outOfRangeCount++;
+		}
+		break;
+	case 2:
+		if(rawADCVal>mA_HITHRESH)
+			PRV_enableRange(&range3);
+		else if(rawADCVal<mA_LOTHRESH)
+			PRV_enableRange(&range1);
+		break;
+	case 1:
+		if(rawADCVal>uA_HITHRESH)
+			PRV_enableRange(&range2);
+		else if(rawADCVal<uA_LOTHRESH)
+			PRV_enableRange(&range0);
+		break;
+	case 0:
+		if(rawADCVal>nA_HITHRESH)
+			PRV_enableRange(&range2);
+		break;
+	default:
+		break;
+
+
+
+	switch(activeRange->rangeNum)	{
+	case 3:
+		if(rawADCVal<A_LOTHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range2);
+			}
+			else
+				outOfRangeCount++;
+		}
+		break;
+	case 2:
+		if(rawADCVal<mA_HITHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range3);
+			}
+			else
+				outOfRangeCount++;
+			}
+		if(rawADCVal<mA_LOTHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range1);
+			}
+			else
+				outOfRangeCount++;
+			}
+		break;
+	case 1:
+		if(rawADCVal<uA_HITHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range2);
+			}
+			else
+				outOfRangeCount++;
+			}
+		if(rawADCVal<uA_LOTHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range0);
+			}
+			else
+				outOfRangeCount++;
+			}
+		break;
+	case 0:
+		if(rawADCVal<nA_HITHRESH)	{
+			if(outOfRangeCount==RNGSWITCHHYS)	{
+				outOfRangeCount=0;
+				PRV_enableRange(&range1);
+			}
+			else
+				outOfRangeCount++;
+			}
+		break;
+	default:
+		outOfRangeCount=0;
+		break;
+	}
+ */

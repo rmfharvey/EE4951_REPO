@@ -3,7 +3,7 @@
   <Header>
     <Name>ee4951_prodmcu</Name>
     <SavedBy>RossHarvey</SavedBy>
-    <ModificationStamp>72</ModificationStamp>
+    <ModificationStamp>73</ModificationStamp>
     <Date>2015-11-28</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.1.RT7_b1531-0480</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>86</ProjectCompNumb>
+    <ProjectCompNumb>87</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>

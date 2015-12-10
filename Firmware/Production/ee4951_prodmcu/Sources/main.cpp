@@ -96,7 +96,7 @@ void setIRangeFromStartup(void)	{
 	uint8_t range = getStartupOptions();
 	iRange_t curRange;
 
-	switch(opt)	{
+	switch(range)	{
 	case 0:
 		curRange=nA;
 		break;

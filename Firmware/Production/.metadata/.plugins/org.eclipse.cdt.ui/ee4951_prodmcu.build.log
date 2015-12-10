@@ -1,13 +1,13 @@
-21:17:01 **** Incremental Build of configuration Debug for project ee4951_prodmcu ****
+23:07:13 **** Incremental Build of configuration Debug for project ee4951_prodmcu ****
 make all 
-'Building file: ../Sources/Events.cpp'
+'Building file: ../Sources/DutISense.cpp'
 'Invoking: Cross ARM C++ Compiler'
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MK22FN512VLL12" -D"FSL_OSA_BM_TIMER_CONFIG=0" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/hal/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/hal/src/sim/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/system/src/clock/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/system/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/osa/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/CMSIS/Include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices/MK22F51212/include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/utilities/src" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/utilities/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Generated_Code/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Sources" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Generated_Code" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/drivers/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Static_Code/IO_Map" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Static_Code/Peripherals" -std=gnu++11 -fabi-version=0 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.cpp"
-In file included from ../Sources/Events.cpp:31:0:
-../Sources/Events.h:135:4: warning: #warning This IRQ handler is not used by sd_spi component. It is recommended to remove this because Processor Expert cannot modify it according to possible new request. [-Wcpp]
-   #warning This IRQ handler is not used by sd_spi component.\
-    ^
-'Finished building: ../Sources/Events.cpp'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MK22FN512VLL12" -D"FSL_OSA_BM_TIMER_CONFIG=0" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/hal/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/hal/src/sim/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/system/src/clock/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/system/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/osa/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/CMSIS/Include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices/MK22F51212/include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/utilities/src" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/utilities/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Generated_Code/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Sources" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Generated_Code" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/SDK/platform/drivers/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Static_Code/IO_Map" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/ee4951_prodmcu/Static_Code/Peripherals" -std=gnu++11 -fabi-version=0 -MMD -MP -MF"Sources/DutISense.d" -MT"Sources/DutISense.o" -c -o "Sources/DutISense.o" "../Sources/DutISense.cpp"
+../Sources/DutISense.cpp: In member function 'void DutISense::updateADCVal()':
+../Sources/DutISense.cpp:66:17: warning: unused variable 'outOfRangeCount' [-Wunused-variable]
+  static uint8_t outOfRangeCount = 0;
+                 ^
+'Finished building: ../Sources/DutISense.cpp'
 ' '
 'Building target: ee4951_prodmcu.elf'
 'Invoking: Cross ARM C++ Linker'
@@ -17,9 +17,9 @@ arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley "ee4951_prodmcu.elf"
    text	   data	    bss	    dec	    hex	filename
-  32260	    128	   2468	  34856	   8828	ee4951_prodmcu.elf
+  32040	    128	   2468	  34636	   874c	ee4951_prodmcu.elf
 'Finished building: ee4951_prodmcu.siz'
 ' '
 
-21:17:02 Build Finished (took 1s.730ms)
+23:07:15 Build Finished (took 1s.836ms)
 
