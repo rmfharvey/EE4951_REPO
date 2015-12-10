@@ -1,0 +1,222 @@
+(22:06:44.228) INFO: [TadState] TAD state init (NONE)
+(22:18:37.817) INFO: [TadModel] DSF session ID 0 has started
+(22:18:40.754) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(22:18:41.858) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(22:21:14.064) INFO: [TadModel] DSF session ID 1 has started
+(22:21:18.115) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(22:21:19.261) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(22:21:36.527) INFO: [TadModel] DSF session ID 2 has started
+(22:21:39.150) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(22:21:39.676) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(22:21:39.768) INFO: [TadState] TAD state changed from DEBUG_INIT_1 to DEBUG_SUSPENDED (Suspended, BREAKPOINT)
+(22:21:45.623) INFO: [TadState] TAD state changed from DEBUG_SUSPENDED to DEBUG_RESUMED (Resumed, STEP)
+(22:21:45.705) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:21:46.431) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:21:46.803) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:21:46.833) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:21:46.982) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:21:47.590) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:21:47.674) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:21:47.704) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:21:48.145) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:21:48.668) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:21:49.160) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(22:21:49.195) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(22:21:49.199) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:21:49.737) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:21:50.247) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:21:50.760) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:21:51.268) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:21:51.778) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:21:52.342) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:21:52.940) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:21:53.454) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:21:53.464) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:21:53.464) INFO: [TadModel$3] Loading of TAD Global Status took 6627 ms
+(22:21:54.039) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:21:54.593) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:21:55.114) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:21:55.656) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:21:56.240) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:21:56.794) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:21:57.316) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:21:57.859) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:21:58.369) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:21:58.879) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:21:59.479) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:22:00.000) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:00.013) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:00.013) INFO: [TadModel$3] Loading of TAD Global Status took 6549 ms
+(22:22:00.013) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:00.537) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:22:01.047) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:22:01.557) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:02.153) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:22:02.675) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:02.681) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:02.681) INFO: [TadModel$3] Loading of TAD Global Status took 14973 ms
+(22:22:03.127) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:03.196) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:03.276) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:03.281) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:03.281) INFO: [TadModel$3] Loading of TAD Global Status took 17569 ms
+(22:22:03.837) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:22:04.388) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:22:04.910) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:05.452) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:22:05.963) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:22:06.469) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:07.065) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:22:07.581) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:07.594) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:07.594) INFO: [TadModel$3] Loading of TAD Global Status took 4314 ms
+(22:22:07.594) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:14.761) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:14.801) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:15.458) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:16.034) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:16.649) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:16.658) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:16.659) INFO: [TadModel$3] Loading of TAD Global Status took 1854 ms
+(22:22:16.659) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:16.969) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:16.973) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:17.533) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:17.538) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:17.619) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:18.330) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:18.909) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:19.420) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:20.042) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:20.052) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:20.052) INFO: [TadModel$3] Loading of TAD Global Status took 3075 ms
+(22:22:20.670) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:20.675) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:20.676) INFO: [TadModel$3] Loading of TAD Global Status took 3131 ms
+(22:22:20.676) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:22.059) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:22.096) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:22.742) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:23.318) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:23.935) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:23.944) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:23.944) INFO: [TadModel$3] Loading of TAD Global Status took 1844 ms
+(22:22:23.945) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:25.138) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:25.142) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:25.750) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:26.317) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:26.447) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:26.450) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:22:26.936) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:26.944) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:22:26.944) INFO: [TadModel$3] Loading of TAD Global Status took 1793 ms
+(22:22:27.533) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:22:27.649) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:22:28.079) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:22:28.580) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:28.580) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 83.line "readIntVariableSafely(_mqx_kernel_data->KERNEL_COMPONENTS11)"
+(22:22:29.081) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:22:29.582) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:29.582) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 86.line "readIntVariableSafely(_mqx_kernel_data->KERNEL_COMPONENTS7)"
+(22:22:30.083) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(MQX_USE_LWMSGQ)"
+(22:22:30.584) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:30.584) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:22:31.085) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 92.line "readIntVariableSafely(MQX_USE_LWTIMER)"
+(22:22:31.586) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:22:32.087) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:32.087) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 94.line "readIntVariableSafely(_mqx_kernel_data->KERNEL_COMPONENTS3)"
+(22:22:32.588) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:32.588) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 95.line "readIntVariableSafely(_mqx_kernel_data->KERNEL_COMPONENTS8)"
+(22:22:33.089) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:33.089) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 96.line "readLongVariableSafely(_mqx_kernel_data->CURRENT_READY_Q)"
+(22:22:33.590) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:33.590) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 97.line "readIntVariableSafely(_mqx_kernel_data->KERNEL_COMPONENTS1)"
+(22:22:34.091) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:34.091) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:22:34.592) NumberFormatException  while reading variable: "_mqx_kernel_data": com.freescale.mqx.gdb.tad.model.TadModel$3.execute() at 248.line "getGlobalStatus()"
+(22:22:34.592) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 103.line "readLongVariableSafely(_mqx_kernel_data->KERNEL_TASK_QUEUES.NEXT)"
+(22:22:35.093) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:22:35.594) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 39.line "readLongVariableSafely(_mqx_version_number)"
+(22:22:35.594) INFO: [TadGlobalStatusFactory] MQX data valid (version Not available)
+(22:22:35.594) INFO: [TadModel$3] Loading of TAD Global Status took 9140 ms
+(22:22:35.777) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, SIGNAL)
+(22:22:36.281) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.isMqxDataValid() at 60.line "readLongVariableSafely(_mqx_kernel_data)"
+(22:22:36.281) ERROR: [TadGlobalStatusFactory] Kernel Data NOT valid (pointer: 0x0000)
+(22:22:36.281) ERROR: [TadGlobalStatusFactory] MQX data not valid!
+(22:22:36.281) INFO: [TadModel$3] Loading of TAD Global Status took 501 ms
+(22:22:36.281) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:22:36.825) INFO: [TadModel] DSF session ID 2 has ended
+(22:24:49.887) INFO: [TadModel] DSF session ID 3 has started
+(22:24:53.928) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(22:24:55.156) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(22:24:55.240) INFO: [TadState] TAD state changed from DEBUG_INIT_1 to DEBUG_SUSPENDED (Suspended, BREAKPOINT)
+(22:25:07.131) INFO: [TadModel] DSF session ID 3 has ended
+(22:25:16.816) INFO: [TadModel] DSF session ID 4 has started
+(22:25:19.527) INFO: [TadState] TAD state changed from DEBUG_STARTED to DEBUG_INIT_0 (Suspended, USER_REQUEST)
+(22:25:20.001) INFO: [TadState] TAD state changed from DEBUG_INIT_0 to DEBUG_INIT_1 (Resumed, USER_REQUEST)
+(22:25:20.092) INFO: [TadState] TAD state changed from DEBUG_INIT_1 to DEBUG_SUSPENDED (Suspended, BREAKPOINT)
+(22:25:22.784) INFO: [TadState] TAD state changed from DEBUG_SUSPENDED to DEBUG_RESUMED (Resumed, STEP)
+(22:25:22.869) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:25:23.579) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:25:24.131) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:25:24.653) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:25:25.194) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:25:25.704) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:25:26.066) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, USER_REQUEST)
+(22:25:26.098) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, BREAKPOINT)
+(22:25:26.214) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:25:26.829) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:25:27.373) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:25:27.895) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:25:28.436) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:25:28.946) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:25:29.450) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:25:30.081) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:25:30.595) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:25:30.606) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:25:30.606) INFO: [TadModel$3] Loading of TAD Global Status took 7733 ms
+(22:25:31.117) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:25:31.639) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:25:31.650) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:25:31.650) INFO: [TadModel$3] Loading of TAD Global Status took 5548 ms
+(22:25:31.650) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:25:51.522) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:25:51.669) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:25:52.245) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:25:52.800) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:25:53.321) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:25:53.864) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:25:54.374) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:25:54.885) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:25:55.470) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:25:55.992) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:25:56.003) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:25:56.003) INFO: [TadModel$3] Loading of TAD Global Status took 4330 ms
+(22:25:56.003) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:25:57.357) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:25:57.399) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:25:57.958) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:25:58.510) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:25:59.031) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:25:59.572) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:26:00.084) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:26:00.594) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:26:01.189) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:26:01.714) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:26:01.725) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:26:01.725) INFO: [TadModel$3] Loading of TAD Global Status took 4322 ms
+(22:26:01.725) INFO: [TadGlobalStatusController] TAD global status data is ready!
+(22:26:06.007) INFO: [TadState] TAD state changed from READY to DEBUG_RESUMED (Resumed, STEP)
+(22:26:06.045) INFO: [TadState] TAD state changed from DEBUG_RESUMED to READY (Suspended, STEP)
+(22:26:06.621) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 78.line "readIntVariableSafely(_mqx_kernel_data->IO_DEVICES.SIZE)"
+(22:26:07.168) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 82.line "readIntVariableSafely(_mqx_kernel_data->LWEVENTS.SIZE)"
+(22:26:07.690) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 84.line "readIntVariableSafely(MQX_USE_LWMEM)"
+(22:26:08.232) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 90.line "readIntVariableSafely(_mqx_kernel_data->LWMSGQS.SIZE)"
+(22:26:08.743) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 91.line "readIntVariableSafely(_mqx_kernel_data->LWSEM.SIZE)"
+(22:26:09.253) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 93.line "readIntVariableSafely(MQX_USE_MEM)"
+(22:26:09.829) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.whichTadViewsAreEnabled() at 99.line "readIntVariableSafely(_mqx_kernel_data->TD_LIST.SIZE)"
+(22:26:10.343) ReadingException: com.freescale.mqx.gdb.tad.model.globalstatus.TadGlobalStatusFactory.getGlobalStatus() at 33.line "readLongVariableSafely(_mqxlite_version_number)"
+(22:26:10.354) INFO: [TadGlobalStatusFactory] MQX data valid (version 5.0.512 (0x05000200))
+(22:26:10.354) INFO: [TadModel$3] Loading of TAD Global Status took 4306 ms
+(22:26:10.354) INFO: [TadGlobalStatusController] TAD global status data is ready!

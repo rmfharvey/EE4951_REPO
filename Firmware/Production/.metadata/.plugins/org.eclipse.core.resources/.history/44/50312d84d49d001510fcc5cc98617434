@@ -1,0 +1,17 @@
+/*
+ * SDCard.h
+ *
+ *  Created on: Dec 8, 2015
+ *      Author: RossHarvey
+ */
+
+#ifndef SOURCES_SDCARD_H_
+#define SOURCES_SDCARD_H_
+
+class SDCard {
+public:
+	SDCard();
+	virtual ~SDCard();
+};
+
+#endif /* SOURCES_SDCARD_H_ */

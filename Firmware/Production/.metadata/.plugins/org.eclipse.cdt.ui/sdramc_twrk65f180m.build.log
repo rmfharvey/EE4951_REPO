@@ -1,0 +1,21 @@
+22:04:05 **** Incremental Build of configuration int flash debug for project sdramc_twrk65f180m ****
+Info: Internal Builder is used for build
+"C:\\Freescale\\Freescale_MQX_4_2\\mqx\\examples\\sdramc\\build\\kds\\sdramc_twrk65f180m\\makedir.bat" "C:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/int flash debug" 
+
+C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug>set TARGETDIR="C:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/int flash debug" 
+
+C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug>set TARGETDIR="C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug" 
+
+C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug>set TARGETDIR=C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug 
+
+C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug>IF NOT EXIST "C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug" mkdir "C:\Freescale\Freescale_MQX_4_2\mqx\examples\sdramc\build\kds\sdramc_twrk65f180m\int flash debug" 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall -Wno-missing-braces -g3 -gdwarf-2 -gstrict-dwarf -gstrict-dwarf -gstrict-dwarf -nostdinc -D_AEABI_LC_CTYPE=C -D__STRICT_ANSI__=1 -D_DEBUG=1 -IC:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/../../../../../../lib/twrk65f180m.kds/debug/bsp/Generated_Code -IC:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/../../../../../../lib/twrk65f180m.kds/debug -IC:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/../../../../../../lib/twrk65f180m.kds/debug/bsp -IC:/Freescale/Freescale_MQX_4_2/mqx/examples/sdramc/build/kds/sdramc_twrk65f180m/../../../../../../lib/twrk65f180m.kds/debug/psp "-IC:\\Freescale\\KDS_3.0.0\\eclipse\\../toolchain/lib/gcc/arm-none-eabi/4.8.4/include" "-IC:\\Freescale\\KDS_3.0.0\\eclipse\\../toolchain/lib/gcc/arm-none-eabi/4.8.4/include-fixed" "-IC:\\Freescale\\KDS_3.0.0\\eclipse\\../toolchain/arm-none-eabi/include" -std=gnu99 -fno-strict-aliasing -c -o "Sources\\sdramc.o" "..\\..\\..\\..\\sdramc.c" 
+In file included from c:\freescale\freescale_mqx_4_2\lib\twrk65f180m.kds\debug\psp\mqx.h:75:0,
+                 from ..\..\..\..\sdramc.c:1:
+c:\freescale\freescale_mqx_4_2\lib\twrk65f180m.kds\debug\psp\mqx_cnfg.h:84:25: fatal error: user_config.h: No such file or directory
+ #include "user_config.h"
+                         ^
+compilation terminated.
+
+22:04:06 Build Finished (took 214ms)
+

@@ -1,0 +1,38 @@
+/*
+ * SDCard.cpp
+ *
+ *  Created on: Dec 8, 2015
+ *      Author: RossHarvey
+ */
+
+#include <SDCard.h>
+
+SDCard::SDCard() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SDCard::~SDCard() {
+	// TODO Auto-generated destructor stub
+}
+
+uint8_t *SDCard::getRxBuffer(void)	{
+	return rxBuffer;
+}
+
+/*
+void fillTxBuffer(const uint8_t data[], uint8_t size)	{
+	uint8_t i = 0;
+	for(i; i<size; i++)	{
+		txBuffer[i]=data[i];
+	}
+}
+*/
+
+void sendData(const uint8_t data[], uint8_t size)	{
+	DSPI_DRV_MasterTransfer(sd_spi_IDX, &sd_spi_BusConfig0, txBuffer, rxBuffer, 1);
+	const dspi_device_t * device,
+	                                      const uint8_t * sendBuffer,
+	                                      uint8_t * receiveBuffer,
+	                                      size_t transferByteCount);
+}

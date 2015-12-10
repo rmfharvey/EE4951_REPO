@@ -179,8 +179,14 @@ int main(void)
   //cycleRanges(&dutIsense, 500U);
 
   uint32_t i=0;
-  while(true)	{
+#define SIZE	512
+  uint8_t arrTx[SIZE];
+  uint8_t arrRx[SIZE];
+  for(i=0;i<SIZE;i++){
+	  arrTx[i] = i;
+  }
 
+  while(true)	{
 
 	  i++;
 	  /*uint8_t range = getStartupOptions();
@@ -207,7 +213,7 @@ int main(void)
 	  }
 	  PRINTF("%05d\r",ADC16_DRV_GetConvValueRAW(dut_adc_IDX,0U));
 	  */
-	  WAIT1_Waitms(100);
+	  //WAIT1_Waitms(100);
   }
 
 

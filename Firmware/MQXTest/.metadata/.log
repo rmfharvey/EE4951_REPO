@@ -1,0 +1,1429 @@
+!SESSION 2015-12-08 22:06:35.842 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -data C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\MQXTest -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-08 22:06:42.924
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-08 22:06:42.925
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\RossHarvey'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-12-08 22:06:43.897
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-12-08 22:06:53.020
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-12-08 22:08:10.911
+!MESSAGE Indexed 'mqxTest' (27 sources, 115 headers) in 3.46 sec: 8,859 declarations; 14,756 references; 1 unresolved inclusions; 37 syntax errors; 671 unresolved names (2.8%)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:45.940
+!MESSAGE Request for monitor: '77^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:45.940
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:46.492
+!MESSAGE Request for monitor: '83^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:46.492
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:47.100
+!MESSAGE Request for monitor: '103^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:47.100
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:47.654
+!MESSAGE Request for monitor: '109^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:47.654
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:48.178
+!MESSAGE Request for monitor: '121^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:48.178
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:48.709
+!MESSAGE Request for monitor: '125^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:48.709
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:49.247
+!MESSAGE Request for monitor: '132^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:49.247
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:49.758
+!MESSAGE Request for monitor: '143^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:49.758
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:50.270
+!MESSAGE Request for monitor: '145^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:50.270
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:50.778
+!MESSAGE Request for monitor: '167^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:50.778
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:51.288
+!MESSAGE Request for monitor: '169^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:51.288
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:51.851
+!MESSAGE Request for monitor: '176^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:51.851
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:52.450
+!MESSAGE Request for monitor: '200^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:52.450
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:52.964
+!MESSAGE Request for monitor: '207^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:52.964
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:53.549
+!MESSAGE Request for monitor: '216^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:53.549
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:54.103
+!MESSAGE Request for monitor: '222^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:54.103
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:54.624
+!MESSAGE Request for monitor: '225^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:54.624
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:55.166
+!MESSAGE Request for monitor: '230^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:55.166
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:55.750
+!MESSAGE Request for monitor: '239^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:55.750
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:56.295
+!MESSAGE Request for monitor: '245^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:56.295
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:56.826
+!MESSAGE Request for monitor: '248^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:56.826
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:57.368
+!MESSAGE Request for monitor: '253^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:57.368
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:57.879
+!MESSAGE Request for monitor: '255^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:57.879
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:58.389
+!MESSAGE Request for monitor: '257^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:58.389
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:58.988
+!MESSAGE Request for monitor: '267^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:58.988
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:21:59.500
+!MESSAGE Request for monitor: '270^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:21:59.500
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:00.047
+!MESSAGE Request for monitor: '275^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:00.047
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:00.557
+!MESSAGE Request for monitor: '277^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:00.557
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:01.067
+!MESSAGE Request for monitor: '279^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:01.067
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:01.663
+!MESSAGE Request for monitor: '289^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:01.663
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:02.185
+!MESSAGE Request for monitor: '292^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:02.185
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:02.706
+!MESSAGE Request for monitor: '296^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:02.706
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:03.347
+!MESSAGE Request for monitor: '315^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:03.347
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:03.898
+!MESSAGE Request for monitor: '331^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:03.898
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:04.420
+!MESSAGE Request for monitor: '334^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:04.420
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:04.962
+!MESSAGE Request for monitor: '339^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:04.962
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:05.474
+!MESSAGE Request for monitor: '341^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:05.474
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:05.979
+!MESSAGE Request for monitor: '343^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:05.979
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:06.575
+!MESSAGE Request for monitor: '353^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:06.575
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:07.091
+!MESSAGE Request for monitor: '356^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:07.091
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:14.968
+!MESSAGE Request for monitor: '377^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:14.968
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:15.535
+!MESSAGE Request for monitor: '420^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:15.535
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:16.159
+!MESSAGE Request for monitor: '433^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:16.159
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:17.128
+!MESSAGE Request for monitor: '461^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:17.129
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:17.839
+!MESSAGE Request for monitor: '499^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:17.840
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:18.409
+!MESSAGE Request for monitor: '508^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:18.409
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:18.930
+!MESSAGE Request for monitor: '510^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:18.930
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:19.552
+!MESSAGE Request for monitor: '523^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:19.552
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:20.170
+!MESSAGE Request for monitor: '537^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:20.170
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:22.253
+!MESSAGE Request for monitor: '567^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:22.253
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:22.828
+!MESSAGE Request for monitor: '578^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:22.828
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:23.445
+!MESSAGE Request for monitor: '591^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:23.445
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:25.260
+!MESSAGE Request for monitor: '619^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:25.260
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:25.827
+!MESSAGE Request for monitor: '630^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:25.827
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:26.446
+!MESSAGE Request for monitor: '643^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:26.446
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:27.032
+!MESSAGE Request for monitor: '672^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:27.032
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:27.589
+!MESSAGE Request for monitor: '678^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:27.589
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:35.781
+!MESSAGE Request for monitor: '681^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:35.781
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:35.787
+!MESSAGE Request for monitor: '686^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:35.787
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:35.790
+!MESSAGE Request for monitor: '693^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:35.790
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:36.798
+!MESSAGE Request for monitor: '696^error,msg="Cannot access memory at address 0x1fff0410"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:22:36.798
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+Cannot access memory at address 0x1fff0410
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x1fff0410
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:22:36.808
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@ffeda7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2015-12-08 22:22:36.808
+!MESSAGE Context cannot be suspended.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:23.089
+!MESSAGE Request for monitor: '87^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:23.089
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:23.641
+!MESSAGE Request for monitor: '93^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:23.641
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:24.163
+!MESSAGE Request for monitor: '96^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:24.163
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:24.704
+!MESSAGE Request for monitor: '101^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:24.704
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:25.213
+!MESSAGE Request for monitor: '103^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:25.214
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:25.724
+!MESSAGE Request for monitor: '105^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:25.724
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:26.329
+!MESSAGE Request for monitor: '131^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:26.329
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:26.882
+!MESSAGE Request for monitor: '137^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:26.882
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:27.404
+!MESSAGE Request for monitor: '140^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:27.405
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:27.945
+!MESSAGE Request for monitor: '145^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:27.945
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:28.455
+!MESSAGE Request for monitor: '147^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:28.456
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:28.959
+!MESSAGE Request for monitor: '165^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:28.960
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:29.580
+!MESSAGE Request for monitor: '179^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:29.581
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:30.105
+!MESSAGE Request for monitor: '191^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:30.105
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:30.628
+!MESSAGE Request for monitor: '194^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:30.628
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:31.149
+!MESSAGE Request for monitor: '197^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:31.149
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:51.745
+!MESSAGE Request for monitor: '388^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:51.745
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:52.310
+!MESSAGE Request for monitor: '424^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:52.310
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:52.831
+!MESSAGE Request for monitor: '427^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:52.831
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:53.374
+!MESSAGE Request for monitor: '432^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:53.374
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:53.883
+!MESSAGE Request for monitor: '434^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:53.884
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:54.394
+!MESSAGE Request for monitor: '436^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:54.394
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:54.980
+!MESSAGE Request for monitor: '446^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:54.980
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:55.502
+!MESSAGE Request for monitor: '449^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:55.502
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:57.467
+!MESSAGE Request for monitor: '465^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:57.467
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:58.019
+!MESSAGE Request for monitor: '502^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:58.019
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:58.541
+!MESSAGE Request for monitor: '505^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:58.541
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:59.082
+!MESSAGE Request for monitor: '510^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:59.082
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:25:59.594
+!MESSAGE Request for monitor: '512^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:25:59.594
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:00.104
+!MESSAGE Request for monitor: '514^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:00.104
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:00.699
+!MESSAGE Request for monitor: '524^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:00.699
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:01.224
+!MESSAGE Request for monitor: '527^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:01.224
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:06.122
+!MESSAGE Request for monitor: '551^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:06.122
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->IO_DEVICES.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:06.677
+!MESSAGE Request for monitor: '584^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:06.677
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWEVENTS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:07.200
+!MESSAGE Request for monitor: '587^error,msg="No symbol "MQX_USE_LWMEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:07.200
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_LWMEM
+Error message from debugger back end:
+No symbol "MQX_USE_LWMEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_LWMEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:07.742
+!MESSAGE Request for monitor: '592^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:07.742
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWMSGQS.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:08.253
+!MESSAGE Request for monitor: '594^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:08.253
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->LWSEM.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:08.763
+!MESSAGE Request for monitor: '596^error,msg="No symbol "MQX_USE_MEM" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:08.763
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression MQX_USE_MEM
+Error message from debugger back end:
+No symbol "MQX_USE_MEM" in current context.
+!STACK 0
+java.lang.Exception: No symbol "MQX_USE_MEM" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:09.329
+!MESSAGE Request for monitor: '606^error,msg="A syntax error in expression, near `512'."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:09.329
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data->TD_LIST.SIZE
+Error message from debugger back end:
+A syntax error in expression, near `512'.
+!STACK 0
+java.lang.Exception: A syntax error in expression, near `512'.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:09.853
+!MESSAGE Request for monitor: '609^error,msg="No symbol "_mqxlite_version_number" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-12-08 22:26:09.853
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqxlite_version_number
+Error message from debugger back end:
+No symbol "_mqxlite_version_number" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqxlite_version_number" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-12-08 22:26:11.712
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@e2d1a8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2015-12-08 22:26:11.712
+!MESSAGE Context cannot be suspended.
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2015-12-08 22:41:23.588
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2677)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(OpenWorkspaceAction.java:282)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.run(OpenWorkspaceAction.java:264)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$OpenDialogAction.run(OpenWorkspaceAction.java:70)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.jface.action.ActionContributionItem$9.handleEvent(ActionContributionItem.java:1293)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 67 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-12-08 22:41:23.591
+!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@1385767 (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 125, y: 125, width: 1024, height: 768)
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2677)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(OpenWorkspaceAction.java:282)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.run(OpenWorkspaceAction.java:264)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$OpenDialogAction.run(OpenWorkspaceAction.java:70)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.jface.action.ActionContributionItem$9.handleEvent(ActionContributionItem.java:1293)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 67 more

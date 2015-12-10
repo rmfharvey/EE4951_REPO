@@ -1,0 +1,63 @@
+17:30:22 **** Incremental Build of configuration Debug for project spitest ****
+make all 
+'Building file: ../Sources/main.cpp'
+'Invoking: Cross ARM C++ Compiler'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"FSL_OSA_BM_TIMER_CONFIG=2" -D"CPU_MK22FN512VLL12" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/hal/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/hal/src/sim/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/system/src/clock/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/system/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/osa/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/CMSIS/Include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/devices" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/devices/MK22F51212/include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/utilities/src" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/utilities/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Generated_Code/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Sources" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Generated_Code" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/drivers/inc" -std=gnu++11 -fabi-version=0 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.cpp"
+In file included from C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Generated_Code/Cpu.h:84:0,
+                 from ../Sources/main.cpp:31:
+C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/drivers/inc/fsl_dspi_master_driver.h:36:0: warning: "FSL_FEATURE_SOC_DSPI_COUNT" redefined [enabled by default]
+ #define FSL_FEATURE_SOC_DSPI_COUNT 1
+ ^
+In file included from C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/devices/fsl_device_registers.h:198:0,
+                 from C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Generated_Code/Cpu.h:71,
+                 from ../Sources/main.cpp:31:
+C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/SDK/platform/devices/MK22F51212/include/MK22F51212_features.h:177:0: note: this is the location of the previous definition
+ #define FSL_FEATURE_SOC_DSPI_COUNT (2)
+ ^
+../Sources/main.cpp:47:0: warning: "CMD0" redefined [enabled by default]
+ #define CMD0 0x40
+ ^
+In file included from ../Sources/main.cpp:44:0:
+../Sources/SDCard.h:15:0: note: this is the location of the previous definition
+ #define CMD0 0U
+ ^
+../Sources/main.cpp: In function 'uint8_t sendByte(uint8_t)':
+../Sources/main.cpp:56:10: warning: unused variable 'bt' [-Wunused-variable]
+  uint8_t bt[1] = {byte};
+          ^
+../Sources/main.cpp: In function 'uint8_t initSDCard()':
+../Sources/main.cpp:85:10: warning: unused variable 'resetArr' [-Wunused-variable]
+  uint8_t resetArr[6] = {0x40, 0x00, 0x00, 0x00, 0x00, 0x95};
+          ^
+../Sources/main.cpp:86:10: warning: unused variable 'initArr' [-Wunused-variable]
+  uint8_t initArr[6] = {0x41, 0x00, 0x00, 0x00, 0x00, 0x95};
+          ^
+../Sources/main.cpp:87:10: warning: unused variable 'idleArr' [-Wunused-variable]
+  uint8_t idleArr[6] = {0x7A, 0x00, 0x00, 0x00, 0x00, 0x95};
+          ^
+../Sources/main.cpp:88:10: warning: unused variable 'sectorSizeArr' [-Wunused-variable]
+  uint8_t sectorSizeArr[6] = {0x40^16, 0x00,  0x00,  0x02,  0x00,  0x95};
+          ^
+../Sources/main.cpp: In function 'void writeBlock(uint8_t)':
+../Sources/main.cpp:161:10: warning: unused variable 'startToken' [-Wunused-variable]
+  uint8_t startToken = 0xFE;
+          ^
+../Sources/main.cpp:164:10: warning: unused variable 'j' [-Wunused-variable]
+  uint8_t j;
+          ^
+'Finished building: ../Sources/main.cpp'
+' '
+'Building target: spitest.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/spitest/Project_Settings/Linker_Files" -Wl,-Map,"spitest.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "spitest.elf"  ./Static_Code/System/PE_low_level_init.o  ./Sources/Events.o ./Sources/SDCard.o ./Sources/main.o  ./SDK/platform/utilities/src/fsl_debug_console.o ./SDK/platform/utilities/src/fsl_misc_utilities.o ./SDK/platform/utilities/src/print_scan.o  ./SDK/platform/system/src/interrupt/fsl_interrupt_manager.o  ./SDK/platform/system/src/clock/MK22F51212/fsl_clock_MK22F51212.o  ./SDK/platform/system/src/clock/fsl_clock_manager.o ./SDK/platform/system/src/clock/fsl_clock_manager_common.o  ./SDK/platform/osa/src/fsl_os_abstraction_bm.o  ./SDK/platform/hal/src/uart/fsl_uart_hal.o  ./SDK/platform/hal/src/sim/MK22F51212/fsl_sim_hal_MK22F51212.o  ./SDK/platform/hal/src/rtc/fsl_rtc_hal.o  ./SDK/platform/hal/src/port/fsl_port_hal.o  ./SDK/platform/hal/src/osc/fsl_osc_hal.o  ./SDK/platform/hal/src/mcg/fsl_mcg_hal.o ./SDK/platform/hal/src/mcg/fsl_mcg_hal_modes.o  ./SDK/platform/hal/src/lpuart/fsl_lpuart_hal.o  ./SDK/platform/hal/src/gpio/fsl_gpio_hal.o  ./SDK/platform/hal/src/dspi/fsl_dspi_hal.o  ./SDK/platform/drivers/src/rtc/fsl_rtc_common.o  ./SDK/platform/drivers/src/gpio/fsl_gpio_common.o ./SDK/platform/drivers/src/gpio/fsl_gpio_driver.o  ./SDK/platform/drivers/src/dspi/fsl_dspi_common.o ./SDK/platform/drivers/src/dspi/fsl_dspi_master_driver.o ./SDK/platform/drivers/src/dspi/fsl_dspi_shared_function.o ./SDK/platform/drivers/src/dspi/fsl_dspi_slave_driver.o  ./SDK/platform/devices/MK22F51212/startup/gcc/startup_MK22F51212.o  ./SDK/platform/devices/MK22F51212/startup/system_MK22F51212.o  ./SDK/platform/devices/startup.o  ./Generated_Code/Cpu.o ./Generated_Code/WAIT1.o ./Generated_Code/clockMan1.o ./Generated_Code/debug_console.o ./Generated_Code/hardware_init.o ./Generated_Code/osa1.o ./Generated_Code/pin_mux.o ./Generated_Code/sd_gpio.o ./Generated_Code/sd_spi.o   
+'Finished building target: spitest.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "spitest.elf"
+   text	   data	    bss	    dec	    hex	filename
+  30548	    124	   2292	  32964	   80c4	spitest.elf
+'Finished building: spitest.siz'
+' '
+
+17:30:24 Build Finished (took 1s.713ms)
+

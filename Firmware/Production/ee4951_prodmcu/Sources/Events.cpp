@@ -29,12 +29,13 @@
 
 #include "Cpu.h"
 #include "Events.h"
+
 #include "DutISense.h"
 #include "DutVSense.h"
 
 #ifdef __cplusplus
 extern "C" {
-#endif 
+#endif
 
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
@@ -80,7 +81,7 @@ void PORTA_IRQHandler(void)	{
 */
 void adc_trigger_OnTimeOut(void* data)
 {
-	 static uint8_t count=0;
+	 static uint16_t count=0;
 	 extern DutISense dutIsense;
 	 extern DutVSense dutVsense;
 
@@ -107,11 +108,51 @@ void ADC1_IRQHandler(void)
   /* Write your code here ... */
 }
 
+
+#ifdef sd_spi_IDX
+/*
+** ===================================================================
+**     Interrupt handler : SPI0_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void SPI0_IRQHandler(void)
+{
+#if sd_spi_DMA_MODE
+  #if FSL_FEATURE_SOC_EDMA_COUNT
+  /* fsl_dspi_edma driver handler (dma mode) */
+  DSPI_DRV_EdmaIRQHandler(sd_spi_IDX);
+  #else
+  /* fsl_dspi_dma driver does not have handler.
+     DMA callbacks are used instead.
+   */
+  #endif
+#else
+  /* fsl_dspi driver handler (interrupt mode) */
+  DSPI_DRV_IRQHandler(sd_spi_IDX);
+#endif
+  /* Write your code here ... */
+}
+#else
+  /* This IRQ handler is not used by sd_spi component. The purpose may be
+   * that the component has been removed or disabled. It is recommended to 
+   * remove this handler because Processor Expert cannot modify it according to 
+   * possible new request (e.g. in case that another component uses this
+   * interrupt vector). */
+  #warning This IRQ handler is not used by sd_spi component.\
+           It is recommended to remove this because Processor Expert cannot\
+           modify it according to possible new request.
+#endif
+
 /* END Events */
 
 #ifdef __cplusplus
 }  /* extern "C" */
-#endif 
+#endif
 
 /*!
 ** @}

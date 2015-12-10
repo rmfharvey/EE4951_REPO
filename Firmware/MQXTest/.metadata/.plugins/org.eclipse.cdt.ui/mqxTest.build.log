@@ -1,0 +1,11 @@
+22:25:17 **** Incremental Build of configuration Debug for project mqxTest ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "mqxTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+  37592	   2200	   4792	  44584	   ae28	mqxTest.elf
+'Finished building: mqxTest.siz'
+' '
+
+22:25:18 Build Finished (took 1s.77ms)
+

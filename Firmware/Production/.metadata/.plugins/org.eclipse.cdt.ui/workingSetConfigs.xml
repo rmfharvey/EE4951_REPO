@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.cdt.ui.workingSetConfigurations>
+<workingSet name="sdramc_twrk65f180m">
+<config name="debug">
+<project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="bsp_twrk65f180m"/>
+<project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="psp_twrk65f180m"/>
+<project config="com.freescale.arm.cdt.toolchain.config.arm.release.695495605" name="sdramc_twrk65f180m"/>
+</config>
+<config name="release">
+<project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="bsp_twrk65f180m"/>
+<project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="psp_twrk65f180m"/>
+<project config="com.freescale.arm.cdt.toolchain.config.arm.release.695495605" name="sdramc_twrk65f180m"/>
+</config>
+</workingSet>
+</org.eclipse.cdt.ui.workingSetConfigurations>

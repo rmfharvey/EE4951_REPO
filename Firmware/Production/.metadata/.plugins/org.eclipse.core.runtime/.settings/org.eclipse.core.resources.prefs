@@ -1,2 +1,4 @@
+description.buildorder=bsp_twrk65f180m/psp_twrk65f180m/sdramc_twrk65f180m
+description.defaultbuildorder=false
 eclipse.preferences.version=1
 version=1
