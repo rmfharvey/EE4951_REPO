@@ -92,7 +92,8 @@ uint8_t getStartupOptions()	{
 
 
 /* Deprecated in production */
-void setIRangeFromStartup(uint8_t opt)	{
+void setIRangeFromStartup(void)	{
+	uint8_t range = getStartupOptions();
 	iRange_t curRange;
 
 	switch(opt)	{
@@ -171,24 +172,8 @@ int main(void)
   /* For example: for(;;) { } */
   userInit();
 
-
-  //uint8_t i;
-  //uint16_t tempInt;
-  //float tempFloat;
-  //char input[64];
-  //cycleRanges(&dutIsense, 500U);
-
-  uint32_t i=0;
-#define SIZE	512
-  uint8_t arrTx[SIZE];
-  uint8_t arrRx[SIZE];
-  for(i=0;i<SIZE;i++){
-	  arrTx[i] = i;
-  }
-
   while(true)	{
-
-	  i++;
+	  asm("nop");
 	  /*uint8_t range = getStartupOptions();
 	  setIRangeFromStartup(range);
 	  switch(range){
