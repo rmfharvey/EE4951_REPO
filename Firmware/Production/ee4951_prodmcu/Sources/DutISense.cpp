@@ -67,7 +67,7 @@ void DutISense::updateADCVal(void)	{
 	ADC16_DRV_ConfigConvChn(dut_adc_IDX, ADC_CHNGROUP, activeADCChannel);
 
 	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, ADC_CHNGROUP);
-	//floatADCVal = (float)rawADCVal*(activeRange->scalingFactor);
+	floatADCVal.asFloat = (float)rawADCVal*(activeRange->scalingFactor);
 #ifdef AUTOSWITCHING
 
 	switch(activeRange->rangeNum)	{
@@ -101,7 +101,7 @@ uint16_t DutISense::getADCValRaw(void)	{
 	return rawADCVal;
 }
 
-float DutISense::getADCValScaled(void)	{
+floatUnion_t DutISense::getADCValScaled(void)	{
 	return floatADCVal;
 }
 

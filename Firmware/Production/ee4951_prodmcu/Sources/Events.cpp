@@ -83,9 +83,12 @@ void adc_trigger_OnTimeOut(void* data)
 	 static uint16_t count=0;
 	 extern DutISense dutIsense;
 	 extern DutVSense dutVsense;
+	 static uint8_t buffer1[512] = {0};
+	 static uint8_t buffer2[512] = {0};
 
 	 if(count&0b1)
 		 dutVsense.updateADCVal();
+
 	 else
 		 dutIsense.updateADCVal();
 	 if(!count++)

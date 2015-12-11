@@ -48,13 +48,12 @@
 #include "system_timer.h"
 #include "DutISense.h"
 #include "DutVSense.h"
+#include "floatUnion.h"
 
 
 //TODO Self Monitor: Test ADCs
 //TODO Timestamp and packet construction
 //TODO Test interrupt driven Vsense and Isense switching
-
-
 
 /* Global Variables */
 //sysTimer_t timer;

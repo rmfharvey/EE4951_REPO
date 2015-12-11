@@ -10,6 +10,7 @@
 
 #include <stdint.h>
 #include "dut_adc.h"
+#include "floatUnion.h"
 
 #define SELFADC_CHNGROUP	0U
 
@@ -18,11 +19,11 @@ public:
 	DutVSense();
 	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
 	uint16_t getADCValRaw(void);				// Returns raw ADC value
-	float getADCValScaled(void);				// Returns scaled ADC value in volts
+	floatUnion_t getADCValScaled(void);				// Returns scaled ADC value in volts
 private:
 	float scalingFactor;
 	uint16_t rawADCVal;
-	float floatADCVal;
+	floatUnion_t floatADCVal;
 	adc16_chn_config_t	adcChConfig;
 };
 

@@ -16,14 +16,15 @@ DutVSense::DutVSense() {
 void DutVSense::updateADCVal(void)	{
 	ADC16_DRV_ConfigConvChn(dut_adc_IDX, SELFADC_CHNGROUP, &adcChConfig);
 	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, SELFADC_CHNGROUP);
+	floatADCVal.asFloat = (float)rawADCVal*scalingFactor;
 }
 
 uint16_t DutVSense::getADCValRaw(void)	{
 	return rawADCVal;
 }
 
-float DutVSense::getADCValScaled(void)	{
-	return (float)rawADCVal*scalingFactor;
+floatUnion_t DutVSense::getADCValScaled(void)	{
+	return floatADCVal;
 }
 
 

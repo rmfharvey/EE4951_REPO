@@ -1,0 +1,7 @@
+
+
+
+typedef union	FLOAT_UNION	{
+	float	asFloat;
+	uint32_t asInt;
+}floatUnion_t;

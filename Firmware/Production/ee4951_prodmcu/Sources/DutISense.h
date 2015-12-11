@@ -12,6 +12,7 @@
 #include <stdint.h>
 #include "dut_gpio.h"
 #include "dut_adc.h"
+#include "floatUnion.h"
 
 #define NUMRANGES		4U
 #define ADC_CHNGROUP	0U
@@ -25,13 +26,13 @@
 #define uA_LOTHRESH	33		// 500nA	66		// 1uA
 #define nA_HITHRESH	45875	//		16384	// 100uA
 
+
 typedef enum IRANGE	{
 	nA = 0,
 	uA,
 	mA,
 	A
 }iRange_t;
-
 
 /****************************************************************************************************
  * This struct holds all values relevant to the individual current ranges in the project			*
@@ -61,11 +62,11 @@ public:
 	uint8_t getCurrentRange(void);				// Returns the active range as an unsigned int in [0,3]
 	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
 	uint16_t getADCValRaw(void);				// Returns raw ADC value
-	float getADCValScaled(void);				// Returns scaled ADC value in volts
+	floatUnion_t getADCValScaled(void);			// Returns scaled ADC value in volts
 private:
 	uint8_t numCurrentRanges;
 	uint16_t rawADCVal;
-	float floatADCVal;
+	floatUnion_t floatADCVal;
 	currentRange_t range0;
 	currentRange_t range1;
 	currentRange_t range2;
