@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-05, 10:49, # CodeGen: 77
+**     Date/Time   : 2015-12-14, 17:39, # CodeGen: 108
 **     Contents    :
 **         HWTIMER_SYS_Init             - _hwtimer_error_code_t HWTIMER_SYS_Init(hwtimer_t * hwtimer,const...
 **         HWTIMER_SYS_Deinit           - _hwtimer_error_code_t HWTIMER_SYS_Deinit(hwtimer_t * hwtimer);

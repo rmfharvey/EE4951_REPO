@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K22P121M120SF7RM, Rev. 1, March 24, 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-09, 19:57, # CodeGen: 89
+**     Date/Time   : 2015-12-14, 17:45, # CodeGen: 109
 **     Abstract    :
 **
 **     Settings    :
@@ -87,24 +87,18 @@
 #include "fsl_uart_hal.h"
 #include "fsl_lpuart_hal.h"
 #include "fsl_debug_console.h"
-#include "core_cm4_PEx.h"
 #include <assert.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#define CPU_PERIPHERALS_INIT                               0x01U     /* Call Peripherals_Init() method in PE_low_level_init() */ 
+#define CPU_PERIPHERALS_INIT                               0x00U     /* Peripherals_Init() method is not called in PE_low_level_init() */ 
 #define CPU_COMPONENTS_INIT                                0x01U     /* Call Components_Init() method in PE_low_level_init() */ 
-#define CPU_INIT_CONFIG                                    0x01U     /* Include Init_Config.h in the main.c file */ 
+#define CPU_INIT_CONFIG                                    0x00U     /* Do not include Init_Config.h in the main.c file */ 
 #define CPU_HARDWARE_INIT                                  0x01U     /* Call hardware_init() method in PE_low_level_init() */ 
 #define PEX_COMPONENTS_INIT                                0x01U     /* Call PEX_components_init() method in PE_low_level_init() */ 
-#define CPU_COMMON_INIT                                    0x01U     /* Call Common_Init() method in PE_low_level_init() */ 
-
-/* Interrupt definition template */
-#if !defined(PE_ISR)
-  #define PE_ISR(ISR_name) void __attribute__ ((interrupt)) ISR_name(void)
-#endif
+#define CPU_COMMON_INIT                                    0x00U     /* Common_Init() method is not called in PE_low_level_init() */ 
 
 /*
 ** ===================================================================

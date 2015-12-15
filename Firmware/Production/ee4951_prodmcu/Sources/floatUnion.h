@@ -11,7 +11,12 @@
 
 typedef union	FLOAT_UNION	{
 	float	asFloat;
-	uint32_t asInt;
+	struct	{
+		uint8_t	n0	:8;
+		uint8_t	n1	:8;
+		uint8_t	n2	:8;
+		uint8_t	n3	:8;
+	}asIntBF;
 }floatUnion_t;
 
 

@@ -327,11 +327,6 @@ Module "dut_adc"   (component fsl_adc16)
    - dut_adc_ADC16_DRV_GetConvFlag -Gets the event status of the ADC16 module.
    - dut_adc_ADC16_DRV_GetChnFlag -Gets the event status of each channel group.
 
-Module "hw_irqs"   (component Init_GPIO_VAR0)
-   - hw_irqs_Init -This method initializes registers of the GPIO module according to the Peripheral Initialization settings. 
-                Call this method in user code to initialize the module. By default, the method is called by PE automatically; 
-                see "Call Init method" property of the component for more details.
-
 Module "opt_bits"  (component fsl_gpio)
    - opt_bits_GPIO_DRV_Init -Initializes all GPIO pins used by the board.
    - opt_bits_GPIO_DRV_InputPinInit -Initializes one GPIO input pin used by the board.

@@ -131,7 +131,7 @@ void userInit(void)	{
 			CLOCK_SYS_GetSystickFreq()/1000000);
 
 	/* Set initial current range */
-	cycleRanges(&dutIsense, 500);
+	//cycleRanges(&dutIsense, 500);
 	dutIsense.enableCurrentRange(A);
 	WAIT1_Waitms(1);
 
@@ -148,8 +148,6 @@ void userInit(void)	{
 	else	{
 		PRINTF("Failed\n\r");
 	}
-
-
 
 	PRINTF("\n\r");
 }
@@ -171,33 +169,9 @@ int main(void)
   /* For example: for(;;) { } */
   userInit();
 
+  uint8_t i=0;
   while(true)	{
-	  asm("nop");
-	  /*uint8_t range = getStartupOptions();
-	  setIRangeFromStartup(range);
-	  switch(range){
-	  case 3:
-	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense3);
-	  		dutIsense.enableCurrentRange(A);
-	  		break;
-	  	case 2:
-	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense2);
-	  		dutIsense.enableCurrentRange(mA);
-	  		break;
-	  	case 1:
-	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense1);
-	  		dutIsense.enableCurrentRange(uA);
-	  		break;
-	  	case 0:
-	  		ADC16_DRV_ConfigConvChn(dut_adc_IDX,0U,&dut_isense0);
-	  		dutIsense.enableCurrentRange(nA);
-	  		break;
-	  	default:
-	  		break;
-	  }
-	  PRINTF("%05d\r",ADC16_DRV_GetConvValueRAW(dut_adc_IDX,0U));
-	  */
-	  //WAIT1_Waitms(100);
+	  i++;
   }
 
 

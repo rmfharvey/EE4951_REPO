@@ -1,0 +1,71 @@
+18:21:52 **** Incremental Build of configuration Debug for project sd_w_fatfs ****
+make all 
+'Building file: ../Middleware/fatfs/fsl_sdspi_disk.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"FSL_OSA_BM_TIMER_CONFIG=2" -D"CD_USING_GPIO" -D"SD_DISK_ENABLE=1" -D"CPU_MK22FN512VLL12" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/hal/inc" -I"C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\sd_w_fatfs\Middleware\fatfs\fsl_sd_disk" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/hal/src/sim/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/system/src/clock/MK22F51212" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/system/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/osa/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/CMSIS/Include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/devices" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/devices/MK22F51212/include" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/Generated_Code/SDK/platform/devices/MK22F51212/startup" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/Sources" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/Generated_Code" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/drivers/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/SDK/platform/composite/inc" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/Static_Code/IO_Map" -I"C:/Users/RossHarvey/Documents/School/EE4951_REPO/Firmware/Production/sd_w_fatfs/Static_Code/Peripherals" -std=c99 -MMD -MP -MF"Middleware/fatfs/fsl_sdspi_disk.d" -MT"Middleware/fatfs/fsl_sdspi_disk.o" -c -o "Middleware/fatfs/fsl_sdspi_disk.o" "../Middleware/fatfs/fsl_sdspi_disk.c"
+../Middleware/fatfs/fsl_sdspi_disk.c:47:1: error: unknown type name 'dspi_master_state_t'
+ static dspi_master_state_t g_dspiState;
+ ^
+../Middleware/fatfs/fsl_sdspi_disk.c:48:1: error: unknown type name 'dspi_device_t'
+ static dspi_device_t g_dspiDevice;
+ ^
+../Middleware/fatfs/fsl_sdspi_disk.c: In function 'setSpiFrequency':
+../Middleware/fatfs/fsl_sdspi_disk.c:64:15: error: 'dspi_master_state_t' undeclared (first use in this function)
+             ((dspi_master_state_t *)(spi->spiState))->whichCtar,
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:64:15: note: each undeclared identifier is reported only once for each function it appears in
+../Middleware/fatfs/fsl_sdspi_disk.c:64:36: error: expected expression before ')' token
+             ((dspi_master_state_t *)(spi->spiState))->whichCtar,
+                                    ^
+../Middleware/fatfs/fsl_sdspi_disk.c: In function 'spiExchange':
+../Middleware/fatfs/fsl_sdspi_disk.c:117:5: warning: implicit declaration of function 'DSPI_DRV_MasterTransferBlocking' [-Wimplicit-function-declaration]
+     if (kStatus_DSPI_Success == DSPI_DRV_MasterTransferBlocking(spi->spiInstance,
+     ^
+../Middleware/fatfs/fsl_sdspi_disk.c: In function 'reset_all_states':
+../Middleware/fatfs/fsl_sdspi_disk.c:321:5: warning: implicit declaration of function 'DSPI_DRV_MasterDeinit' [-Wimplicit-function-declaration]
+     DSPI_DRV_MasterDeinit(g_spi.spiInstance);
+     ^
+../Middleware/fatfs/fsl_sdspi_disk.c: In function 'sdcard_disk_initialize':
+../Middleware/fatfs/fsl_sdspi_disk.c:400:5: error: unknown type name 'dspi_master_user_config_t'
+     dspi_master_user_config_t dspiConfig;
+     ^
+../Middleware/fatfs/fsl_sdspi_disk.c:405:15: error: request for member 'isChipSelectContinuous' in something not a structure or union
+     dspiConfig.isChipSelectContinuous = true;
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:406:15: error: request for member 'isSckContinuous' in something not a structure or union
+     dspiConfig.isSckContinuous = false;
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:407:15: error: request for member 'pcsPolarity' in something not a structure or union
+     dspiConfig.pcsPolarity = kDspiPcs_ActiveLow;
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:408:15: error: request for member 'whichCtar' in something not a structure or union
+     dspiConfig.whichCtar = kDspiCtar0;
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:409:15: error: request for member 'whichPcs' in something not a structure or union
+     dspiConfig.whichPcs = kDspiPcs0;
+               ^
+../Middleware/fatfs/fsl_sdspi_disk.c:411:5: warning: implicit declaration of function 'DSPI_DRV_MasterInit' [-Wimplicit-function-declaration]
+     DSPI_DRV_MasterInit(g_spi.spiInstance, &g_dspiState, &dspiConfig);
+     ^
+../Middleware/fatfs/fsl_sdspi_disk.c:413:17: error: request for member 'dataBusConfig' in something not a structure or union
+     g_dspiDevice.dataBusConfig.bitsPerFrame = 8;
+                 ^
+../Middleware/fatfs/fsl_sdspi_disk.c:414:17: error: request for member 'dataBusConfig' in something not a structure or union
+     g_dspiDevice.dataBusConfig.clkPhase = kDspiClockPhase_FirstEdge;
+                 ^
+../Middleware/fatfs/fsl_sdspi_disk.c:415:17: error: request for member 'dataBusConfig' in something not a structure or union
+     g_dspiDevice.dataBusConfig.clkPolarity = kDspiClockPolarity_ActiveHigh;
+                 ^
+../Middleware/fatfs/fsl_sdspi_disk.c:416:17: error: request for member 'dataBusConfig' in something not a structure or union
+     g_dspiDevice.dataBusConfig.direction = kDspiMsbFirst;
+                 ^
+../Middleware/fatfs/fsl_sdspi_disk.c:417:17: error: request for member 'bitsPerSec' in something not a structure or union
+     g_dspiDevice.bitsPerSec = 20000000; /* 100KHz */
+                 ^
+../Middleware/fatfs/fsl_sdspi_disk.c:418:5: warning: implicit declaration of function 'DSPI_DRV_MasterConfigureBus' [-Wimplicit-function-declaration]
+     if (DSPI_DRV_MasterConfigureBus(g_spi.spiInstance, &g_dspiDevice, &calculatedBaudRate) != kStatus_DSPI_Success)
+     ^
+make: *** [Middleware/fatfs/fsl_sdspi_disk.o] Error 1
+
+18:21:53 Build Finished (took 572ms)
+

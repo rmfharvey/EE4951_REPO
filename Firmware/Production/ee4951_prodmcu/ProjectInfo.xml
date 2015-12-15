@@ -50,8 +50,6 @@
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\include\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\SDK\platform\devices\MK22F51212\startup\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\IO_Map\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\Peripherals\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\</Path>
     </IncludePaths>
@@ -80,7 +78,6 @@
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\system\src\interrupt\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\</Path>
-      <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\Peripherals\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\System\</Path>
       <Path>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\gcc\</Path>
     </SourceCodePaths>
@@ -131,16 +128,12 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\utilities\src\print_scan.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\Events.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\main.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\Peripherals\PTA_Init.c</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\System\PE_low_level_init.c</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\System\Peripherals_Init.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\DbgCs1.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\Init_Config.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\PE_low_level_init.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\PTA_Config.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\SDK\platform\devices\MK22F51212\startup\system_MK22F51212.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\WAIT1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\adc_trigger.h</PathName>
@@ -148,7 +141,6 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\clockMan1.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_adc.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\dut_gpio.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\hw_irqs.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\op_sys.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\opt_bits.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Generated_Code\pin_mux.h</PathName>
@@ -195,10 +187,8 @@
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\DutVSense.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\Events.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\SelfPower.h</PathName>
+      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\floatUnion.h</PathName>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Sources\system_timer.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\IO_Map\core_cm4_PEx.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\Peripherals\PTA_Init.h</PathName>
-      <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\Static_Code\System\Peripherals_Init.h</PathName>
     </GeneratedHs>
     <GeneratedASMs>
       <PathName>C:\Users\RossHarvey\Documents\School\EE4951_REPO\Firmware\Production\ee4951_prodmcu\SDK\platform\devices\MK22F51212\startup\gcc\startup_MK22F51212.S</PathName>

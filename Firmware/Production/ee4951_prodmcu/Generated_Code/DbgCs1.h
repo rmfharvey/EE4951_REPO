@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-03, 23:33, # CodeGen: 73
+**     Date/Time   : 2015-12-14, 18:50, # CodeGen: 118
 **     Contents    :
 **         DbgConsole_Init   - debug_console_status_t DbgConsole_Init(uint32_t uartInstance,uint32_t...
 **         DbgConsole_DeInit - debug_console_status_t DbgConsole_DeInit(void);
@@ -67,7 +67,7 @@
 /** Device instance number */
 #define BOARD_DEBUG_UART_INSTANCE UART1_IDX
 /** Baud rate in bits per second. */
-#define DEBUG_UART_BAUD 1310720U
+#define DEBUG_UART_BAUD 2048000U
 /** Low level device type */
 #define DEBUG_UART_TYPE kDebugConsoleUART
  

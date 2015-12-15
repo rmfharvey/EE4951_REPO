@@ -9,7 +9,7 @@
 
 
 DutVSense::DutVSense() {
-	scalingFactor = 0.0003814697266;
+	scalingFactor = 0.0003601245;
 	adcChConfig = dut_vsense;
 }
 

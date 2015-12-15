@@ -1,0 +1,194 @@
+/* ###################################################################
+**     Filename    : Events.c
+**     Project     : ee4951_prodmcu
+**     Processor   : MK22FN512VLL12
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2015-11-28, 12:40, # CodeGen: 0
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file Events.c
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup Events_module Events module documentation
+**  @{
+*/         
+/* MODULE Events */
+
+#include "Cpu.h"
+#include "Events.h"
+#include "DutISense.h"
+#include "DutVSense.h"
+#include "floatUnion.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+/*
+** ===================================================================
+**     Interrupt handler : ADC0_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void ADC0_IRQHandler(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Callback    : PORTA_IRQHandler
+**
+**     Description :
+**         User interrupt service routine.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void PORTA_IRQHandler(void)	{
+	//PRINTF("PORTA Interrupt\n\r");
+}
+
+
+/*
+** ===================================================================
+**     Callback    : adc_trigger_OnTimeOut
+**     Description : This callback is called when the timer expires.
+**     Parameters  :
+**       data - User parameter for the callback function.
+**     Returns : Nothing
+** ===================================================================
+*/
+#define BUFFERSIZE	512
+void adc_trigger_OnTimeOut(void* data)
+{
+	static uint32_t timestamp;
+	static uint16_t count=0;
+	extern DutISense dutIsense;
+	extern DutVSense dutVsense;
+	static uint8_t buffer0[BUFFERSIZE] = {0};
+	static uint8_t buffer1[BUFFERSIZE] = {0};
+	static uint8_t bufferHead=0;
+	uint8_t i;
+	static uint16_t bufNum = 0;
+
+	if(count&0b1)	{
+		dutVsense.updateADCVal();
+
+		uint16_t currInt = dutIsense.getADCValRaw();
+		uint16_t voltInt = dutVsense.getADCValRaw();
+		if(buffNum)	{
+			buffer1[bufferHead++] == voltInt>>8;
+			buffer1[bufferHead++] == voltInt&0xFF;
+			buffer1[bufferHead++] == currInt>>8;
+			buffer1[bufferHead++] == currInt&0xFF;
+			buffer1[bufferHead++] == dutIsense.getPreviousIRange();
+			buffer1[bufferHead++] == '\n';
+			if(bufferHead>(BUFFERSIZE-6))
+		}
+		else	{
+
+		}
+
+
+	}
+	else
+		dutIsense.updateADCVal();
+	/*if(!count++)	{
+		floatUnion_t voltageUnion = dutVsense.getADCValScaled();
+		floatUnion_t currentUnion = dutIsense.getADCValScaled();
+		float voltage = voltageUnion.asFloat;
+		float current = 1000*currentUnion.asFloat;	// in mA
+
+		uint16_t vMsd = (uint16_t)voltage;
+		uint16_t vLsd = (uint16_t)((voltage - (float)((uint16_t)voltage))*1000);
+		uint16_t iMsd = (uint16_t)(current);
+		uint16_t iLsd = (uint16_t)((current - (float)((uint16_t)current))*10000);
+
+		PRINTF("%02d.%03dV, %04d.%04dmA\r", vMsd, vLsd, iMsd, iLsd);
+	}*/
+}
+
+/*
+** ===================================================================
+**     Interrupt handler : ADC1_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void ADC1_IRQHandler(void)
+{
+  /* Write your code here ... */
+}
+
+
+
+
+#ifdef ts_clock_IDX
+/*
+** ===================================================================
+**     Interrupt handler : PIT1_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void PIT1_IRQHandler(void)
+{
+  /* Clear interrupt flag.*/
+  PIT_HAL_ClearIntFlag(g_pitBase[ts_clock_IDX], ts_clock_CHANNEL);
+  /* Write your code here ... */
+}
+#else
+  /* This IRQ handler is not used by ts_clock component. The purpose may be
+   * that the component has been removed or disabled. It is recommended to 
+   * remove this handler because Processor Expert cannot modify it according to 
+   * possible new request (e.g. in case that another component uses this
+   * interrupt vector). */
+  #warning This IRQ handler is not used by ts_clock component.\
+           It is recommended to remove this because Processor Expert cannot\
+           modify it according to possible new request.
+#endif
+
+/* END Events */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif
+
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/

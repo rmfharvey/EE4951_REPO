@@ -319,18 +319,6 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="hw_irqs" type="Init_GPIO">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="hw_irqs" />
-    </Properties>
-    <Methods>
-      <Init v="generate code" />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
   <Bean name="opt_bits" type="fsl_gpio">
     <Enabled v="Y" />
     <Properties>

@@ -16,6 +16,11 @@ DutISense::DutISense() {
 	PRV_initCurrentRange(&range1, range1_p, dut_isense1, 1.0, 25, 1);
 	PRV_initCurrentRange(&range2, range2_p, dut_isense2, 100.0, 25, 2);
 	PRV_initCurrentRange(&range3, range3_p, dut_isense3, 1000.0, 25, 3);
+	range0.scalingFactor *= 0.000009759;	// Corrective factors
+	range1.scalingFactor *= 0.010064;		// Corrective factors
+	range2.scalingFactor *= 100;				// Corrective factors
+	range3.scalingFactor *= 100000;
+
 	activeRange = &range2;
 	PRV_enableRange(&range3);
 }
@@ -69,7 +74,7 @@ void DutISense::updateADCVal(void)	{
 	rawADCVal = ADC16_DRV_GetConvValueRAW(dut_adc_IDX, ADC_CHNGROUP);
 	floatADCVal.asFloat = (float)rawADCVal*(activeRange->scalingFactor);
 #ifdef AUTOSWITCHING
-
+	prevIRange = activeRange->rangeNum;
 	switch(activeRange->rangeNum)	{
 	case 3:
 		if(rawADCVal<A_LOTHRESH)
@@ -105,6 +110,9 @@ floatUnion_t DutISense::getADCValScaled(void)	{
 	return floatADCVal;
 }
 
+uint8_t DutISense::getPreviousIRange(void)	{
+	return prevIRange;
+}
 
 /*	Private Functions	*/
 

@@ -23,8 +23,8 @@
 #define mA_HITHRESH 45875	// 70mA
 #define mA_LOTHRESH	82		// 500uA
 #define uA_HITHRESH	45875	// 700uA
-#define uA_LOTHRESH	33		// 500nA	66		// 1uA
-#define nA_HITHRESH	45875	//		16384	// 100uA
+#define uA_LOTHRESH	66		// 1uA
+#define nA_HITHRESH	16384	// 100uA
 
 
 typedef enum IRANGE	{
@@ -63,6 +63,7 @@ public:
 	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
 	uint16_t getADCValRaw(void);				// Returns raw ADC value
 	floatUnion_t getADCValScaled(void);			// Returns scaled ADC value in volts
+	uint8_t getPreviousIRange(void);
 private:
 	uint8_t numCurrentRanges;
 	uint16_t rawADCVal;
@@ -72,6 +73,7 @@ private:
 	currentRange_t range2;
 	currentRange_t range3;
 	currentRange_t *activeRange;			// Pointer to whichever range is currently active
+	uint8_t prevIRange;
 	adc16_chn_config_t *activeADCChannel;	// Pointer to whichever ADC channel is currently active
 
 	void PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain, uint8_t rngNum);

@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2015-12-09, 19:57, # CodeGen: 89
+**     Date/Time   : 2015-12-14, 17:45, # CodeGen: 109
 **     Abstract    :
 **
 **     Settings    :
@@ -1399,13 +1399,6 @@ void deinit_cmp_pins(uint32_t instance)
 void init_gpio_pins(uint32_t instance)
 {
   switch(instance) {    
-    case PORTA_IDX:                     /* PORTA_IDX */
-      /* Affects PORTA_PCR5 register */
-      PORT_HAL_SetMuxMode(PORTA,5UL,kPortMuxAsGpio);
-      /* Affects PORTA_PCR13 register */
-      PORT_HAL_SetMuxMode(PORTA,13UL,kPortMuxAsGpio);
-      PORT_HAL_SetPullMode(PORTA,13UL,kPortPullUp);
-      break;
     case PORTC_IDX:                     /* PORTC_IDX */
       /* Affects PORTC_PCR2 register */
       PORT_HAL_SetSlewRateMode(PORTC,2UL,kPortFastSlewRate);
@@ -1464,10 +1457,6 @@ void init_gpio_pins(uint32_t instance)
 void deinit_gpio_pins(uint32_t instance)
 {
   switch(instance) {    
-    case PORTA_IDX:                     /* PORTA_IDX */
-      PORT_HAL_SetMuxMode(PORTA,5UL,kPortPinDisabled);
-      PORT_HAL_SetMuxMode(PORTA,13UL,kPortPinDisabled);
-      break;
     case PORTC_IDX:                     /* PORTC_IDX */
       PORT_HAL_SetMuxMode(PORTC,2UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTC,3UL,kPortPinDisabled);
@@ -1531,9 +1520,6 @@ void init_llwu_pins(uint32_t instance)
   PORT_HAL_SetPullMode(PORTE,4UL,kPortPullDown);
   PORT_HAL_SetMuxMode(PORTE,4UL,kPortMuxAsGpio);
   PORT_HAL_SetPullCmd(PORTE,4UL,true);
-  /* Affects PORTA_PCR13 register */
-  PORT_HAL_SetMuxMode(PORTA,13UL,kPortMuxAsGpio);
-  PORT_HAL_SetPullMode(PORTA,13UL,kPortPullUp);
   /* Affects PORTC_PCR3 register */
   PORT_HAL_SetSlewRateMode(PORTC,3UL,kPortFastSlewRate);
   PORT_HAL_SetOpenDrainCmd(PORTC,3UL,false);
@@ -1563,7 +1549,6 @@ void init_llwu_pins(uint32_t instance)
 void deinit_llwu_pins(uint32_t instance)
 {
   PORT_HAL_SetMuxMode(PORTE,4UL,kPortPinDisabled);
-  PORT_HAL_SetMuxMode(PORTA,13UL,kPortPinDisabled);
   PORT_HAL_SetMuxMode(PORTC,3UL,kPortPinDisabled);
   PORT_HAL_SetMuxMode(PORTC,4UL,kPortPinDisabled);
   PORT_HAL_SetMuxMode(PORTC,5UL,kPortPinDisabled);
