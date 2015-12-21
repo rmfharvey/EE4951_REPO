@@ -5,6 +5,11 @@
  *      Author: RossHarvey
  */
 
+/*
+ * This is almost the same as the DutISense class, but much simpler since there are no ranges to deal with.
+ * It should be easy to figure out without more comments
+ */
+
 #ifndef SOURCES_DUTVSENSE_H_
 #define SOURCES_DUTVSENSE_H_
 
@@ -19,7 +24,7 @@ public:
 	DutVSense();
 	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
 	uint16_t getADCValRaw(void);				// Returns raw ADC value
-	floatUnion_t getADCValScaled(void);				// Returns scaled ADC value in volts
+	floatUnion_t getADCValScaled(void);			// Returns scaled ADC value in volts
 private:
 	float scalingFactor;
 	uint16_t rawADCVal;

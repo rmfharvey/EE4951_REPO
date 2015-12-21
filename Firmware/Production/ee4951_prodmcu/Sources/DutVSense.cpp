@@ -5,6 +5,12 @@
  *      Author: RossHarvey
  */
 
+/*
+ * This is almost the same as the DutISense class, but much simpler since there are no ranges to deal with.
+ * It should be easy to figure out without more comments
+ */
+
+
 #include <DutVSense.h>
 
 

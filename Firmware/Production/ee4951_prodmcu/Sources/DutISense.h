@@ -14,19 +14,20 @@
 #include "dut_adc.h"
 #include "floatUnion.h"
 
-#define NUMRANGES		4U
-#define ADC_CHNGROUP	0U
-#define AUTOSWITCHING
-#define RNGSWITCHHYS	3U
+#define NUMRANGES		4U	// Number of current ranges on the board
+#define ADC_CHNGROUP	0U	// For ADC functions
+#define AUTOSWITCHING		// Automatically switches between channels.  Comment this out to disable
+#define RNGSWITCHHYS	3U	// I was going to add some hysteresis to prevent false switching between channels.  This wasn;t actually needed, though.
 
-#define A_LOTHRESH	33		// 5mA
-#define mA_HITHRESH 45875	// 70mA
-#define mA_LOTHRESH	82		// 500uA
-#define uA_HITHRESH	45875	// 700uA
-#define uA_LOTHRESH	66		// 1uA
-#define nA_HITHRESH	16384	// 100uA
+// "Out-of-range" Thresholds for auto-switching.
+#define A_LOTHRESH	33U		// 5mA
+#define mA_HITHRESH 45875U	// 70mA
+#define mA_LOTHRESH	82U		// 500uA
+#define uA_HITHRESH	45875U	// 700uA
+#define uA_LOTHRESH	66U		// 1uA
+#define nA_HITHRESH	16384U	// 100uA
 
-
+// Enumeration for code readability.
 typedef enum IRANGE	{
 	nA = 0,
 	uA,
@@ -60,21 +61,21 @@ public:
 	void enableCurrentRange(iRange_t range);	// Sets which range is active
 	void disableCurrentRange(void);				// Disables all Current Ranges
 	uint8_t getCurrentRange(void);				// Returns the active range as an unsigned int in [0,3]
-	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal
+	void updateADCVal(void);					// Reads a new ADC value and updates rawADCVal and floatADCVal.  If AUTOSWITCHING is defined, checks if we need to switch ranges
 	uint16_t getADCValRaw(void);				// Returns raw ADC value
-	floatUnion_t getADCValScaled(void);			// Returns scaled ADC value in volts
-	uint8_t getPreviousIRange(void);
+	floatUnion_t getADCValScaled(void);			// Returns scaled ADC value in amps
+	uint8_t getPreviousIRange(void);			// Returns the previous current range.  This is needed for sending formatted values out, since updateADCVal() will change this range sometimes
 private:
 	uint8_t numCurrentRanges;
 	uint16_t rawADCVal;
 	floatUnion_t floatADCVal;
-	currentRange_t range0;
+	currentRange_t range0;						// Holds all values for range 0.  Same for range 1-3 (see struct above)
 	currentRange_t range1;
 	currentRange_t range2;
 	currentRange_t range3;
-	currentRange_t *activeRange;			// Pointer to whichever range is currently active
-	uint8_t prevIRange;
-	adc16_chn_config_t *activeADCChannel;	// Pointer to whichever ADC channel is currently active
+	currentRange_t *activeRange;				// Pointer to whichever range is currently active
+	uint8_t prevIRange;							// Used for sending out formatted data since updateADCVal() may change range.
+	adc16_chn_config_t *activeADCChannel;		// Pointer to whichever ADC channel is currently active. (see SDK>platform>drivers>inc>fsl_adc_driver.h)
 
 	void PRV_initCurrentRange(currentRange_t *cRange, uint32_t pinName, adc16_chn_config_t adcCfg, float shRes, uint8_t gain, uint8_t rngNum);
 	void PRV_enableRange(currentRange_t *newRange);

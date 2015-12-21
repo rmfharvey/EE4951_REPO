@@ -77,10 +77,17 @@ void ADC0_IRQHandler(void)
 **     Parameters  :
 **       data - User parameter for the callback function.
 **     Returns : Nothing
+**
+**     Since we couldn't get the SD card working, the double bufferring and sending of data is really poorly implemented.  It was just something I cobbled together
+**     as quickly as possible in order to validate the hardware.
+**     This routine is blocking since we're using UART, which actually means we don't need to double buffer the data.  It could be made non-blocking by using external
+**     flags and polling them in main().
+**     Once this uses SPI (as it should), the transfer will be non-blocking.
+**     See notes below.
 ** ===================================================================
 */
 #define BUFFERSIZE	20000
-void adc_trigger_OnTimeOut(void* data)
+void adc_trigger_OnTimeOut(void* data)		// See flowcharts in the repository for a full description
 {
 	static uint32_t timestamp;
 	static uint16_t count=0;
@@ -93,26 +100,27 @@ void adc_trigger_OnTimeOut(void* data)
 	static uint8_t buffNum = 0;
 
 	if(count&0b1)	{
-		dutVsense.updateADCVal();
+		dutVsense.updateADCVal();	// Update voltage reading
 		count++;
 
-		uint16_t currInt = dutIsense.getADCValRaw();
-		uint16_t voltInt = dutVsense.getADCValRaw();
-		if(buffNum&0x0001)	{
+		uint16_t currInt = dutIsense.getADCValRaw();	// Get current value
+		uint16_t voltInt = dutVsense.getADCValRaw();	// Get voltage value
+		if(buffNum&0x0001)	{							// Check which buffer to use (could be implemented with a 2d array)
+			// Populate buffer/array
 			buffer1[bufferHead++] = voltInt>>8;
 			buffer1[bufferHead++] = voltInt&0xFF;
 			buffer1[bufferHead++] = currInt>>8;
 			buffer1[bufferHead++] = currInt&0xFF;
 			buffer1[bufferHead++] = dutIsense.getPreviousIRange();
 			buffer1[bufferHead++] = '\n';
-			if(bufferHead>(BUFFERSIZE-7))	{
-				//HWTIMER_SYS_Stop(&adc_trigger_Handle);
+
+			if(bufferHead>(BUFFERSIZE-7))	{	// Check to make sure that you won't overrun the buffer on the next time through.
 				PRINTF(&buffer1[0]);
 				bufferHead=0;
 				buffNum++;
 			}
 		}
-		else	{
+		else	{	// Same thing, different array
 			buffer0[bufferHead++] = voltInt>>8;
 			buffer0[bufferHead++] = voltInt&0xFF;
 			buffer0[bufferHead++] = currInt>>8;
@@ -120,7 +128,6 @@ void adc_trigger_OnTimeOut(void* data)
 			buffer0[bufferHead++] = dutIsense.getPreviousIRange();
 			buffer0[bufferHead++] = '\n';
 			if(bufferHead>(BUFFERSIZE-7))	{
-				//HWTIMER_SYS_Stop(&adc_trigger_Handle);
 				PRINTF(&buffer0[0]);
 				bufferHead=0;
 				buffNum++;
@@ -128,7 +135,7 @@ void adc_trigger_OnTimeOut(void* data)
 		}
 	}
 	else	{
-		dutIsense.updateADCVal();
+		dutIsense.updateADCVal();	// Get ADC Value
 		count++;
 	}
 }

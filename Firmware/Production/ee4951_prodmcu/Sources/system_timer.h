@@ -5,6 +5,9 @@
  *      Author: RossHarvey
  */
 
+/*
+ * This was going to be a timestamp for readings, but I never got this far.
+ */
 
 
 #ifndef SOURCES_SYSTEM_TIMER_H_

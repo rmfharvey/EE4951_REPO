@@ -11266,3 +11266,113 @@ java.io.FileNotFoundException: C:\Users\RossHarvey\Documents\School\EE4951_REPO\
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf 4 -1 2015-12-14 20:48:13.073
+!MESSAGE Invocation exception when calling a service event handler method
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor267.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.cdt.dsf.service.DsfSession.doDispatchEvent(DsfSession.java:519)
+	at org.eclipse.cdt.dsf.service.DsfSession.access$2(DsfSession.java:463)
+	at org.eclipse.cdt.dsf.service.DsfSession$3.run(DsfSession.java:390)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.RejectedExecutionException: Display org.eclipse.swt.widgets.Display@f37ccf is disposed
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:85)
+	at org.eclipse.cdt.dsf.ui.viewmodel.AbstractVMAdapter.handleEvent(AbstractVMAdapter.java:260)
+	at org.eclipse.cdt.dsf.ui.viewmodel.datamodel.AbstractDMVMAdapter.eventDispatched(AbstractDMVMAdapter.java:103)
+	... 13 more
+Caused by: org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1258)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:77)
+	... 15 more
+Root exception:
+java.util.concurrent.RejectedExecutionException: Display org.eclipse.swt.widgets.Display@f37ccf is disposed
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:85)
+	at org.eclipse.cdt.dsf.ui.viewmodel.AbstractVMAdapter.handleEvent(AbstractVMAdapter.java:260)
+	at org.eclipse.cdt.dsf.ui.viewmodel.datamodel.AbstractDMVMAdapter.eventDispatched(AbstractDMVMAdapter.java:103)
+	at sun.reflect.GeneratedMethodAccessor267.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.cdt.dsf.service.DsfSession.doDispatchEvent(DsfSession.java:519)
+	at org.eclipse.cdt.dsf.service.DsfSession.access$2(DsfSession.java:463)
+	at org.eclipse.cdt.dsf.service.DsfSession$3.run(DsfSession.java:390)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1258)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:77)
+	... 15 more
+!SESSION 2015-12-15 18:58:48.648 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-12-15 18:58:50.850
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-15 18:58:59.530
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-15 18:58:59.530
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\RossHarvey'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-12-15 18:59:00.750
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+!SESSION 2015-12-21 12:43:56.146 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-21 12:44:07.131
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-21 12:44:07.158
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\RossHarvey'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2015-12-21 12:44:08.269
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist

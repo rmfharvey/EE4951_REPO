@@ -5,6 +5,10 @@
  *      Author: RossHarvey
  */
 
+/*
+ * We never actually got the hardware working for this, so I'm not using anything in here
+ */
+
 #ifndef SOURCES_SELFPOWER_H_
 #define SOURCES_SELFPOWER_H_
 
